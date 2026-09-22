@@ -139,6 +139,10 @@
   .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
   @media (max-width: 640px) { .two-col { grid-template-columns: 1fr; } }
 
+  .heatmap-wrap { position: relative; overflow-x: auto; }
+  .heatmap-cell { cursor: default; }
+  .heatmap-cell:hover { stroke: var(--text-primary); stroke-width: 1.5; }
+
   .empty { color: var(--text-muted); font-size: 13px; padding: 24px; text-align: center; }
 </style>
 </head>
@@ -152,6 +156,8 @@
   <div class="segmented page-toggle" id="page-toggle" role="tablist" aria-label="Dashboard page">
     <button data-page="overview" aria-pressed="true">Overview</button>
     <button data-page="engagement" aria-pressed="false">Engagement</button>
+    <button data-page="audience" aria-pressed="false">Audience</button>
+    <button data-page="behavior" aria-pressed="false">Behavior</button>
   </div>
 
   <div class="filters">
@@ -241,6 +247,52 @@
         <div class="card-title">Top countries <span class="card-sub">last 30 days</span></div>
         <table class="data-list-table" id="countries-table"></table>
       </div>
+    </div>
+  </div>
+
+  <!-- ===== Audience page ===== -->
+  <div id="page-audience" style="display:none;">
+    <div class="two-col">
+      <div class="card">
+        <div class="card-title">Landing pages <span class="card-sub">where sessions start · last 30 days</span></div>
+        <table class="data-list-table" id="landing-pages-table"></table>
+      </div>
+      <div class="card">
+        <div class="card-title">Traffic sources, detailed <span class="card-sub">last 30 days</span></div>
+        <div id="sources-list"></div>
+      </div>
+    </div>
+
+    <div class="two-col">
+      <div class="card">
+        <div class="card-title">Browser <span class="card-sub">last 30 days</span></div>
+        <div id="browsers-list"></div>
+      </div>
+      <div class="card">
+        <div class="card-title">Operating system <span class="card-sub">last 30 days</span></div>
+        <div id="os-list"></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Top cities <span class="card-sub">last 30 days</span></div>
+      <table class="data-list-table" id="cities-table"></table>
+    </div>
+  </div>
+
+  <!-- ===== Behavior page ===== -->
+  <div id="page-behavior" style="display:none;">
+    <div class="card">
+      <div class="card-title">When visitors arrive <span class="card-sub">sessions by day &amp; hour · last 30 days, browser local time</span></div>
+      <div class="heatmap-wrap" id="heatmap-wrap">
+        <svg class="chart" id="heatmap"></svg>
+        <div class="tooltip" id="heatmap-tooltip"></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Content engagement <span class="card-sub">automatically tracked events · last 30 days</span></div>
+      <div id="events-list"></div>
     </div>
   </div>
 </div>
@@ -333,9 +385,13 @@ function syncToggles() {
   document.querySelectorAll('#page-toggle button').forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.page === state.page)));
   document.querySelectorAll('#granularity-toggle button').forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.granularity === state.granularity)));
   document.querySelectorAll('#range-toggle button').forEach((b) => b.setAttribute('aria-pressed', String(Number(b.dataset.range) === state.range)));
-  document.getElementById('range-toggle').style.display = state.granularity === 'daily' ? 'inline-flex' : 'none';
+  const usesTrendFilters = state.page === 'overview' || state.page === 'engagement';
+  document.getElementById('range-toggle').style.display = usesTrendFilters && state.granularity === 'daily' ? 'inline-flex' : 'none';
+  document.getElementById('granularity-toggle').style.display = usesTrendFilters ? 'inline-flex' : 'none';
   document.getElementById('page-overview').style.display = state.page === 'overview' ? '' : 'none';
   document.getElementById('page-engagement').style.display = state.page === 'engagement' ? '' : 'none';
+  document.getElementById('page-audience').style.display = state.page === 'audience' ? '' : 'none';
+  document.getElementById('page-behavior').style.display = state.page === 'behavior' ? '' : 'none';
 }
 
 function currentSeries() {
@@ -374,13 +430,17 @@ function render() {
     renderChart('chart', 'tooltip', 'chart-wrap', sliceForRange(), OVERVIEW_SERIES);
     renderDataTable();
     renderTopPages();
-  } else {
+  } else if (state.page === 'engagement') {
     renderStatsInto('eng-stats', ENGAGEMENT_SERIES);
     const rows = sliceForRange();
     renderChart('eng-chart-duration', 'eng-tooltip-duration', 'eng-wrap-duration', rows, [ENGAGEMENT_SERIES[0]]);
     renderChart('eng-chart-pages', 'eng-tooltip-pages', 'eng-wrap-pages', rows, [ENGAGEMENT_SERIES[1]]);
     renderChart('eng-chart-rate', 'eng-tooltip-rate', 'eng-wrap-rate', rows, [ENGAGEMENT_SERIES[2]]);
     renderBreakdowns();
+  } else if (state.page === 'audience') {
+    renderAudience();
+  } else if (state.page === 'behavior') {
+    renderBehavior();
   }
 }
 
@@ -699,19 +759,22 @@ function renderBreakdowns() {
   renderCountriesTable('countries-table', site.countries);
 }
 
-function renderBarList(elId, items, color) {
+function renderBarList(elId, items, color, opts = {}) {
+  const valueKey = opts.valueKey || 'sessions';
+  const labelWidth = opts.labelWidth || 130;
   const el = document.getElementById(elId);
   el.innerHTML = '';
   if (!items || !items.length) { el.innerHTML = '<div class="empty">No data</div>'; return; }
-  const total = items.reduce((a, i) => a + i.sessions, 0) || 1;
-  const max = Math.max(...items.map(i => i.sessions), 1);
+  const total = items.reduce((a, i) => a + i[valueKey], 0) || 1;
+  const max = Math.max(...items.map(i => i[valueKey]), 1);
   items.forEach((i) => {
-    const pct = ((i.sessions / total) * 100).toFixed(1);
-    const widthPct = ((i.sessions / max) * 100).toFixed(1);
+    const pct = ((i[valueKey] / total) * 100).toFixed(1);
+    const widthPct = ((i[valueKey] / max) * 100).toFixed(1);
     const row = document.createElement('div');
     row.className = 'bar-row';
     const labelEl = document.createElement('div');
     labelEl.className = 'bar-label';
+    labelEl.style.width = labelWidth + 'px';
     labelEl.title = i.label;
     labelEl.textContent = i.label;
     const track = document.createElement('div');
@@ -723,7 +786,7 @@ function renderBarList(elId, items, color) {
     track.appendChild(fill);
     const valueEl = document.createElement('div');
     valueEl.className = 'bar-value';
-    valueEl.textContent = i.sessions.toLocaleString() + ' ';
+    valueEl.textContent = i[valueKey].toLocaleString() + ' ';
     const pctSpan = document.createElement('span');
     pctSpan.className = 'bar-pct';
     pctSpan.textContent = `(${pct}%)`;
@@ -779,6 +842,145 @@ function renderCountriesTable(elId, items) {
   });
   html += '</tbody>';
   table.innerHTML = html;
+}
+
+function renderAudience() {
+  const site = DATA.sites[state.site];
+  renderLandingPagesTable('landing-pages-table', site.landingPages);
+  renderBarList('sources-list', site.sources, 'var(--series-1)', { labelWidth: 170 });
+  renderBarList('browsers-list', site.browsers, 'var(--series-1)');
+  renderBarList('os-list', site.operatingSystems, 'var(--series-1)');
+  renderSimpleCountTable('cities-table', site.cities, 'City');
+}
+
+function renderBehavior() {
+  const site = DATA.sites[state.site];
+  renderHeatmap('heatmap', 'heatmap-tooltip', 'heatmap-wrap', site.timing);
+  const events = site.events.map(e => ({ label: e.label, count: e.count }));
+  renderBarList('events-list', events, 'var(--series-1)', { valueKey: 'count', labelWidth: 190 });
+}
+
+function renderLandingPagesTable(elId, items) {
+  const table = document.getElementById(elId);
+  if (!items || !items.length) { table.innerHTML = '<tr><td class="empty">No data</td></tr>'; return; }
+  let html = '<thead><tr><th>Page</th><th>Sessions</th><th>Engaged</th></tr></thead><tbody>';
+  items.forEach((i) => {
+    html += `<tr><td class="path" title="${escapeHtml(i.path)}">${escapeHtml(i.path)}</td><td>${i.sessions.toLocaleString()}</td><td>${(i.engagementRate * 100).toFixed(1)}%</td></tr>`;
+  });
+  html += '</tbody>';
+  table.innerHTML = html;
+}
+
+function renderSimpleCountTable(elId, items, labelHeader) {
+  const table = document.getElementById(elId);
+  if (!items || !items.length) { table.innerHTML = '<tr><td class="empty">No data</td></tr>'; return; }
+  const total = items.reduce((a, i) => a + i.sessions, 0) || 1;
+  let html = `<thead><tr><th>${labelHeader}</th><th>Sessions</th><th>%</th></tr></thead><tbody>`;
+  items.forEach((i) => {
+    const pct = ((i.sessions / total) * 100).toFixed(1);
+    html += `<tr><td>${escapeHtml(i.label)}</td><td>${i.sessions.toLocaleString()}</td><td>${pct}%</td></tr>`;
+  });
+  html += '</tbody>';
+  table.innerHTML = html;
+}
+
+const DAY_LABELS = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+function hourLabel(h) {
+  if (h === 0) return '12a';
+  if (h < 12) return h + 'a';
+  if (h === 12) return '12p';
+  return (h - 12) + 'p';
+}
+
+function renderHeatmap(svgId, tooltipId, wrapId, rows) {
+  const svg = document.getElementById(svgId);
+  const tooltip = document.getElementById(tooltipId);
+  svg.innerHTML = '';
+
+  const grid = Array.from({ length: 7 }, () => new Array(24).fill(0));
+  (rows || []).forEach((r) => {
+    if (r.day >= 0 && r.day < 7 && r.hour >= 0 && r.hour < 24) grid[r.day][r.hour] = r.sessions;
+  });
+  const max = Math.max(1, ...grid.flat());
+
+  const CELL_W = 26, CELL_H = 18, GAP = 2, LABEL_W = 34, TOP_H = 16;
+  const W = LABEL_W + 24 * (CELL_W + GAP);
+  const H = TOP_H + 7 * (CELL_H + GAP);
+  svg.setAttribute('viewBox', `0 0 ${W} ${H}`);
+
+  const ns = 'http://www.w3.org/2000/svg';
+
+  for (let h = 0; h < 24; h += 3) {
+    const text = document.createElementNS(ns, 'text');
+    text.setAttribute('class', 'axis-text');
+    text.setAttribute('x', LABEL_W + h * (CELL_W + GAP) + (CELL_W / 2));
+    text.setAttribute('y', TOP_H - 5);
+    text.setAttribute('text-anchor', 'middle');
+    text.textContent = hourLabel(h);
+    svg.appendChild(text);
+  }
+
+  for (let d = 0; d < 7; d++) {
+    const text = document.createElementNS(ns, 'text');
+    text.setAttribute('class', 'axis-text');
+    text.setAttribute('x', LABEL_W - 8);
+    text.setAttribute('y', TOP_H + d * (CELL_H + GAP) + CELL_H / 2 + 3);
+    text.setAttribute('text-anchor', 'end');
+    text.textContent = DAY_LABELS[d];
+    svg.appendChild(text);
+
+    for (let h = 0; h < 24; h++) {
+      const v = grid[d][h];
+      const opacity = v === 0 ? 0.06 : 0.12 + 0.83 * (v / max);
+      const rect = document.createElementNS(ns, 'rect');
+      rect.setAttribute('class', 'heatmap-cell');
+      rect.setAttribute('x', LABEL_W + h * (CELL_W + GAP));
+      rect.setAttribute('y', TOP_H + d * (CELL_H + GAP));
+      rect.setAttribute('width', CELL_W);
+      rect.setAttribute('height', CELL_H);
+      rect.setAttribute('rx', 2);
+      rect.setAttribute('fill', 'var(--series-1)');
+      rect.setAttribute('fill-opacity', opacity.toFixed(2));
+
+      rect.addEventListener('pointerenter', (e) => showCellTooltip(e, d, h, v));
+      rect.addEventListener('pointermove', (e) => showCellTooltip(e, d, h, v));
+      rect.addEventListener('mouseenter', (e) => showCellTooltip(e, d, h, v));
+      rect.addEventListener('mousemove', (e) => showCellTooltip(e, d, h, v));
+      rect.addEventListener('pointerleave', hideCellTooltip);
+      rect.addEventListener('mouseleave', hideCellTooltip);
+      svg.appendChild(rect);
+    }
+  }
+
+  function showCellTooltip(e, d, h, v) {
+    tooltip.innerHTML = '';
+    const dateEl = document.createElement('div');
+    dateEl.className = 'tt-date';
+    dateEl.textContent = `${DAY_LABELS[d]} ${hourLabel(h)}–${hourLabel((h + 1) % 24)}`;
+    tooltip.appendChild(dateEl);
+    const rowEl = document.createElement('div');
+    rowEl.className = 'tt-row';
+    const key = document.createElement('span');
+    key.className = 'tt-key';
+    key.style.background = 'var(--series-1)';
+    const name = document.createElement('span');
+    name.className = 'tt-name';
+    name.textContent = 'Sessions';
+    const val = document.createElement('span');
+    val.className = 'tt-val';
+    val.textContent = v.toLocaleString();
+    rowEl.appendChild(key); rowEl.appendChild(name); rowEl.appendChild(val);
+    tooltip.appendChild(rowEl);
+
+    const wrapRect = document.getElementById(wrapId).getBoundingClientRect();
+    tooltip.style.opacity = '1';
+    tooltip.style.left = (e.clientX - wrapRect.left + 14) + 'px';
+    tooltip.style.top = (e.clientY - wrapRect.top - 10) + 'px';
+  }
+
+  function hideCellTooltip() {
+    tooltip.style.opacity = '0';
+  }
 }
 
 function escapeHtml(str) {

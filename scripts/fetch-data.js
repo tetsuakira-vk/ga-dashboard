@@ -101,12 +101,82 @@ async function fetchBreakdown(propertyId, dimension, days = 30, limit = 20) {
     .filter((r) => r.label.trim() !== '');
 }
 
+async function fetchLandingPages(propertyId, days = 30, limit = 10) {
+  const [response] = await client.runReport({
+    property: `properties/${propertyId}`,
+    dateRanges: [{ startDate: `${days}daysAgo`, endDate: 'today' }],
+    dimensions: [{ name: 'landingPage' }],
+    metrics: [{ name: 'sessions' }, { name: 'engagementRate' }],
+    orderBys: [{ metric: { metricName: 'sessions' }, desc: true }],
+    limit,
+  });
+
+  return (response.rows || [])
+    .map((row) => ({
+      path: row.dimensionValues[0].value,
+      sessions: Number(row.metricValues[0].value),
+      engagementRate: Number(row.metricValues[1].value),
+    }))
+    .filter((r) => r.path.trim() !== '' && r.path !== '(not set)');
+}
+
+// GA4's "click" event (Enhanced Measurement) = outbound link click; "scroll" = 90% scroll depth.
+const EVENT_LABELS = {
+  scroll: 'Scrolled 90%+',
+  click: 'Outbound link click',
+  file_download: 'File download',
+  video_start: 'Video started',
+  video_progress: 'Video progress (10/25/50/75%)',
+  video_complete: 'Video completed',
+  form_start: 'Form started',
+  form_submit: 'Form submitted',
+  view_search_results: 'Site search used',
+};
+const EVENT_EXCLUDE = new Set(['session_start', 'first_visit', 'user_engagement', 'page_view']);
+
+async function fetchEvents(propertyId, days = 30, limit = 15) {
+  const [response] = await client.runReport({
+    property: `properties/${propertyId}`,
+    dateRanges: [{ startDate: `${days}daysAgo`, endDate: 'today' }],
+    dimensions: [{ name: 'eventName' }],
+    metrics: [{ name: 'eventCount' }],
+    orderBys: [{ metric: { metricName: 'eventCount' }, desc: true }],
+    limit,
+  });
+
+  return (response.rows || [])
+    .map((row) => ({
+      name: row.dimensionValues[0].value,
+      label: EVENT_LABELS[row.dimensionValues[0].value] || row.dimensionValues[0].value,
+      count: Number(row.metricValues[0].value),
+    }))
+    .filter((r) => !EVENT_EXCLUDE.has(r.name));
+}
+
+async function fetchTimingHeatmap(propertyId, days = 30) {
+  const [response] = await client.runReport({
+    property: `properties/${propertyId}`,
+    dateRanges: [{ startDate: `${days}daysAgo`, endDate: 'today' }],
+    dimensions: [{ name: 'dayOfWeek' }, { name: 'hour' }],
+    metrics: [{ name: 'sessions' }],
+  });
+
+  return (response.rows || []).map((row) => ({
+    day: Number(row.dimensionValues[0].value), // 0 = Sunday
+    hour: Number(row.dimensionValues[1].value), // 0-23
+    sessions: Number(row.metricValues[0].value),
+  }));
+}
+
 async function main() {
   const result = { generatedAt: new Date().toISOString(), sites: {} };
 
   for (const site of SITES) {
     console.log(`Fetching ${site.label} (${site.propertyId})...`);
-    const [daily, monthly, topPages, channels, newVsReturning, devices, countries] = await Promise.all([
+    const [
+      daily, monthly, topPages, channels, newVsReturning, devices, countries,
+      landingPages, sources, browsers, operatingSystems, cities, events, timing,
+    ] = await Promise.all([
       fetchDaily(site.propertyId),
       fetchMonthly(site.propertyId),
       fetchTopPages(site.propertyId),
@@ -114,10 +184,18 @@ async function main() {
       fetchBreakdown(site.propertyId, 'newVsReturning'),
       fetchBreakdown(site.propertyId, 'deviceCategory'),
       fetchBreakdown(site.propertyId, 'country', 30, 10),
+      fetchLandingPages(site.propertyId),
+      fetchBreakdown(site.propertyId, 'sessionSourceMedium', 30, 10),
+      fetchBreakdown(site.propertyId, 'browser', 30, 8),
+      fetchBreakdown(site.propertyId, 'operatingSystem', 30, 8),
+      fetchBreakdown(site.propertyId, 'city', 30, 10),
+      fetchEvents(site.propertyId),
+      fetchTimingHeatmap(site.propertyId),
     ]);
     result.sites[site.id] = {
       label: site.label, daily, monthly, topPages,
       channels, newVsReturning, devices, countries,
+      landingPages, sources, browsers, operatingSystems, cities, events, timing,
     };
   }
 
