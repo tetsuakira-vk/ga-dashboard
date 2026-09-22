@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-22T13:23:29.591Z",
+  "generatedAt": "2026-09-22T14:06:31.247Z",
   "sites": {
     "japaneseunlocked": {
       "label": "Japanese Unlocked",
@@ -8,859 +8,1288 @@
           "date": "20260430",
           "sessions": 11,
           "users": 10,
-          "pageviews": 29
+          "pageviews": 29,
+          "avgSessionDuration": 213.5058808181818,
+          "pagesPerSession": 2.6363636363636362,
+          "engagementRate": 0.36363636363636365
         },
         {
           "date": "20260501",
           "sessions": 18,
           "users": 14,
-          "pageviews": 63
+          "pageviews": 63,
+          "avgSessionDuration": 324.34784766666667,
+          "pagesPerSession": 3.5,
+          "engagementRate": 0.2777777777777778
         },
         {
           "date": "20260502",
           "sessions": 25,
           "users": 21,
-          "pageviews": 126
+          "pageviews": 126,
+          "avgSessionDuration": 740.3520362399998,
+          "pagesPerSession": 5.04,
+          "engagementRate": 0.28
         },
         {
           "date": "20260503",
           "sessions": 11,
           "users": 6,
-          "pageviews": 26
+          "pageviews": 26,
+          "avgSessionDuration": 234.3306780909091,
+          "pagesPerSession": 2.3636363636363638,
+          "engagementRate": 0.6363636363636364
         },
         {
           "date": "20260504",
           "sessions": 7,
           "users": 7,
-          "pageviews": 8
+          "pageviews": 8,
+          "avgSessionDuration": 1.4976855714285713,
+          "pagesPerSession": 1.1428571428571428,
+          "engagementRate": 0.14285714285714285
         },
         {
           "date": "20260505",
           "sessions": 2,
           "users": 2,
-          "pageviews": 4
+          "pageviews": 4,
+          "avgSessionDuration": 32.3428315,
+          "pagesPerSession": 2,
+          "engagementRate": 0.5
         },
         {
           "date": "20260506",
           "sessions": 3,
           "users": 3,
-          "pageviews": 3
+          "pageviews": 3,
+          "avgSessionDuration": 0,
+          "pagesPerSession": 1,
+          "engagementRate": 0
         },
         {
           "date": "20260507",
           "sessions": 7,
           "users": 7,
-          "pageviews": 9
+          "pageviews": 9,
+          "avgSessionDuration": 3.473669857142857,
+          "pagesPerSession": 1.2857142857142858,
+          "engagementRate": 0.2857142857142857
         },
         {
           "date": "20260508",
           "sessions": 6,
           "users": 6,
-          "pageviews": 16
+          "pageviews": 16,
+          "avgSessionDuration": 112.21426366666667,
+          "pagesPerSession": 2.6666666666666665,
+          "engagementRate": 0.3333333333333333
         },
         {
           "date": "20260509",
           "sessions": 4,
           "users": 4,
-          "pageviews": 4
+          "pageviews": 4,
+          "avgSessionDuration": 68.07516725,
+          "pagesPerSession": 1,
+          "engagementRate": 0.25
         },
         {
           "date": "20260510",
           "sessions": 5,
           "users": 5,
-          "pageviews": 5
+          "pageviews": 5,
+          "avgSessionDuration": 0,
+          "pagesPerSession": 1,
+          "engagementRate": 0
         },
         {
           "date": "20260511",
           "sessions": 3,
           "users": 3,
-          "pageviews": 3
+          "pageviews": 3,
+          "avgSessionDuration": 72.33894,
+          "pagesPerSession": 1,
+          "engagementRate": 0.3333333333333333
         },
         {
           "date": "20260512",
           "sessions": 2,
           "users": 2,
-          "pageviews": 2
+          "pageviews": 2,
+          "avgSessionDuration": 0,
+          "pagesPerSession": 1,
+          "engagementRate": 0
         },
         {
           "date": "20260513",
           "sessions": 4,
           "users": 4,
-          "pageviews": 4
+          "pageviews": 4,
+          "avgSessionDuration": 0.32253175,
+          "pagesPerSession": 1,
+          "engagementRate": 0
         },
         {
           "date": "20260514",
           "sessions": 5,
           "users": 5,
-          "pageviews": 5
+          "pageviews": 5,
+          "avgSessionDuration": 0,
+          "pagesPerSession": 1,
+          "engagementRate": 0
         },
         {
           "date": "20260515",
           "sessions": 7,
           "users": 6,
-          "pageviews": 8
+          "pageviews": 8,
+          "avgSessionDuration": 6.522494857142857,
+          "pagesPerSession": 1.1428571428571428,
+          "engagementRate": 0.14285714285714285
         },
         {
           "date": "20260517",
           "sessions": 4,
           "users": 4,
-          "pageviews": 9
+          "pageviews": 9,
+          "avgSessionDuration": 341.79994475,
+          "pagesPerSession": 2.25,
+          "engagementRate": 0.5
         },
         {
           "date": "20260518",
           "sessions": 3,
           "users": 2,
-          "pageviews": 3
+          "pageviews": 3,
+          "avgSessionDuration": 0,
+          "pagesPerSession": 1,
+          "engagementRate": 0
         },
         {
           "date": "20260519",
           "sessions": 4,
           "users": 4,
-          "pageviews": 5
+          "pageviews": 5,
+          "avgSessionDuration": 1.27858,
+          "pagesPerSession": 1.25,
+          "engagementRate": 0.25
         },
         {
           "date": "20260520",
           "sessions": 2,
           "users": 2,
-          "pageviews": 2
+          "pageviews": 2,
+          "avgSessionDuration": 1.003379,
+          "pagesPerSession": 1,
+          "engagementRate": 0
         },
         {
           "date": "20260521",
           "sessions": 4,
           "users": 4,
-          "pageviews": 4
+          "pageviews": 4,
+          "avgSessionDuration": 0,
+          "pagesPerSession": 1,
+          "engagementRate": 0
         },
         {
           "date": "20260522",
           "sessions": 3,
           "users": 2,
-          "pageviews": 3
+          "pageviews": 3,
+          "avgSessionDuration": 84.09939733333333,
+          "pagesPerSession": 1,
+          "engagementRate": 0.6666666666666666
         },
         {
           "date": "20260523",
           "sessions": 2,
           "users": 2,
-          "pageviews": 3
+          "pageviews": 3,
+          "avgSessionDuration": 6.007119,
+          "pagesPerSession": 1.5,
+          "engagementRate": 0.5
         },
         {
           "date": "20260525",
           "sessions": 3,
           "users": 3,
-          "pageviews": 3
+          "pageviews": 3,
+          "avgSessionDuration": 8.420066333333333,
+          "pagesPerSession": 1,
+          "engagementRate": 0.3333333333333333
         },
         {
           "date": "20260527",
           "sessions": 1,
           "users": 1,
-          "pageviews": 11
+          "pageviews": 11,
+          "avgSessionDuration": 2451.672396,
+          "pagesPerSession": 11,
+          "engagementRate": 1
         },
         {
           "date": "20260528",
           "sessions": 4,
           "users": 4,
-          "pageviews": 6
+          "pageviews": 6,
+          "avgSessionDuration": 30.08410825,
+          "pagesPerSession": 1.5,
+          "engagementRate": 0.25
         },
         {
           "date": "20260529",
           "sessions": 11,
           "users": 7,
-          "pageviews": 17
+          "pageviews": 17,
+          "avgSessionDuration": 269.46966272727275,
+          "pagesPerSession": 1.5454545454545454,
+          "engagementRate": 0.36363636363636365
         },
         {
           "date": "20260530",
           "sessions": 4,
           "users": 3,
-          "pageviews": 7
+          "pageviews": 7,
+          "avgSessionDuration": 85.6965475,
+          "pagesPerSession": 1.75,
+          "engagementRate": 0.5
         },
         {
           "date": "20260531",
           "sessions": 4,
           "users": 4,
-          "pageviews": 8
+          "pageviews": 8,
+          "avgSessionDuration": 285.7635565,
+          "pagesPerSession": 2,
+          "engagementRate": 1
         },
         {
           "date": "20260601",
           "sessions": 8,
           "users": 6,
-          "pageviews": 23
+          "pageviews": 23,
+          "avgSessionDuration": 588.9565660000001,
+          "pagesPerSession": 2.875,
+          "engagementRate": 0.625
         },
         {
           "date": "20260602",
           "sessions": 12,
           "users": 9,
-          "pageviews": 21
+          "pageviews": 21,
+          "avgSessionDuration": 77.05568016666668,
+          "pagesPerSession": 1.75,
+          "engagementRate": 0.5
         },
         {
           "date": "20260603",
           "sessions": 8,
           "users": 7,
-          "pageviews": 10
+          "pageviews": 10,
+          "avgSessionDuration": 90.16500737499999,
+          "pagesPerSession": 1.25,
+          "engagementRate": 0.625
         },
         {
           "date": "20260604",
           "sessions": 10,
           "users": 8,
-          "pageviews": 15
+          "pageviews": 15,
+          "avgSessionDuration": 151.7873086,
+          "pagesPerSession": 1.5,
+          "engagementRate": 0.5
         },
         {
           "date": "20260605",
           "sessions": 20,
           "users": 9,
-          "pageviews": 43
+          "pageviews": 43,
+          "avgSessionDuration": 159.3399876,
+          "pagesPerSession": 2.15,
+          "engagementRate": 0.6
         },
         {
           "date": "20260606",
           "sessions": 14,
           "users": 9,
-          "pageviews": 32
+          "pageviews": 32,
+          "avgSessionDuration": 263.44525521428574,
+          "pagesPerSession": 2.2857142857142856,
+          "engagementRate": 0.5714285714285714
         },
         {
           "date": "20260607",
           "sessions": 22,
           "users": 15,
-          "pageviews": 49
+          "pageviews": 49,
+          "avgSessionDuration": 46.022361909090904,
+          "pagesPerSession": 2.227272727272727,
+          "engagementRate": 0.36363636363636365
         },
         {
           "date": "20260608",
           "sessions": 17,
           "users": 15,
-          "pageviews": 35
+          "pageviews": 35,
+          "avgSessionDuration": 61.606764176470584,
+          "pagesPerSession": 2.0588235294117645,
+          "engagementRate": 0.5882352941176471
         },
         {
           "date": "20260609",
           "sessions": 14,
           "users": 8,
-          "pageviews": 31
+          "pageviews": 31,
+          "avgSessionDuration": 499.26452207142853,
+          "pagesPerSession": 2.2142857142857144,
+          "engagementRate": 0.42857142857142855
         },
         {
           "date": "20260610",
           "sessions": 8,
           "users": 7,
-          "pageviews": 20
+          "pageviews": 20,
+          "avgSessionDuration": 174.5570745,
+          "pagesPerSession": 2.5,
+          "engagementRate": 0.75
         },
         {
           "date": "20260611",
           "sessions": 13,
           "users": 8,
-          "pageviews": 29
+          "pageviews": 29,
+          "avgSessionDuration": 45.813127307692305,
+          "pagesPerSession": 2.230769230769231,
+          "engagementRate": 0.38461538461538464
         },
         {
           "date": "20260612",
           "sessions": 11,
           "users": 5,
-          "pageviews": 33
+          "pageviews": 33,
+          "avgSessionDuration": 204.32255236363636,
+          "pagesPerSession": 3,
+          "engagementRate": 0.36363636363636365
         },
         {
           "date": "20260613",
           "sessions": 14,
           "users": 8,
-          "pageviews": 107
+          "pageviews": 107,
+          "avgSessionDuration": 665.0181628571428,
+          "pagesPerSession": 7.642857142857143,
+          "engagementRate": 0.5
         },
         {
           "date": "20260614",
           "sessions": 15,
           "users": 7,
-          "pageviews": 17
+          "pageviews": 17,
+          "avgSessionDuration": 129.67853593333334,
+          "pagesPerSession": 1.1333333333333333,
+          "engagementRate": 0.26666666666666666
         },
         {
           "date": "20260615",
           "sessions": 11,
           "users": 7,
-          "pageviews": 17
+          "pageviews": 17,
+          "avgSessionDuration": 164.675846,
+          "pagesPerSession": 1.5454545454545454,
+          "engagementRate": 0.6363636363636364
         },
         {
           "date": "20260616",
           "sessions": 15,
           "users": 14,
-          "pageviews": 34
+          "pageviews": 34,
+          "avgSessionDuration": 80.67357766666666,
+          "pagesPerSession": 2.2666666666666666,
+          "engagementRate": 0.4666666666666667
         },
         {
           "date": "20260617",
           "sessions": 13,
           "users": 8,
-          "pageviews": 20
+          "pageviews": 20,
+          "avgSessionDuration": 252.3802863076923,
+          "pagesPerSession": 1.5384615384615385,
+          "engagementRate": 0.46153846153846156
         },
         {
           "date": "20260618",
           "sessions": 19,
           "users": 14,
-          "pageviews": 32
+          "pageviews": 32,
+          "avgSessionDuration": 137.55226826315788,
+          "pagesPerSession": 1.6842105263157894,
+          "engagementRate": 0.47368421052631576
         },
         {
           "date": "20260619",
           "sessions": 11,
           "users": 6,
-          "pageviews": 32
+          "pageviews": 32,
+          "avgSessionDuration": 135.01695436363636,
+          "pagesPerSession": 2.909090909090909,
+          "engagementRate": 0.5454545454545454
         },
         {
           "date": "20260620",
           "sessions": 21,
           "users": 17,
-          "pageviews": 78
+          "pageviews": 78,
+          "avgSessionDuration": 346.05166414285713,
+          "pagesPerSession": 3.7142857142857144,
+          "engagementRate": 0.7142857142857143
         },
         {
           "date": "20260621",
           "sessions": 24,
           "users": 14,
-          "pageviews": 45
+          "pageviews": 45,
+          "avgSessionDuration": 82.938539625,
+          "pagesPerSession": 1.875,
+          "engagementRate": 0.6666666666666666
         },
         {
           "date": "20260622",
           "sessions": 20,
           "users": 14,
-          "pageviews": 82
+          "pageviews": 82,
+          "avgSessionDuration": 428.66296415,
+          "pagesPerSession": 4.1,
+          "engagementRate": 0.55
         },
         {
           "date": "20260623",
           "sessions": 12,
           "users": 10,
-          "pageviews": 16
+          "pageviews": 16,
+          "avgSessionDuration": 91.73220433333334,
+          "pagesPerSession": 1.3333333333333333,
+          "engagementRate": 0.5833333333333334
         },
         {
           "date": "20260624",
           "sessions": 6,
           "users": 6,
-          "pageviews": 11
+          "pageviews": 11,
+          "avgSessionDuration": 151.9559631666667,
+          "pagesPerSession": 1.8333333333333333,
+          "engagementRate": 0.5
         },
         {
           "date": "20260625",
           "sessions": 15,
           "users": 7,
-          "pageviews": 41
+          "pageviews": 41,
+          "avgSessionDuration": 79.85690766666667,
+          "pagesPerSession": 2.7333333333333334,
+          "engagementRate": 0.4666666666666667
         },
         {
           "date": "20260626",
           "sessions": 18,
           "users": 10,
-          "pageviews": 26
+          "pageviews": 26,
+          "avgSessionDuration": 151.82509794444442,
+          "pagesPerSession": 1.4444444444444444,
+          "engagementRate": 0.3888888888888889
         },
         {
           "date": "20260627",
           "sessions": 20,
           "users": 16,
-          "pageviews": 34
+          "pageviews": 34,
+          "avgSessionDuration": 114.2305226,
+          "pagesPerSession": 1.7,
+          "engagementRate": 0.5
         },
         {
           "date": "20260628",
           "sessions": 10,
           "users": 6,
-          "pageviews": 42
+          "pageviews": 42,
+          "avgSessionDuration": 295.70812209999997,
+          "pagesPerSession": 4.2,
+          "engagementRate": 0.5
         },
         {
           "date": "20260629",
           "sessions": 21,
           "users": 20,
-          "pageviews": 32
+          "pageviews": 32,
+          "avgSessionDuration": 115.10834723809525,
+          "pagesPerSession": 1.5238095238095237,
+          "engagementRate": 0.42857142857142855
         },
         {
           "date": "20260630",
           "sessions": 24,
           "users": 19,
-          "pageviews": 40
+          "pageviews": 40,
+          "avgSessionDuration": 189.49793516666668,
+          "pagesPerSession": 1.6666666666666667,
+          "engagementRate": 0.5833333333333334
         },
         {
           "date": "20260701",
           "sessions": 16,
           "users": 12,
-          "pageviews": 47
+          "pageviews": 47,
+          "avgSessionDuration": 353.89098462500004,
+          "pagesPerSession": 2.9375,
+          "engagementRate": 0.625
         },
         {
           "date": "20260702",
           "sessions": 24,
           "users": 20,
-          "pageviews": 58
+          "pageviews": 58,
+          "avgSessionDuration": 139.5687782916667,
+          "pagesPerSession": 2.4166666666666665,
+          "engagementRate": 0.75
         },
         {
           "date": "20260703",
           "sessions": 28,
           "users": 20,
-          "pageviews": 52
+          "pageviews": 52,
+          "avgSessionDuration": 45.12666196428571,
+          "pagesPerSession": 1.8571428571428572,
+          "engagementRate": 0.5357142857142857
         },
         {
           "date": "20260704",
           "sessions": 29,
           "users": 19,
-          "pageviews": 105
+          "pageviews": 105,
+          "avgSessionDuration": 412.83756603448273,
+          "pagesPerSession": 3.6206896551724137,
+          "engagementRate": 0.5517241379310345
         },
         {
           "date": "20260705",
           "sessions": 7,
           "users": 4,
-          "pageviews": 7
+          "pageviews": 7,
+          "avgSessionDuration": 243.89083242857143,
+          "pagesPerSession": 1,
+          "engagementRate": 0.5714285714285714
         },
         {
           "date": "20260706",
           "sessions": 11,
           "users": 5,
-          "pageviews": 25
+          "pageviews": 25,
+          "avgSessionDuration": 215.71432309090906,
+          "pagesPerSession": 2.272727272727273,
+          "engagementRate": 0.36363636363636365
         },
         {
           "date": "20260707",
           "sessions": 9,
           "users": 8,
-          "pageviews": 11
+          "pageviews": 11,
+          "avgSessionDuration": 199.95888988888888,
+          "pagesPerSession": 1.2222222222222223,
+          "engagementRate": 0.6666666666666666
         },
         {
           "date": "20260708",
           "sessions": 18,
           "users": 16,
-          "pageviews": 30
+          "pageviews": 30,
+          "avgSessionDuration": 95.497059,
+          "pagesPerSession": 1.6666666666666667,
+          "engagementRate": 0.2777777777777778
         },
         {
           "date": "20260709",
           "sessions": 16,
           "users": 15,
-          "pageviews": 22
+          "pageviews": 22,
+          "avgSessionDuration": 103.193187,
+          "pagesPerSession": 1.375,
+          "engagementRate": 0.5625
         },
         {
           "date": "20260710",
           "sessions": 10,
           "users": 8,
-          "pageviews": 34
+          "pageviews": 34,
+          "avgSessionDuration": 176.2612849,
+          "pagesPerSession": 3.4,
+          "engagementRate": 0.6
         },
         {
           "date": "20260711",
           "sessions": 7,
           "users": 5,
-          "pageviews": 8
+          "pageviews": 8,
+          "avgSessionDuration": 221.15207128571427,
+          "pagesPerSession": 1.1428571428571428,
+          "engagementRate": 0.2857142857142857
         },
         {
           "date": "20260712",
           "sessions": 5,
           "users": 5,
-          "pageviews": 8
+          "pageviews": 8,
+          "avgSessionDuration": 66.1163048,
+          "pagesPerSession": 1.6,
+          "engagementRate": 0.6
         },
         {
           "date": "20260713",
           "sessions": 13,
           "users": 10,
-          "pageviews": 17
+          "pageviews": 17,
+          "avgSessionDuration": 24.93466453846154,
+          "pagesPerSession": 1.3076923076923077,
+          "engagementRate": 0.38461538461538464
         },
         {
           "date": "20260714",
           "sessions": 7,
           "users": 6,
-          "pageviews": 15
+          "pageviews": 15,
+          "avgSessionDuration": 574.4613701428572,
+          "pagesPerSession": 2.142857142857143,
+          "engagementRate": 0.5714285714285714
         },
         {
           "date": "20260715",
           "sessions": 12,
           "users": 6,
-          "pageviews": 17
+          "pageviews": 17,
+          "avgSessionDuration": 156.5167635,
+          "pagesPerSession": 1.4166666666666667,
+          "engagementRate": 0.4166666666666667
         },
         {
           "date": "20260716",
           "sessions": 6,
           "users": 4,
-          "pageviews": 11
+          "pageviews": 11,
+          "avgSessionDuration": 408.1559743333334,
+          "pagesPerSession": 1.8333333333333333,
+          "engagementRate": 0.5
         },
         {
           "date": "20260717",
           "sessions": 14,
           "users": 12,
-          "pageviews": 25
+          "pageviews": 25,
+          "avgSessionDuration": 110.2696472142857,
+          "pagesPerSession": 1.7857142857142858,
+          "engagementRate": 0.35714285714285715
         },
         {
           "date": "20260718",
           "sessions": 7,
           "users": 7,
-          "pageviews": 10
+          "pageviews": 10,
+          "avgSessionDuration": 56.824246714285714,
+          "pagesPerSession": 1.4285714285714286,
+          "engagementRate": 0.8571428571428571
         },
         {
           "date": "20260719",
           "sessions": 18,
           "users": 17,
-          "pageviews": 21
+          "pageviews": 21,
+          "avgSessionDuration": 20.379134444444443,
+          "pagesPerSession": 1.1666666666666667,
+          "engagementRate": 0.4444444444444444
         },
         {
           "date": "20260720",
           "sessions": 7,
           "users": 4,
-          "pageviews": 8
+          "pageviews": 8,
+          "avgSessionDuration": 21.831620999999995,
+          "pagesPerSession": 1.1428571428571428,
+          "engagementRate": 0.2857142857142857
         },
         {
           "date": "20260721",
           "sessions": 13,
           "users": 12,
-          "pageviews": 22
+          "pageviews": 22,
+          "avgSessionDuration": 68.70399507692308,
+          "pagesPerSession": 1.6923076923076923,
+          "engagementRate": 0.6923076923076923
         },
         {
           "date": "20260722",
           "sessions": 19,
           "users": 17,
-          "pageviews": 32
+          "pageviews": 32,
+          "avgSessionDuration": 184.34489605263158,
+          "pagesPerSession": 1.6842105263157894,
+          "engagementRate": 0.42105263157894735
         },
         {
           "date": "20260723",
           "sessions": 13,
           "users": 11,
-          "pageviews": 22
+          "pageviews": 22,
+          "avgSessionDuration": 154.16731215384615,
+          "pagesPerSession": 1.6923076923076923,
+          "engagementRate": 0.5384615384615384
         },
         {
           "date": "20260724",
           "sessions": 8,
           "users": 7,
-          "pageviews": 9
+          "pageviews": 9,
+          "avgSessionDuration": 5.386191125,
+          "pagesPerSession": 1.125,
+          "engagementRate": 0.375
         },
         {
           "date": "20260725",
           "sessions": 6,
           "users": 6,
-          "pageviews": 12
+          "pageviews": 12,
+          "avgSessionDuration": 51.80749483333333,
+          "pagesPerSession": 2,
+          "engagementRate": 0.5
         },
         {
           "date": "20260726",
           "sessions": 7,
           "users": 7,
-          "pageviews": 9
+          "pageviews": 9,
+          "avgSessionDuration": 175.40476314285712,
+          "pagesPerSession": 1.2857142857142858,
+          "engagementRate": 0.7142857142857143
         },
         {
           "date": "20260727",
           "sessions": 8,
           "users": 6,
-          "pageviews": 14
+          "pageviews": 14,
+          "avgSessionDuration": 268.46550675000003,
+          "pagesPerSession": 1.75,
+          "engagementRate": 0.625
         },
         {
           "date": "20260728",
           "sessions": 9,
           "users": 6,
-          "pageviews": 13
+          "pageviews": 13,
+          "avgSessionDuration": 72.12075411111113,
+          "pagesPerSession": 1.4444444444444444,
+          "engagementRate": 0.5555555555555556
         },
         {
           "date": "20260729",
           "sessions": 8,
           "users": 6,
-          "pageviews": 16
+          "pageviews": 16,
+          "avgSessionDuration": 379.391324125,
+          "pagesPerSession": 2,
+          "engagementRate": 0.375
         },
         {
           "date": "20260730",
           "sessions": 15,
           "users": 12,
-          "pageviews": 19
+          "pageviews": 19,
+          "avgSessionDuration": 113.02816266666667,
+          "pagesPerSession": 1.2666666666666666,
+          "engagementRate": 0.4666666666666667
         },
         {
           "date": "20260731",
           "sessions": 7,
           "users": 7,
-          "pageviews": 17
+          "pageviews": 17,
+          "avgSessionDuration": 168.08155442857145,
+          "pagesPerSession": 2.4285714285714284,
+          "engagementRate": 0.5714285714285714
         },
         {
           "date": "20260801",
           "sessions": 11,
           "users": 8,
-          "pageviews": 23
+          "pageviews": 23,
+          "avgSessionDuration": 84.93843309090909,
+          "pagesPerSession": 2.090909090909091,
+          "engagementRate": 0.36363636363636365
         },
         {
           "date": "20260802",
           "sessions": 2,
           "users": 2,
-          "pageviews": 2
+          "pageviews": 2,
+          "avgSessionDuration": 8.95051,
+          "pagesPerSession": 1,
+          "engagementRate": 0.5
         },
         {
           "date": "20260803",
           "sessions": 20,
           "users": 14,
-          "pageviews": 51
+          "pageviews": 51,
+          "avgSessionDuration": 286.0921853,
+          "pagesPerSession": 2.55,
+          "engagementRate": 0.65
         },
         {
           "date": "20260804",
           "sessions": 18,
           "users": 16,
-          "pageviews": 30
+          "pageviews": 30,
+          "avgSessionDuration": 52.65509677777778,
+          "pagesPerSession": 1.6666666666666667,
+          "engagementRate": 0.4444444444444444
         },
         {
           "date": "20260805",
           "sessions": 12,
           "users": 10,
-          "pageviews": 29
+          "pageviews": 29,
+          "avgSessionDuration": 133.11021916666667,
+          "pagesPerSession": 2.4166666666666665,
+          "engagementRate": 0.3333333333333333
         },
         {
           "date": "20260806",
           "sessions": 22,
           "users": 12,
-          "pageviews": 30
+          "pageviews": 30,
+          "avgSessionDuration": 169.1349328181818,
+          "pagesPerSession": 1.3636363636363635,
+          "engagementRate": 0.36363636363636365
         },
         {
           "date": "20260807",
           "sessions": 21,
           "users": 19,
-          "pageviews": 57
+          "pageviews": 57,
+          "avgSessionDuration": 102.37596985714286,
+          "pagesPerSession": 2.7142857142857144,
+          "engagementRate": 0.47619047619047616
         },
         {
           "date": "20260808",
           "sessions": 14,
           "users": 13,
-          "pageviews": 25
+          "pageviews": 25,
+          "avgSessionDuration": 229.0724150714286,
+          "pagesPerSession": 1.7857142857142858,
+          "engagementRate": 0.5714285714285714
         },
         {
           "date": "20260809",
           "sessions": 7,
           "users": 2,
-          "pageviews": 7
+          "pageviews": 7,
+          "avgSessionDuration": 79.33787099999999,
+          "pagesPerSession": 1,
+          "engagementRate": 0.2857142857142857
         },
         {
           "date": "20260810",
           "sessions": 22,
           "users": 19,
-          "pageviews": 32
+          "pageviews": 32,
+          "avgSessionDuration": 217.0956409090909,
+          "pagesPerSession": 1.4545454545454546,
+          "engagementRate": 0.36363636363636365
         },
         {
           "date": "20260811",
           "sessions": 29,
           "users": 22,
-          "pageviews": 67
+          "pageviews": 67,
+          "avgSessionDuration": 134.50933637931035,
+          "pagesPerSession": 2.310344827586207,
+          "engagementRate": 0.3793103448275862
         },
         {
           "date": "20260812",
           "sessions": 25,
           "users": 19,
-          "pageviews": 46
+          "pageviews": 46,
+          "avgSessionDuration": 103.9243534,
+          "pagesPerSession": 1.84,
+          "engagementRate": 0.24
         },
         {
           "date": "20260813",
           "sessions": 25,
           "users": 20,
-          "pageviews": 49
+          "pageviews": 49,
+          "avgSessionDuration": 232.69038964,
+          "pagesPerSession": 1.96,
+          "engagementRate": 0.72
         },
         {
           "date": "20260814",
           "sessions": 13,
           "users": 13,
-          "pageviews": 74
+          "pageviews": 74,
+          "avgSessionDuration": 386.3902302307692,
+          "pagesPerSession": 5.6923076923076925,
+          "engagementRate": 0.5384615384615384
         },
         {
           "date": "20260815",
           "sessions": 21,
           "users": 18,
-          "pageviews": 45
+          "pageviews": 45,
+          "avgSessionDuration": 94.84686609523808,
+          "pagesPerSession": 2.142857142857143,
+          "engagementRate": 0.5714285714285714
         },
         {
           "date": "20260816",
           "sessions": 25,
           "users": 24,
-          "pageviews": 56
+          "pageviews": 56,
+          "avgSessionDuration": 107.50238136,
+          "pagesPerSession": 2.24,
+          "engagementRate": 0.52
         },
         {
           "date": "20260817",
           "sessions": 20,
           "users": 16,
-          "pageviews": 57
+          "pageviews": 57,
+          "avgSessionDuration": 165.7801141,
+          "pagesPerSession": 2.85,
+          "engagementRate": 0.65
         },
         {
           "date": "20260818",
           "sessions": 25,
           "users": 21,
-          "pageviews": 40
+          "pageviews": 40,
+          "avgSessionDuration": 133.26893256,
+          "pagesPerSession": 1.6,
+          "engagementRate": 0.4
         },
         {
           "date": "20260819",
           "sessions": 17,
           "users": 14,
-          "pageviews": 28
+          "pageviews": 28,
+          "avgSessionDuration": 120.025248,
+          "pagesPerSession": 1.6470588235294117,
+          "engagementRate": 0.4117647058823529
         },
         {
           "date": "20260820",
           "sessions": 37,
           "users": 32,
-          "pageviews": 88
+          "pageviews": 88,
+          "avgSessionDuration": 381.5494948108108,
+          "pagesPerSession": 2.3783783783783785,
+          "engagementRate": 0.5405405405405406
         },
         {
           "date": "20260821",
           "sessions": 32,
           "users": 25,
-          "pageviews": 63
+          "pageviews": 63,
+          "avgSessionDuration": 95.57727725,
+          "pagesPerSession": 1.96875,
+          "engagementRate": 0.46875
         },
         {
           "date": "20260822",
           "sessions": 18,
           "users": 16,
-          "pageviews": 51
+          "pageviews": 51,
+          "avgSessionDuration": 169.68975494444445,
+          "pagesPerSession": 2.8333333333333335,
+          "engagementRate": 0.5555555555555556
         },
         {
           "date": "20260823",
           "sessions": 19,
           "users": 16,
-          "pageviews": 27
+          "pageviews": 27,
+          "avgSessionDuration": 149.49918010526315,
+          "pagesPerSession": 1.4210526315789473,
+          "engagementRate": 0.5263157894736842
         },
         {
           "date": "20260824",
           "sessions": 29,
           "users": 24,
-          "pageviews": 83
+          "pageviews": 83,
+          "avgSessionDuration": 155.781736,
+          "pagesPerSession": 2.8620689655172415,
+          "engagementRate": 0.6206896551724138
         },
         {
           "date": "20260825",
           "sessions": 30,
           "users": 23,
-          "pageviews": 67
+          "pageviews": 67,
+          "avgSessionDuration": 156.3733663,
+          "pagesPerSession": 2.2333333333333334,
+          "engagementRate": 0.4666666666666667
         },
         {
           "date": "20260826",
           "sessions": 23,
           "users": 19,
-          "pageviews": 52
+          "pageviews": 52,
+          "avgSessionDuration": 207.01263213043475,
+          "pagesPerSession": 2.260869565217391,
+          "engagementRate": 0.6086956521739131
         },
         {
           "date": "20260827",
           "sessions": 22,
           "users": 15,
-          "pageviews": 36
+          "pageviews": 36,
+          "avgSessionDuration": 42.242219181818186,
+          "pagesPerSession": 1.6363636363636365,
+          "engagementRate": 0.36363636363636365
         },
         {
           "date": "20260828",
           "sessions": 18,
           "users": 18,
-          "pageviews": 29
+          "pageviews": 29,
+          "avgSessionDuration": 237.63074305555554,
+          "pagesPerSession": 1.6111111111111112,
+          "engagementRate": 0.5555555555555556
         },
         {
           "date": "20260829",
           "sessions": 35,
           "users": 32,
-          "pageviews": 108
+          "pageviews": 108,
+          "avgSessionDuration": 246.2487777714286,
+          "pagesPerSession": 3.085714285714286,
+          "engagementRate": 0.6285714285714286
         },
         {
           "date": "20260830",
           "sessions": 38,
           "users": 29,
-          "pageviews": 111
+          "pageviews": 111,
+          "avgSessionDuration": 433.27405947368425,
+          "pagesPerSession": 2.9210526315789473,
+          "engagementRate": 0.5
         },
         {
           "date": "20260831",
           "sessions": 42,
           "users": 35,
-          "pageviews": 82
+          "pageviews": 82,
+          "avgSessionDuration": 185.62056173809523,
+          "pagesPerSession": 1.9523809523809523,
+          "engagementRate": 0.5714285714285714
         },
         {
           "date": "20260901",
           "sessions": 56,
           "users": 34,
-          "pageviews": 96
+          "pageviews": 96,
+          "avgSessionDuration": 198.48908460714284,
+          "pagesPerSession": 1.7142857142857142,
+          "engagementRate": 0.4642857142857143
         },
         {
           "date": "20260902",
           "sessions": 42,
           "users": 30,
-          "pageviews": 112
+          "pageviews": 112,
+          "avgSessionDuration": 293.49162490476186,
+          "pagesPerSession": 2.6666666666666665,
+          "engagementRate": 0.7142857142857143
         },
         {
           "date": "20260903",
           "sessions": 39,
           "users": 30,
-          "pageviews": 116
+          "pageviews": 116,
+          "avgSessionDuration": 256.2717878974359,
+          "pagesPerSession": 2.9743589743589745,
+          "engagementRate": 0.5897435897435898
         },
         {
           "date": "20260904",
           "sessions": 32,
           "users": 21,
-          "pageviews": 65
+          "pageviews": 65,
+          "avgSessionDuration": 189.83250634375,
+          "pagesPerSession": 2.03125,
+          "engagementRate": 0.5625
         },
         {
           "date": "20260905",
           "sessions": 18,
           "users": 13,
-          "pageviews": 37
+          "pageviews": 37,
+          "avgSessionDuration": 221.10548944444446,
+          "pagesPerSession": 2.0555555555555554,
+          "engagementRate": 0.5555555555555556
         },
         {
           "date": "20260906",
           "sessions": 32,
           "users": 28,
-          "pageviews": 59
+          "pageviews": 59,
+          "avgSessionDuration": 108.05119371875,
+          "pagesPerSession": 1.84375,
+          "engagementRate": 0.5625
         },
         {
           "date": "20260907",
           "sessions": 36,
           "users": 25,
-          "pageviews": 53
+          "pageviews": 53,
+          "avgSessionDuration": 143.15310469444444,
+          "pagesPerSession": 1.4722222222222223,
+          "engagementRate": 0.4166666666666667
         },
         {
           "date": "20260908",
           "sessions": 42,
           "users": 31,
-          "pageviews": 89
+          "pageviews": 89,
+          "avgSessionDuration": 218.2273965,
+          "pagesPerSession": 2.119047619047619,
+          "engagementRate": 0.5952380952380952
         },
         {
           "date": "20260909",
           "sessions": 48,
           "users": 39,
-          "pageviews": 121
+          "pageviews": 121,
+          "avgSessionDuration": 260.39868433333334,
+          "pagesPerSession": 2.5208333333333335,
+          "engagementRate": 0.5416666666666666
         },
         {
           "date": "20260910",
           "sessions": 42,
           "users": 38,
-          "pageviews": 187
+          "pageviews": 187,
+          "avgSessionDuration": 389.7063321428571,
+          "pagesPerSession": 4.4523809523809526,
+          "engagementRate": 0.6428571428571429
         },
         {
           "date": "20260911",
           "sessions": 29,
           "users": 20,
-          "pageviews": 77
+          "pageviews": 77,
+          "avgSessionDuration": 189.7316078275862,
+          "pagesPerSession": 2.6551724137931036,
+          "engagementRate": 0.4482758620689655
         },
         {
           "date": "20260912",
           "sessions": 46,
           "users": 31,
-          "pageviews": 136
+          "pageviews": 136,
+          "avgSessionDuration": 197.90425402173915,
+          "pagesPerSession": 2.9565217391304346,
+          "engagementRate": 0.6956521739130435
         },
         {
           "date": "20260913",
           "sessions": 40,
           "users": 29,
-          "pageviews": 69
+          "pageviews": 69,
+          "avgSessionDuration": 168.3994183,
+          "pagesPerSession": 1.725,
+          "engagementRate": 0.675
         },
         {
           "date": "20260914",
           "sessions": 34,
           "users": 27,
-          "pageviews": 62
+          "pageviews": 62,
+          "avgSessionDuration": 216.28618652941176,
+          "pagesPerSession": 1.8235294117647058,
+          "engagementRate": 0.5882352941176471
         },
         {
           "date": "20260915",
           "sessions": 54,
           "users": 39,
-          "pageviews": 129
+          "pageviews": 129,
+          "avgSessionDuration": 359.72896099999997,
+          "pagesPerSession": 2.388888888888889,
+          "engagementRate": 0.6851851851851852
         },
         {
           "date": "20260916",
           "sessions": 51,
           "users": 37,
-          "pageviews": 155
+          "pageviews": 155,
+          "avgSessionDuration": 361.95009964705883,
+          "pagesPerSession": 3.0392156862745097,
+          "engagementRate": 0.5098039215686274
         },
         {
           "date": "20260917",
           "sessions": 42,
           "users": 30,
-          "pageviews": 69
+          "pageviews": 69,
+          "avgSessionDuration": 95.8886385,
+          "pagesPerSession": 1.6428571428571428,
+          "engagementRate": 0.5476190476190477
         },
         {
           "date": "20260918",
           "sessions": 46,
           "users": 38,
-          "pageviews": 133
+          "pageviews": 133,
+          "avgSessionDuration": 394.1885637608695,
+          "pagesPerSession": 2.891304347826087,
+          "engagementRate": 0.5869565217391305
         },
         {
           "date": "20260919",
           "sessions": 40,
           "users": 34,
-          "pageviews": 101
+          "pageviews": 101,
+          "avgSessionDuration": 180.07650965,
+          "pagesPerSession": 2.525,
+          "engagementRate": 0.6
         },
         {
           "date": "20260920",
           "sessions": 42,
           "users": 31,
-          "pageviews": 76
+          "pageviews": 76,
+          "avgSessionDuration": 210.07382707142858,
+          "pagesPerSession": 1.8095238095238095,
+          "engagementRate": 0.5238095238095238
         },
         {
           "date": "20260921",
           "sessions": 48,
           "users": 37,
-          "pageviews": 98
+          "pageviews": 98,
+          "avgSessionDuration": 335.2855260833333,
+          "pagesPerSession": 2.0416666666666665,
+          "engagementRate": 0
         },
         {
           "date": "20260922",
-          "sessions": 22,
-          "users": 18,
-          "pageviews": 50
+          "sessions": 23,
+          "users": 19,
+          "pageviews": 51,
+          "avgSessionDuration": 221.01119930434783,
+          "pagesPerSession": 2.217391304347826,
+          "engagementRate": 0
         }
       ],
       "monthly": [
@@ -868,37 +1297,55 @@
           "month": "202604",
           "sessions": 11,
           "users": 10,
-          "pageviews": 29
+          "pageviews": 29,
+          "avgSessionDuration": 213.5058808181818,
+          "pagesPerSession": 2.6363636363636362,
+          "engagementRate": 0.36363636363636365
         },
         {
           "month": "202605",
           "sessions": 157,
           "users": 128,
-          "pageviews": 367
+          "pageviews": 367,
+          "avgSessionDuration": 235.15697106369424,
+          "pagesPerSession": 2.337579617834395,
+          "engagementRate": 0.29936305732484075
         },
         {
           "month": "202606",
           "sessions": 447,
           "users": 262,
-          "pageviews": 1047
+          "pageviews": 1047,
+          "avgSessionDuration": 191.67167909395977,
+          "pagesPerSession": 2.3422818791946307,
+          "engagementRate": 0.5145413870246085
         },
         {
           "month": "202607",
           "sessions": 378,
           "users": 272,
-          "pageviews": 716
+          "pageviews": 716,
+          "avgSessionDuration": 166.55569604761905,
+          "pagesPerSession": 1.8941798941798942,
+          "engagementRate": 0.5158730158730159
         },
         {
           "month": "202608",
           "sessions": 689,
           "users": 530,
-          "pageviews": 1545
+          "pageviews": 1545,
+          "avgSessionDuration": 187.89778367489112,
+          "pagesPerSession": 2.2423802612481856,
+          "engagementRate": 0.49782293178519593
         },
         {
           "month": "202609",
-          "sessions": 878,
-          "users": 588,
-          "pageviews": 2090
+          "sessions": 879,
+          "users": 589,
+          "pageviews": 2091,
+          "avgSessionDuration": 245.82268283845275,
+          "pagesPerSession": 2.378839590443686,
+          "engagementRate": 0.5312855517633674
         }
       ],
       "topPages": [
@@ -908,7 +1355,7 @@
         },
         {
           "path": "/",
-          "pageviews": 222
+          "pageviews": 223
         },
         {
           "path": "/games/battle/",
@@ -942,6 +1389,124 @@
           "path": "/jlpt/n4/mock/",
           "pageviews": 93
         }
+      ],
+      "channels": [
+        {
+          "label": "Organic Search",
+          "sessions": 604,
+          "users": 405
+        },
+        {
+          "label": "AI Assistant",
+          "sessions": 233,
+          "users": 159
+        },
+        {
+          "label": "Direct",
+          "sessions": 230,
+          "users": 183
+        },
+        {
+          "label": "Referral",
+          "sessions": 43,
+          "users": 17
+        },
+        {
+          "label": "Unassigned",
+          "sessions": 33,
+          "users": 28
+        },
+        {
+          "label": "Cross-network",
+          "sessions": 18,
+          "users": 18
+        }
+      ],
+      "newVsReturning": [
+        {
+          "label": "new",
+          "sessions": 776,
+          "users": 768
+        },
+        {
+          "label": "returning",
+          "sessions": 266,
+          "users": 112
+        },
+        {
+          "label": "(not set)",
+          "sessions": 91,
+          "users": 0
+        }
+      ],
+      "devices": [
+        {
+          "label": "desktop",
+          "sessions": 688,
+          "users": 474
+        },
+        {
+          "label": "mobile",
+          "sessions": 429,
+          "users": 291
+        },
+        {
+          "label": "tablet",
+          "sessions": 18,
+          "users": 12
+        }
+      ],
+      "countries": [
+        {
+          "label": "United States",
+          "sessions": 202,
+          "users": 128
+        },
+        {
+          "label": "Japan",
+          "sessions": 110,
+          "users": 81
+        },
+        {
+          "label": "India",
+          "sessions": 89,
+          "users": 57
+        },
+        {
+          "label": "Indonesia",
+          "sessions": 63,
+          "users": 49
+        },
+        {
+          "label": "China",
+          "sessions": 56,
+          "users": 56
+        },
+        {
+          "label": "Bangladesh",
+          "sessions": 55,
+          "users": 21
+        },
+        {
+          "label": "Singapore",
+          "sessions": 42,
+          "users": 36
+        },
+        {
+          "label": "Vietnam",
+          "sessions": 39,
+          "users": 23
+        },
+        {
+          "label": "Australia",
+          "sessions": 37,
+          "users": 27
+        },
+        {
+          "label": "Germany",
+          "sessions": 34,
+          "users": 24
+        }
       ]
     },
     "vkchronicle": {
@@ -951,811 +1516,1216 @@
           "date": "20260504",
           "sessions": 16,
           "users": 12,
-          "pageviews": 67
+          "pageviews": 67,
+          "avgSessionDuration": 311.4789381875,
+          "pagesPerSession": 4.1875,
+          "engagementRate": 0.3125
         },
         {
           "date": "20260505",
           "sessions": 11,
           "users": 7,
-          "pageviews": 88
+          "pageviews": 88,
+          "avgSessionDuration": 585.1939522727272,
+          "pagesPerSession": 8,
+          "engagementRate": 0.6363636363636364
         },
         {
           "date": "20260506",
           "sessions": 18,
           "users": 10,
-          "pageviews": 86
+          "pageviews": 86,
+          "avgSessionDuration": 425.4833255,
+          "pagesPerSession": 4.777777777777778,
+          "engagementRate": 0.5
         },
         {
           "date": "20260507",
           "sessions": 14,
           "users": 10,
-          "pageviews": 47
+          "pageviews": 47,
+          "avgSessionDuration": 473.914826,
+          "pagesPerSession": 3.357142857142857,
+          "engagementRate": 0.42857142857142855
         },
         {
           "date": "20260508",
           "sessions": 9,
           "users": 4,
-          "pageviews": 81
+          "pageviews": 81,
+          "avgSessionDuration": 1066.87185,
+          "pagesPerSession": 9,
+          "engagementRate": 0.7777777777777778
         },
         {
           "date": "20260509",
           "sessions": 5,
           "users": 2,
-          "pageviews": 53
+          "pageviews": 53,
+          "avgSessionDuration": 2179.8490326,
+          "pagesPerSession": 10.6,
+          "engagementRate": 0.8
         },
         {
           "date": "20260510",
           "sessions": 19,
           "users": 13,
-          "pageviews": 94
+          "pageviews": 94,
+          "avgSessionDuration": 449.9170867368421,
+          "pagesPerSession": 4.947368421052632,
+          "engagementRate": 0.5789473684210527
         },
         {
           "date": "20260511",
           "sessions": 15,
           "users": 8,
-          "pageviews": 54
+          "pageviews": 54,
+          "avgSessionDuration": 400.3011467333333,
+          "pagesPerSession": 3.6,
+          "engagementRate": 0.3333333333333333
         },
         {
           "date": "20260512",
           "sessions": 13,
           "users": 6,
-          "pageviews": 85
+          "pageviews": 85,
+          "avgSessionDuration": 829.767098,
+          "pagesPerSession": 6.538461538461538,
+          "engagementRate": 0.5384615384615384
         },
         {
           "date": "20260513",
           "sessions": 13,
           "users": 5,
-          "pageviews": 54
+          "pageviews": 54,
+          "avgSessionDuration": 612.5044783076924,
+          "pagesPerSession": 4.153846153846154,
+          "engagementRate": 0.6153846153846154
         },
         {
           "date": "20260514",
           "sessions": 16,
           "users": 7,
-          "pageviews": 75
+          "pageviews": 75,
+          "avgSessionDuration": 756.9203259375,
+          "pagesPerSession": 4.6875,
+          "engagementRate": 0.5
         },
         {
           "date": "20260515",
           "sessions": 9,
           "users": 6,
-          "pageviews": 14
+          "pageviews": 14,
+          "avgSessionDuration": 80.42126944444445,
+          "pagesPerSession": 1.5555555555555556,
+          "engagementRate": 0.4444444444444444
         },
         {
           "date": "20260516",
           "sessions": 5,
           "users": 4,
-          "pageviews": 8
+          "pageviews": 8,
+          "avgSessionDuration": 13.0011102,
+          "pagesPerSession": 1.6,
+          "engagementRate": 0.2
         },
         {
           "date": "20260517",
           "sessions": 6,
           "users": 3,
-          "pageviews": 14
+          "pageviews": 14,
+          "avgSessionDuration": 181.16291833333332,
+          "pagesPerSession": 2.3333333333333335,
+          "engagementRate": 0.5
         },
         {
           "date": "20260518",
           "sessions": 8,
           "users": 4,
-          "pageviews": 15
+          "pageviews": 15,
+          "avgSessionDuration": 577.725759125,
+          "pagesPerSession": 1.875,
+          "engagementRate": 0.5
         },
         {
           "date": "20260519",
           "sessions": 7,
           "users": 5,
-          "pageviews": 9
+          "pageviews": 9,
+          "avgSessionDuration": 12.776992857142856,
+          "pagesPerSession": 1.2857142857142858,
+          "engagementRate": 0.2857142857142857
         },
         {
           "date": "20260520",
           "sessions": 6,
           "users": 4,
-          "pageviews": 6
+          "pageviews": 6,
+          "avgSessionDuration": 2.974805,
+          "pagesPerSession": 1,
+          "engagementRate": 0
         },
         {
           "date": "20260521",
           "sessions": 2,
           "users": 2,
-          "pageviews": 4
+          "pageviews": 4,
+          "avgSessionDuration": 42.567515,
+          "pagesPerSession": 2,
+          "engagementRate": 0.5
         },
         {
           "date": "20260522",
           "sessions": 7,
           "users": 5,
-          "pageviews": 18
+          "pageviews": 18,
+          "avgSessionDuration": 74.31431685714286,
+          "pagesPerSession": 2.5714285714285716,
+          "engagementRate": 0.2857142857142857
         },
         {
           "date": "20260523",
           "sessions": 3,
           "users": 3,
-          "pageviews": 4
+          "pageviews": 4,
+          "avgSessionDuration": 269.2558286666667,
+          "pagesPerSession": 1.3333333333333333,
+          "engagementRate": 0.3333333333333333
         },
         {
           "date": "20260525",
           "sessions": 8,
           "users": 7,
-          "pageviews": 12
+          "pageviews": 12,
+          "avgSessionDuration": 10.56135725,
+          "pagesPerSession": 1.5,
+          "engagementRate": 0.125
         },
         {
           "date": "20260526",
           "sessions": 8,
           "users": 6,
-          "pageviews": 9
+          "pageviews": 9,
+          "avgSessionDuration": 32.078766875,
+          "pagesPerSession": 1.125,
+          "engagementRate": 0.375
         },
         {
           "date": "20260527",
           "sessions": 5,
           "users": 5,
-          "pageviews": 5
+          "pageviews": 5,
+          "avgSessionDuration": 1.2535653999999998,
+          "pagesPerSession": 1,
+          "engagementRate": 0
         },
         {
           "date": "20260528",
           "sessions": 2,
           "users": 2,
-          "pageviews": 2
+          "pageviews": 2,
+          "avgSessionDuration": 0,
+          "pagesPerSession": 1,
+          "engagementRate": 0
         },
         {
           "date": "20260529",
           "sessions": 4,
           "users": 2,
-          "pageviews": 4
+          "pageviews": 4,
+          "avgSessionDuration": 0,
+          "pagesPerSession": 1,
+          "engagementRate": 0
         },
         {
           "date": "20260530",
           "sessions": 5,
           "users": 5,
-          "pageviews": 6
+          "pageviews": 6,
+          "avgSessionDuration": 5.4817922,
+          "pagesPerSession": 1.2,
+          "engagementRate": 0.2
         },
         {
           "date": "20260531",
           "sessions": 3,
           "users": 3,
-          "pageviews": 4
+          "pageviews": 4,
+          "avgSessionDuration": 13.198599000000002,
+          "pagesPerSession": 1.3333333333333333,
+          "engagementRate": 0.3333333333333333
         },
         {
           "date": "20260601",
           "sessions": 3,
           "users": 3,
-          "pageviews": 5
+          "pageviews": 5,
+          "avgSessionDuration": 16.02495,
+          "pagesPerSession": 1.6666666666666667,
+          "engagementRate": 0.6666666666666666
         },
         {
           "date": "20260602",
           "sessions": 4,
           "users": 4,
-          "pageviews": 5
+          "pageviews": 5,
+          "avgSessionDuration": 10.2033685,
+          "pagesPerSession": 1.25,
+          "engagementRate": 0.25
         },
         {
           "date": "20260603",
           "sessions": 13,
           "users": 13,
-          "pageviews": 15
+          "pageviews": 15,
+          "avgSessionDuration": 16.710992923076923,
+          "pagesPerSession": 1.1538461538461537,
+          "engagementRate": 0.38461538461538464
         },
         {
           "date": "20260604",
           "sessions": 1,
           "users": 1,
-          "pageviews": 2
+          "pageviews": 2,
+          "avgSessionDuration": 51.269521,
+          "pagesPerSession": 2,
+          "engagementRate": 1
         },
         {
           "date": "20260605",
           "sessions": 7,
           "users": 7,
-          "pageviews": 8
+          "pageviews": 8,
+          "avgSessionDuration": 4.554860428571429,
+          "pagesPerSession": 1.1428571428571428,
+          "engagementRate": 0.14285714285714285
         },
         {
           "date": "20260607",
           "sessions": 3,
           "users": 1,
-          "pageviews": 23
+          "pageviews": 23,
+          "avgSessionDuration": 768.2368746666666,
+          "pagesPerSession": 7.666666666666667,
+          "engagementRate": 0.6666666666666666
         },
         {
           "date": "20260608",
           "sessions": 3,
           "users": 2,
-          "pageviews": 2
+          "pageviews": 2,
+          "avgSessionDuration": 10.639619666666666,
+          "pagesPerSession": 0.6666666666666666,
+          "engagementRate": 0.3333333333333333
         },
         {
           "date": "20260609",
           "sessions": 8,
           "users": 8,
-          "pageviews": 8
+          "pageviews": 8,
+          "avgSessionDuration": 225.61913850000002,
+          "pagesPerSession": 1,
+          "engagementRate": 0.25
         },
         {
           "date": "20260610",
           "sessions": 1,
           "users": 1,
-          "pageviews": 2
+          "pageviews": 2,
+          "avgSessionDuration": 10.034293,
+          "pagesPerSession": 2,
+          "engagementRate": 1
         },
         {
           "date": "20260611",
           "sessions": 1,
           "users": 1,
-          "pageviews": 3
+          "pageviews": 3,
+          "avgSessionDuration": 65.248593,
+          "pagesPerSession": 3,
+          "engagementRate": 1
         },
         {
           "date": "20260612",
           "sessions": 2,
           "users": 2,
-          "pageviews": 23
+          "pageviews": 23,
+          "avgSessionDuration": 130.794576,
+          "pagesPerSession": 11.5,
+          "engagementRate": 0.5
         },
         {
           "date": "20260613",
           "sessions": 1,
           "users": 1,
-          "pageviews": 1
+          "pageviews": 1,
+          "avgSessionDuration": 6.189231,
+          "pagesPerSession": 1,
+          "engagementRate": 0
         },
         {
           "date": "20260614",
           "sessions": 2,
           "users": 1,
-          "pageviews": 2
+          "pageviews": 2,
+          "avgSessionDuration": 2.092345,
+          "pagesPerSession": 1,
+          "engagementRate": 0
         },
         {
           "date": "20260615",
           "sessions": 1,
           "users": 1,
-          "pageviews": 2
+          "pageviews": 2,
+          "avgSessionDuration": 796.177893,
+          "pagesPerSession": 2,
+          "engagementRate": 1
         },
         {
           "date": "20260616",
           "sessions": 1,
           "users": 1,
-          "pageviews": 1
+          "pageviews": 1,
+          "avgSessionDuration": 7.911009,
+          "pagesPerSession": 1,
+          "engagementRate": 0
         },
         {
           "date": "20260617",
           "sessions": 2,
           "users": 2,
-          "pageviews": 3
+          "pageviews": 3,
+          "avgSessionDuration": 12.812847,
+          "pagesPerSession": 1.5,
+          "engagementRate": 0.5
         },
         {
           "date": "20260618",
           "sessions": 2,
           "users": 2,
-          "pageviews": 3
+          "pageviews": 3,
+          "avgSessionDuration": 3.765677,
+          "pagesPerSession": 1.5,
+          "engagementRate": 0.5
         },
         {
           "date": "20260619",
           "sessions": 3,
           "users": 2,
-          "pageviews": 3
+          "pageviews": 3,
+          "avgSessionDuration": 11.695375666666665,
+          "pagesPerSession": 1,
+          "engagementRate": 0.3333333333333333
         },
         {
           "date": "20260620",
           "sessions": 1,
           "users": 1,
-          "pageviews": 1
+          "pageviews": 1,
+          "avgSessionDuration": 2.877122,
+          "pagesPerSession": 1,
+          "engagementRate": 0
         },
         {
           "date": "20260623",
           "sessions": 2,
           "users": 2,
-          "pageviews": 2
+          "pageviews": 2,
+          "avgSessionDuration": 15.5699955,
+          "pagesPerSession": 1,
+          "engagementRate": 1
         },
         {
           "date": "20260625",
           "sessions": 1,
           "users": 1,
-          "pageviews": 1
+          "pageviews": 1,
+          "avgSessionDuration": 93.562327,
+          "pagesPerSession": 1,
+          "engagementRate": 1
         },
         {
           "date": "20260626",
           "sessions": 2,
           "users": 1,
-          "pageviews": 4
+          "pageviews": 4,
+          "avgSessionDuration": 87.2879975,
+          "pagesPerSession": 2,
+          "engagementRate": 0.5
         },
         {
           "date": "20260627",
           "sessions": 3,
           "users": 2,
-          "pageviews": 2
+          "pageviews": 2,
+          "avgSessionDuration": 4.384873333333333,
+          "pagesPerSession": 0.6666666666666666,
+          "engagementRate": 0.3333333333333333
         },
         {
           "date": "20260629",
           "sessions": 2,
           "users": 2,
-          "pageviews": 3
+          "pageviews": 3,
+          "avgSessionDuration": 71.714603,
+          "pagesPerSession": 1.5,
+          "engagementRate": 1
         },
         {
           "date": "20260630",
           "sessions": 1,
           "users": 1,
-          "pageviews": 1
+          "pageviews": 1,
+          "avgSessionDuration": 0,
+          "pagesPerSession": 1,
+          "engagementRate": 0
         },
         {
           "date": "20260702",
           "sessions": 9,
           "users": 9,
-          "pageviews": 11
+          "pageviews": 11,
+          "avgSessionDuration": 11.513272555555556,
+          "pagesPerSession": 1.2222222222222223,
+          "engagementRate": 0.3333333333333333
         },
         {
           "date": "20260703",
           "sessions": 3,
           "users": 3,
-          "pageviews": 4
+          "pageviews": 4,
+          "avgSessionDuration": 27.169144333333332,
+          "pagesPerSession": 1.3333333333333333,
+          "engagementRate": 0.6666666666666666
         },
         {
           "date": "20260704",
           "sessions": 10,
           "users": 7,
-          "pageviews": 28
+          "pageviews": 28,
+          "avgSessionDuration": 287.64288339999996,
+          "pagesPerSession": 2.8,
+          "engagementRate": 0.5
         },
         {
           "date": "20260705",
           "sessions": 7,
           "users": 4,
-          "pageviews": 32
+          "pageviews": 32,
+          "avgSessionDuration": 523.9789132857143,
+          "pagesPerSession": 4.571428571428571,
+          "engagementRate": 0.7142857142857143
         },
         {
           "date": "20260706",
           "sessions": 5,
           "users": 2,
-          "pageviews": 10
+          "pageviews": 10,
+          "avgSessionDuration": 291.0579762,
+          "pagesPerSession": 2,
+          "engagementRate": 0.4
         },
         {
           "date": "20260707",
           "sessions": 4,
           "users": 2,
-          "pageviews": 5
+          "pageviews": 5,
+          "avgSessionDuration": 49.76356725,
+          "pagesPerSession": 1.25,
+          "engagementRate": 0.5
         },
         {
           "date": "20260708",
           "sessions": 11,
           "users": 5,
-          "pageviews": 48
+          "pageviews": 48,
+          "avgSessionDuration": 152.0321540909091,
+          "pagesPerSession": 4.363636363636363,
+          "engagementRate": 0.18181818181818182
         },
         {
           "date": "20260709",
           "sessions": 1,
           "users": 0,
-          "pageviews": 1
+          "pageviews": 1,
+          "avgSessionDuration": 0,
+          "pagesPerSession": 1,
+          "engagementRate": 0
         },
         {
           "date": "20260710",
           "sessions": 3,
           "users": 3,
-          "pageviews": 5
+          "pageviews": 5,
+          "avgSessionDuration": 19.723586666666666,
+          "pagesPerSession": 1.6666666666666667,
+          "engagementRate": 1
         },
         {
           "date": "20260711",
           "sessions": 2,
           "users": 2,
-          "pageviews": 6
+          "pageviews": 6,
+          "avgSessionDuration": 147.4692415,
+          "pagesPerSession": 3,
+          "engagementRate": 1
         },
         {
           "date": "20260712",
           "sessions": 4,
           "users": 4,
-          "pageviews": 13
+          "pageviews": 13,
+          "avgSessionDuration": 111.3026125,
+          "pagesPerSession": 3.25,
+          "engagementRate": 0.75
         },
         {
           "date": "20260713",
           "sessions": 5,
           "users": 5,
-          "pageviews": 6
+          "pageviews": 6,
+          "avgSessionDuration": 12.0626414,
+          "pagesPerSession": 1.2,
+          "engagementRate": 0.8
         },
         {
           "date": "20260714",
           "sessions": 9,
           "users": 8,
-          "pageviews": 10
+          "pageviews": 10,
+          "avgSessionDuration": 47.49560111111111,
+          "pagesPerSession": 1.1111111111111112,
+          "engagementRate": 0.5555555555555556
         },
         {
           "date": "20260715",
           "sessions": 5,
           "users": 5,
-          "pageviews": 5
+          "pageviews": 5,
+          "avgSessionDuration": 24.6364048,
+          "pagesPerSession": 1,
+          "engagementRate": 0.4
         },
         {
           "date": "20260716",
           "sessions": 1,
           "users": 1,
-          "pageviews": 1
+          "pageviews": 1,
+          "avgSessionDuration": 0,
+          "pagesPerSession": 1,
+          "engagementRate": 0
         },
         {
           "date": "20260717",
           "sessions": 2,
           "users": 2,
-          "pageviews": 3
+          "pageviews": 3,
+          "avgSessionDuration": 14.955749,
+          "pagesPerSession": 1.5,
+          "engagementRate": 1
         },
         {
           "date": "20260718",
           "sessions": 6,
           "users": 4,
-          "pageviews": 6
+          "pageviews": 6,
+          "avgSessionDuration": 219.57647283333333,
+          "pagesPerSession": 1,
+          "engagementRate": 0.6666666666666666
         },
         {
           "date": "20260719",
           "sessions": 2,
           "users": 2,
-          "pageviews": 13
+          "pageviews": 13,
+          "avgSessionDuration": 167.392578,
+          "pagesPerSession": 6.5,
+          "engagementRate": 1
         },
         {
           "date": "20260720",
           "sessions": 2,
           "users": 2,
-          "pageviews": 2
+          "pageviews": 2,
+          "avgSessionDuration": 5.3685465,
+          "pagesPerSession": 1,
+          "engagementRate": 0.5
         },
         {
           "date": "20260721",
           "sessions": 8,
           "users": 6,
-          "pageviews": 9
+          "pageviews": 9,
+          "avgSessionDuration": 6.993657125,
+          "pagesPerSession": 1.125,
+          "engagementRate": 0.25
         },
         {
           "date": "20260722",
           "sessions": 7,
           "users": 7,
-          "pageviews": 8
+          "pageviews": 8,
+          "avgSessionDuration": 272.35081199999996,
+          "pagesPerSession": 1.1428571428571428,
+          "engagementRate": 0.42857142857142855
         },
         {
           "date": "20260723",
           "sessions": 5,
           "users": 5,
-          "pageviews": 5
+          "pageviews": 5,
+          "avgSessionDuration": 104.4454552,
+          "pagesPerSession": 1,
+          "engagementRate": 0.8
         },
         {
           "date": "20260724",
           "sessions": 17,
           "users": 15,
-          "pageviews": 17
+          "pageviews": 17,
+          "avgSessionDuration": 16.30035976470588,
+          "pagesPerSession": 1,
+          "engagementRate": 0.23529411764705882
         },
         {
           "date": "20260725",
           "sessions": 9,
           "users": 9,
-          "pageviews": 19
+          "pageviews": 19,
+          "avgSessionDuration": 103.21849633333333,
+          "pagesPerSession": 2.111111111111111,
+          "engagementRate": 0.4444444444444444
         },
         {
           "date": "20260726",
           "sessions": 5,
           "users": 4,
-          "pageviews": 9
+          "pageviews": 9,
+          "avgSessionDuration": 258.3829064,
+          "pagesPerSession": 1.8,
+          "engagementRate": 0.6
         },
         {
           "date": "20260727",
           "sessions": 3,
           "users": 3,
-          "pageviews": 4
+          "pageviews": 4,
+          "avgSessionDuration": 173.80815833333335,
+          "pagesPerSession": 1.3333333333333333,
+          "engagementRate": 0.6666666666666666
         },
         {
           "date": "20260728",
           "sessions": 3,
           "users": 3,
-          "pageviews": 4
+          "pageviews": 4,
+          "avgSessionDuration": 8.861091666666667,
+          "pagesPerSession": 1.3333333333333333,
+          "engagementRate": 0.6666666666666666
         },
         {
           "date": "20260729",
           "sessions": 5,
           "users": 5,
-          "pageviews": 7
+          "pageviews": 7,
+          "avgSessionDuration": 18.317763199999998,
+          "pagesPerSession": 1.4,
+          "engagementRate": 0.6
         },
         {
           "date": "20260730",
           "sessions": 6,
           "users": 4,
-          "pageviews": 16
+          "pageviews": 16,
+          "avgSessionDuration": 391.82573083333335,
+          "pagesPerSession": 2.6666666666666665,
+          "engagementRate": 0.5
         },
         {
           "date": "20260731",
           "sessions": 6,
           "users": 6,
-          "pageviews": 21
+          "pageviews": 21,
+          "avgSessionDuration": 64.7647025,
+          "pagesPerSession": 3.5,
+          "engagementRate": 0.6666666666666666
         },
         {
           "date": "20260801",
           "sessions": 8,
           "users": 8,
-          "pageviews": 18
+          "pageviews": 18,
+          "avgSessionDuration": 105.006449125,
+          "pagesPerSession": 2.25,
+          "engagementRate": 0.625
         },
         {
           "date": "20260802",
           "sessions": 8,
           "users": 7,
-          "pageviews": 22
+          "pageviews": 22,
+          "avgSessionDuration": 72.883595375,
+          "pagesPerSession": 2.75,
+          "engagementRate": 0.5
         },
         {
           "date": "20260803",
           "sessions": 1,
           "users": 1,
-          "pageviews": 1
+          "pageviews": 1,
+          "avgSessionDuration": 1.120847,
+          "pagesPerSession": 1,
+          "engagementRate": 0
         },
         {
           "date": "20260804",
           "sessions": 1,
           "users": 1,
-          "pageviews": 1
+          "pageviews": 1,
+          "avgSessionDuration": 14.390022,
+          "pagesPerSession": 1,
+          "engagementRate": 1
         },
         {
           "date": "20260805",
           "sessions": 5,
           "users": 5,
-          "pageviews": 13
+          "pageviews": 13,
+          "avgSessionDuration": 750.7881058,
+          "pagesPerSession": 2.6,
+          "engagementRate": 0.8
         },
         {
           "date": "20260806",
           "sessions": 5,
           "users": 5,
-          "pageviews": 17
+          "pageviews": 17,
+          "avgSessionDuration": 107.9825322,
+          "pagesPerSession": 3.4,
+          "engagementRate": 0.6
         },
         {
           "date": "20260807",
           "sessions": 9,
           "users": 7,
-          "pageviews": 9
+          "pageviews": 9,
+          "avgSessionDuration": 7.295415444444444,
+          "pagesPerSession": 1,
+          "engagementRate": 0.1111111111111111
         },
         {
           "date": "20260808",
           "sessions": 9,
           "users": 9,
-          "pageviews": 14
+          "pageviews": 14,
+          "avgSessionDuration": 177.032688,
+          "pagesPerSession": 1.5555555555555556,
+          "engagementRate": 0.6666666666666666
         },
         {
           "date": "20260809",
           "sessions": 5,
           "users": 4,
-          "pageviews": 8
+          "pageviews": 8,
+          "avgSessionDuration": 21.224461400000003,
+          "pagesPerSession": 1.6,
+          "engagementRate": 0.6
         },
         {
           "date": "20260810",
           "sessions": 8,
           "users": 8,
-          "pageviews": 13
+          "pageviews": 13,
+          "avgSessionDuration": 39.7221435,
+          "pagesPerSession": 1.625,
+          "engagementRate": 0.625
         },
         {
           "date": "20260811",
           "sessions": 5,
           "users": 4,
-          "pageviews": 5
+          "pageviews": 5,
+          "avgSessionDuration": 16.126518400000002,
+          "pagesPerSession": 1,
+          "engagementRate": 0.4
         },
         {
           "date": "20260812",
           "sessions": 8,
           "users": 6,
-          "pageviews": 11
+          "pageviews": 11,
+          "avgSessionDuration": 15.888285375,
+          "pagesPerSession": 1.375,
+          "engagementRate": 0.375
         },
         {
           "date": "20260813",
           "sessions": 6,
           "users": 6,
-          "pageviews": 10
+          "pageviews": 10,
+          "avgSessionDuration": 338.666312,
+          "pagesPerSession": 1.6666666666666667,
+          "engagementRate": 0.8333333333333334
         },
         {
           "date": "20260814",
           "sessions": 3,
           "users": 2,
-          "pageviews": 3
+          "pageviews": 3,
+          "avgSessionDuration": 42.489742,
+          "pagesPerSession": 1,
+          "engagementRate": 0.6666666666666666
         },
         {
           "date": "20260815",
           "sessions": 12,
           "users": 12,
-          "pageviews": 23
+          "pageviews": 23,
+          "avgSessionDuration": 51.67373791666666,
+          "pagesPerSession": 1.9166666666666667,
+          "engagementRate": 0.5
         },
         {
           "date": "20260816",
           "sessions": 8,
           "users": 7,
-          "pageviews": 7
+          "pageviews": 7,
+          "avgSessionDuration": 17.581674125000003,
+          "pagesPerSession": 0.875,
+          "engagementRate": 0.625
         },
         {
           "date": "20260817",
           "sessions": 8,
           "users": 6,
-          "pageviews": 7
+          "pageviews": 7,
+          "avgSessionDuration": 0.226348375,
+          "pagesPerSession": 0.875,
+          "engagementRate": 0
         },
         {
           "date": "20260818",
           "sessions": 8,
           "users": 8,
-          "pageviews": 9
+          "pageviews": 9,
+          "avgSessionDuration": 39.187561875,
+          "pagesPerSession": 1.125,
+          "engagementRate": 0.5
         },
         {
           "date": "20260819",
           "sessions": 9,
           "users": 9,
-          "pageviews": 16
+          "pageviews": 16,
+          "avgSessionDuration": 510.6066281111111,
+          "pagesPerSession": 1.7777777777777777,
+          "engagementRate": 0.4444444444444444
         },
         {
           "date": "20260820",
           "sessions": 8,
           "users": 8,
-          "pageviews": 8
+          "pageviews": 8,
+          "avgSessionDuration": 58.934778375,
+          "pagesPerSession": 1,
+          "engagementRate": 0.5
         },
         {
           "date": "20260821",
           "sessions": 14,
           "users": 14,
-          "pageviews": 17
+          "pageviews": 17,
+          "avgSessionDuration": 135.7428885,
+          "pagesPerSession": 1.2142857142857142,
+          "engagementRate": 0.6428571428571429
         },
         {
           "date": "20260822",
           "sessions": 25,
           "users": 19,
-          "pageviews": 41
+          "pageviews": 41,
+          "avgSessionDuration": 42.17270268,
+          "pagesPerSession": 1.64,
+          "engagementRate": 0.28
         },
         {
           "date": "20260823",
           "sessions": 8,
           "users": 7,
-          "pageviews": 12
+          "pageviews": 12,
+          "avgSessionDuration": 111.36786925,
+          "pagesPerSession": 1.5,
+          "engagementRate": 0.375
         },
         {
           "date": "20260824",
           "sessions": 21,
           "users": 18,
-          "pageviews": 32
+          "pageviews": 32,
+          "avgSessionDuration": 12.315896714285714,
+          "pagesPerSession": 1.5238095238095237,
+          "engagementRate": 0.19047619047619047
         },
         {
           "date": "20260825",
           "sessions": 25,
           "users": 22,
-          "pageviews": 26
+          "pageviews": 26,
+          "avgSessionDuration": 14.34633956,
+          "pagesPerSession": 1.04,
+          "engagementRate": 0.16
         },
         {
           "date": "20260826",
           "sessions": 30,
           "users": 30,
-          "pageviews": 31
+          "pageviews": 31,
+          "avgSessionDuration": 84.58832276666665,
+          "pagesPerSession": 1.0333333333333334,
+          "engagementRate": 0.16666666666666666
         },
         {
           "date": "20260827",
           "sessions": 76,
           "users": 74,
-          "pageviews": 74
+          "pageviews": 74,
+          "avgSessionDuration": 2.2889848684210525,
+          "pagesPerSession": 0.9736842105263158,
+          "engagementRate": 0.013157894736842105
         },
         {
           "date": "20260828",
           "sessions": 69,
           "users": 69,
-          "pageviews": 71
+          "pageviews": 71,
+          "avgSessionDuration": 2.8382307246376812,
+          "pagesPerSession": 1.0289855072463767,
+          "engagementRate": 0.043478260869565216
         },
         {
           "date": "20260829",
           "sessions": 60,
           "users": 59,
-          "pageviews": 72
+          "pageviews": 72,
+          "avgSessionDuration": 16.677241766666665,
+          "pagesPerSession": 1.2,
+          "engagementRate": 0.08333333333333333
         },
         {
           "date": "20260830",
           "sessions": 32,
           "users": 31,
-          "pageviews": 34
+          "pageviews": 34,
+          "avgSessionDuration": 53.66196840625,
+          "pagesPerSession": 1.0625,
+          "engagementRate": 0.21875
         },
         {
           "date": "20260831",
           "sessions": 14,
           "users": 13,
-          "pageviews": 15
+          "pageviews": 15,
+          "avgSessionDuration": 4.8083884999999995,
+          "pagesPerSession": 1.0714285714285714,
+          "engagementRate": 0.14285714285714285
         },
         {
           "date": "20260901",
           "sessions": 53,
           "users": 50,
-          "pageviews": 54
+          "pageviews": 54,
+          "avgSessionDuration": 27.801414301886794,
+          "pagesPerSession": 1.0188679245283019,
+          "engagementRate": 0.16981132075471697
         },
         {
           "date": "20260902",
           "sessions": 35,
           "users": 31,
-          "pageviews": 57
+          "pageviews": 57,
+          "avgSessionDuration": 127.64529679999998,
+          "pagesPerSession": 1.6285714285714286,
+          "engagementRate": 0.22857142857142856
         },
         {
           "date": "20260903",
           "sessions": 24,
           "users": 19,
-          "pageviews": 27
+          "pageviews": 27,
+          "avgSessionDuration": 32.38765633333333,
+          "pagesPerSession": 1.125,
+          "engagementRate": 0.25
         },
         {
           "date": "20260904",
           "sessions": 40,
           "users": 39,
-          "pageviews": 42
+          "pageviews": 42,
+          "avgSessionDuration": 5.197313225,
+          "pagesPerSession": 1.05,
+          "engagementRate": 0.1
         },
         {
           "date": "20260905",
           "sessions": 18,
           "users": 18,
-          "pageviews": 18
+          "pageviews": 18,
+          "avgSessionDuration": 41.99492288888889,
+          "pagesPerSession": 1,
+          "engagementRate": 0.05555555555555555
         },
         {
           "date": "20260906",
           "sessions": 104,
           "users": 103,
-          "pageviews": 118
+          "pageviews": 118,
+          "avgSessionDuration": 18.63255120192308,
+          "pagesPerSession": 1.1346153846153846,
+          "engagementRate": 0.0673076923076923
         },
         {
           "date": "20260907",
           "sessions": 11,
           "users": 11,
-          "pageviews": 11
+          "pageviews": 11,
+          "avgSessionDuration": 3.927748454545454,
+          "pagesPerSession": 1,
+          "engagementRate": 0.18181818181818182
         },
         {
           "date": "20260908",
           "sessions": 10,
           "users": 9,
-          "pageviews": 16
+          "pageviews": 16,
+          "avgSessionDuration": 124.05344290000001,
+          "pagesPerSession": 1.6,
+          "engagementRate": 0.3
         },
         {
           "date": "20260909",
           "sessions": 24,
           "users": 24,
-          "pageviews": 29
+          "pageviews": 29,
+          "avgSessionDuration": 65.65390841666667,
+          "pagesPerSession": 1.2083333333333333,
+          "engagementRate": 0.5
         },
         {
           "date": "20260910",
           "sessions": 21,
           "users": 17,
-          "pageviews": 51
+          "pageviews": 51,
+          "avgSessionDuration": 268.3205541904762,
+          "pagesPerSession": 2.4285714285714284,
+          "engagementRate": 0.2857142857142857
         },
         {
           "date": "20260911",
           "sessions": 35,
           "users": 34,
-          "pageviews": 36
+          "pageviews": 36,
+          "avgSessionDuration": 67.05920351428571,
+          "pagesPerSession": 1.0285714285714285,
+          "engagementRate": 0.11428571428571428
         },
         {
           "date": "20260912",
           "sessions": 20,
           "users": 19,
-          "pageviews": 20
+          "pageviews": 20,
+          "avgSessionDuration": 0.93115035,
+          "pagesPerSession": 1,
+          "engagementRate": 0
         },
         {
           "date": "20260913",
           "sessions": 24,
           "users": 22,
-          "pageviews": 33
+          "pageviews": 33,
+          "avgSessionDuration": 36.823707875000004,
+          "pagesPerSession": 1.375,
+          "engagementRate": 0.25
         },
         {
           "date": "20260914",
           "sessions": 9,
           "users": 9,
-          "pageviews": 9
+          "pageviews": 9,
+          "avgSessionDuration": 126.09809866666666,
+          "pagesPerSession": 1,
+          "engagementRate": 0.1111111111111111
         },
         {
           "date": "20260915",
           "sessions": 20,
           "users": 20,
-          "pageviews": 27
+          "pageviews": 27,
+          "avgSessionDuration": 38.00691885,
+          "pagesPerSession": 1.35,
+          "engagementRate": 0.15
         },
         {
           "date": "20260916",
           "sessions": 23,
           "users": 21,
-          "pageviews": 25
+          "pageviews": 25,
+          "avgSessionDuration": 42.74460452173913,
+          "pagesPerSession": 1.0869565217391304,
+          "engagementRate": 0.21739130434782608
         },
         {
           "date": "20260917",
           "sessions": 31,
           "users": 31,
-          "pageviews": 58
+          "pageviews": 58,
+          "avgSessionDuration": 17.105387935483872,
+          "pagesPerSession": 1.8709677419354838,
+          "engagementRate": 0.12903225806451613
         },
         {
           "date": "20260918",
           "sessions": 35,
           "users": 34,
-          "pageviews": 37
+          "pageviews": 37,
+          "avgSessionDuration": 9.066395428571429,
+          "pagesPerSession": 1.0571428571428572,
+          "engagementRate": 0.05714285714285714
         },
         {
           "date": "20260919",
           "sessions": 32,
           "users": 31,
-          "pageviews": 34
+          "pageviews": 34,
+          "avgSessionDuration": 30.01589853125,
+          "pagesPerSession": 1.0625,
+          "engagementRate": 0.25
         },
         {
           "date": "20260920",
           "sessions": 16,
           "users": 16,
-          "pageviews": 16
+          "pageviews": 16,
+          "avgSessionDuration": 3.7527220625,
+          "pagesPerSession": 1,
+          "engagementRate": 0.125
         },
         {
           "date": "20260921",
           "sessions": 17,
           "users": 17,
-          "pageviews": 31
+          "pageviews": 31,
+          "avgSessionDuration": 54.63160647058823,
+          "pagesPerSession": 1.8235294117647058,
+          "engagementRate": 0.17647058823529413
         },
         {
           "date": "20260922",
           "sessions": 8,
           "users": 8,
-          "pageviews": 8
+          "pageviews": 8,
+          "avgSessionDuration": 1.358609875,
+          "pagesPerSession": 1,
+          "engagementRate": 0
         }
       ],
       "monthly": [
@@ -1763,31 +2733,46 @@
           "month": "202605",
           "sessions": 237,
           "users": 127,
-          "pageviews": 918
+          "pageviews": 918,
+          "avgSessionDuration": 422.19813472151884,
+          "pagesPerSession": 3.8734177215189876,
+          "engagementRate": 0.42616033755274263
         },
         {
           "month": "202606",
           "sessions": 70,
           "users": 58,
-          "pageviews": 125
+          "pageviews": 125,
+          "avgSessionDuration": 88.70263805714283,
+          "pagesPerSession": 1.7857142857142858,
+          "engagementRate": 0.4142857142857143
         },
         {
           "month": "202607",
           "sessions": 165,
           "users": 129,
-          "pageviews": 328
+          "pageviews": 328,
+          "avgSessionDuration": 130.43049923636363,
+          "pagesPerSession": 1.9878787878787878,
+          "engagementRate": 0.503030303030303
         },
         {
           "month": "202608",
           "sessions": 504,
           "users": 465,
-          "pageviews": 640
+          "pageviews": 640,
+          "avgSessionDuration": 52.54180327579363,
+          "pagesPerSession": 1.2698412698412698,
+          "engagementRate": 0.2261904761904762
         },
         {
           "month": "202609",
           "sessions": 610,
           "users": 578,
-          "pageviews": 757
+          "pageviews": 757,
+          "avgSessionDuration": 44.343403795081976,
+          "pagesPerSession": 1.240983606557377,
+          "engagementRate": 0.15737704918032788
         }
       ],
       "topPages": [
@@ -1830,6 +2815,124 @@
         {
           "path": "/subgenres/nagoya-kei/",
           "pageviews": 13
+        }
+      ],
+      "channels": [
+        {
+          "label": "Direct",
+          "sessions": 787,
+          "users": 789
+        },
+        {
+          "label": "Organic Search",
+          "sessions": 124,
+          "users": 79
+        },
+        {
+          "label": "AI Assistant",
+          "sessions": 19,
+          "users": 17
+        },
+        {
+          "label": "Organic Social",
+          "sessions": 7,
+          "users": 6
+        },
+        {
+          "label": "Unassigned",
+          "sessions": 6,
+          "users": 4
+        },
+        {
+          "label": "Cross-network",
+          "sessions": 1,
+          "users": 1
+        }
+      ],
+      "newVsReturning": [
+        {
+          "label": "new",
+          "sessions": 884,
+          "users": 888
+        },
+        {
+          "label": "returning",
+          "sessions": 34,
+          "users": 19
+        },
+        {
+          "label": "(not set)",
+          "sessions": 23,
+          "users": 0
+        }
+      ],
+      "devices": [
+        {
+          "label": "desktop",
+          "sessions": 868,
+          "users": 829
+        },
+        {
+          "label": "mobile",
+          "sessions": 70,
+          "users": 63
+        },
+        {
+          "label": "tablet",
+          "sessions": 4,
+          "users": 3
+        }
+      ],
+      "countries": [
+        {
+          "label": "China",
+          "sessions": 389,
+          "users": 387
+        },
+        {
+          "label": "Singapore",
+          "sessions": 364,
+          "users": 361
+        },
+        {
+          "label": "United States",
+          "sessions": 71,
+          "users": 51
+        },
+        {
+          "label": "Japan",
+          "sessions": 27,
+          "users": 19
+        },
+        {
+          "label": "Mexico",
+          "sessions": 12,
+          "users": 5
+        },
+        {
+          "label": "Canada",
+          "sessions": 11,
+          "users": 7
+        },
+        {
+          "label": "Brazil",
+          "sessions": 10,
+          "users": 10
+        },
+        {
+          "label": "Sweden",
+          "sessions": 7,
+          "users": 4
+        },
+        {
+          "label": "Argentina",
+          "sessions": 6,
+          "users": 6
+        },
+        {
+          "label": "Türkiye",
+          "sessions": 6,
+          "users": 6
         }
       ]
     }

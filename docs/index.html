@@ -16,9 +16,9 @@
     --baseline:       #c3c2b7;
     --border:         rgba(11,11,11,0.10);
     --good:           #006300;
-    --series-1:       #2a78d6; /* sessions */
-    --series-2:       #eb6834; /* users */
-    --series-3:       #1baf7a; /* pageviews */
+    --series-1:       #2a78d6; /* sessions / duration */
+    --series-2:       #eb6834; /* users / pages-per-session */
+    --series-3:       #1baf7a; /* pageviews / engagement rate */
   }
   @media (prefers-color-scheme: dark) {
     :root {
@@ -48,7 +48,7 @@
   body { padding: 24px 20px 64px; }
   .wrap { max-width: 980px; margin: 0 auto; }
 
-  header { display: flex; align-items: baseline; justify-content: space-between; flex-wrap: wrap; gap: 8px; margin-bottom: 20px; }
+  header { display: flex; align-items: baseline; justify-content: space-between; flex-wrap: wrap; gap: 8px; margin-bottom: 16px; }
   h1 { font-size: 20px; font-weight: 650; margin: 0; }
   .updated { font-size: 12px; color: var(--text-muted); }
 
@@ -61,8 +61,11 @@
   }
   .segmented button[aria-pressed="true"] { background: var(--series-1); color: #fff; }
   .segmented button:not([aria-pressed="true"]):hover { background: var(--gridline); }
+  .page-toggle { margin-bottom: 14px; }
 
   .card { background: var(--surface-1); border: 1px solid var(--border); border-radius: 12px; padding: 18px; margin-bottom: 16px; }
+  .card-title { font-size: 14px; font-weight: 600; margin-bottom: 10px; }
+  .card-sub { font-size: 12px; color: var(--text-muted); font-weight: 500; margin-left: 6px; }
 
   .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; margin-bottom: 16px; }
   .stat-tile { background: var(--surface-1); border: 1px solid var(--border); border-radius: 12px; padding: 14px 16px; }
@@ -77,7 +80,7 @@
   .chart-title { font-size: 14px; font-weight: 600; }
   .legend { display: flex; gap: 14px; flex-wrap: wrap; }
   .legend-item { display: flex; align-items: center; gap: 6px; font-size: 12px; color: var(--text-secondary); }
-  .legend-swatch { width: 14px; height: 2px; border-radius: 1px; }
+  .legend-swatch { width: 14px; height: 2px; border-radius: 1px; flex: none; }
 
   svg.chart { width: 100%; height: auto; display: block; overflow: visible; }
   .gridline { stroke: var(--gridline); stroke-width: 1; }
@@ -101,6 +104,10 @@
 
   .chart-wrap { position: relative; }
 
+  .mini-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; }
+  .mini-card { min-width: 0; }
+  .mini-card .chart-title { font-size: 13px; margin-bottom: 8px; }
+
   .toggle-table { background: none; border: none; color: var(--text-secondary); font-size: 12px; cursor: pointer; text-decoration: underline; padding: 0; }
 
   table.data-table { width: 100%; border-collapse: collapse; font-size: 12px; margin-top: 12px; }
@@ -109,11 +116,28 @@
   table.data-table th { color: var(--text-secondary); font-weight: 600; }
   table.data-table.hidden { display: none; }
 
-  .pages-table { width: 100%; border-collapse: collapse; font-size: 13px; }
-  .pages-table th, .pages-table td { text-align: left; padding: 7px 8px; border-bottom: 1px solid var(--gridline); }
-  .pages-table td:last-child, .pages-table th:last-child { text-align: right; font-variant-numeric: tabular-nums; }
-  .pages-table th { color: var(--text-secondary); font-weight: 600; font-size: 12px; }
+  .pages-table, .data-list-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  .pages-table th, .pages-table td, .data-list-table th, .data-list-table td { text-align: left; padding: 7px 8px; border-bottom: 1px solid var(--gridline); }
+  .pages-table td:last-child, .pages-table th:last-child,
+  .data-list-table td:not(:first-child), .data-list-table th:not(:first-child) { text-align: right; font-variant-numeric: tabular-nums; }
+  .pages-table th, .data-list-table th { color: var(--text-secondary); font-weight: 600; font-size: 12px; }
   .pages-table td.path { max-width: 420px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+  .bar-row { display: flex; align-items: center; gap: 10px; margin-bottom: 9px; }
+  .bar-row:last-child { margin-bottom: 0; }
+  .bar-label { width: 130px; flex: none; font-size: 12px; color: var(--text-secondary); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .bar-track { flex: 1; height: 10px; background: var(--gridline); border-radius: 5px; overflow: hidden; min-width: 40px; }
+  .bar-fill { height: 100%; border-radius: 5px; }
+  .bar-value { width: 108px; flex: none; text-align: right; font-size: 12px; color: var(--text-primary); font-variant-numeric: tabular-nums; }
+  .bar-value .bar-pct { color: var(--text-muted); }
+
+  .stacked-track { display: flex; height: 14px; border-radius: 7px; overflow: hidden; background: var(--surface-1); gap: 2px; }
+  .stacked-seg { height: 100%; }
+  .stacked-legend { display: flex; gap: 18px; margin-top: 12px; flex-wrap: wrap; }
+  .stacked-legend .legend-item .legend-swatch { width: 8px; height: 8px; border-radius: 50%; }
+
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  @media (max-width: 640px) { .two-col { grid-template-columns: 1fr; } }
 
   .empty { color: var(--text-muted); font-size: 13px; padding: 24px; text-align: center; }
 </style>
@@ -124,6 +148,11 @@
     <h1>Site analytics</h1>
     <div class="updated" id="updated">Loading…</div>
   </header>
+
+  <div class="segmented page-toggle" id="page-toggle" role="tablist" aria-label="Dashboard page">
+    <button data-page="overview" aria-pressed="true">Overview</button>
+    <button data-page="engagement" aria-pressed="false">Engagement</button>
+  </div>
 
   <div class="filters">
     <div class="segmented" id="site-toggle" role="tablist" aria-label="Site"></div>
@@ -138,36 +167,99 @@
     </div>
   </div>
 
-  <div class="stats" id="stats"></div>
+  <!-- ===== Overview page ===== -->
+  <div id="page-overview">
+    <div class="stats" id="stats"></div>
 
-  <div class="card">
-    <div class="chart-head">
-      <div class="chart-title" id="chart-title">Trend</div>
-      <div class="legend" id="legend"></div>
+    <div class="card">
+      <div class="chart-head">
+        <div class="chart-title" id="chart-title">Trend</div>
+        <div class="legend" id="legend"></div>
+      </div>
+      <div class="chart-wrap" id="chart-wrap">
+        <svg class="chart" id="chart"></svg>
+        <div class="tooltip" id="tooltip"></div>
+      </div>
+      <button class="toggle-table" id="toggle-table">View as table</button>
+      <table class="data-table hidden" id="data-table"></table>
     </div>
-    <div class="chart-wrap" id="chart-wrap">
-      <svg class="chart" id="chart"></svg>
-      <div class="tooltip" id="tooltip"></div>
+
+    <div class="card">
+      <div class="chart-title" style="margin-bottom:10px;">Top pages (last 30 days)</div>
+      <table class="pages-table" id="pages-table"></table>
     </div>
-    <button class="toggle-table" id="toggle-table">View as table</button>
-    <table class="data-table hidden" id="data-table"></table>
   </div>
 
-  <div class="card">
-    <div class="chart-title" style="margin-bottom:10px;">Top pages (last 30 days)</div>
-    <table class="pages-table" id="pages-table"></table>
+  <!-- ===== Engagement page ===== -->
+  <div id="page-engagement" style="display:none;">
+    <div class="stats" id="eng-stats"></div>
+
+    <div class="card">
+      <div class="card-title" id="eng-chart-title">Engagement trend</div>
+      <div class="mini-grid">
+        <div class="mini-card">
+          <div class="chart-title">Avg. session duration</div>
+          <div class="chart-wrap" id="eng-wrap-duration">
+            <svg class="chart" id="eng-chart-duration"></svg>
+            <div class="tooltip" id="eng-tooltip-duration"></div>
+          </div>
+        </div>
+        <div class="mini-card">
+          <div class="chart-title">Pages per session</div>
+          <div class="chart-wrap" id="eng-wrap-pages">
+            <svg class="chart" id="eng-chart-pages"></svg>
+            <div class="tooltip" id="eng-tooltip-pages"></div>
+          </div>
+        </div>
+        <div class="mini-card">
+          <div class="chart-title">Engagement rate</div>
+          <div class="chart-wrap" id="eng-wrap-rate">
+            <svg class="chart" id="eng-chart-rate"></svg>
+            <div class="tooltip" id="eng-tooltip-rate"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="two-col">
+      <div class="card">
+        <div class="card-title">Traffic sources <span class="card-sub">last 30 days</span></div>
+        <div id="channels-list"></div>
+      </div>
+      <div class="card">
+        <div class="card-title">Device <span class="card-sub">last 30 days</span></div>
+        <div id="devices-list"></div>
+      </div>
+    </div>
+
+    <div class="two-col">
+      <div class="card">
+        <div class="card-title">New vs. returning <span class="card-sub">last 30 days</span></div>
+        <div id="new-returning"></div>
+      </div>
+      <div class="card">
+        <div class="card-title">Top countries <span class="card-sub">last 30 days</span></div>
+        <table class="data-list-table" id="countries-table"></table>
+      </div>
+    </div>
   </div>
 </div>
 
 <script>
-const SERIES = [
-  { key: 'sessions',  name: 'Sessions',  color: 'var(--series-1)' },
-  { key: 'users',     name: 'Users',     color: 'var(--series-2)' },
-  { key: 'pageviews', name: 'Pageviews', color: 'var(--series-3)' },
+const OVERVIEW_SERIES = [
+  { key: 'sessions',  name: 'Sessions',  color: 'var(--series-1)', agg: 'sum', format: compact },
+  { key: 'users',     name: 'Users',     color: 'var(--series-2)', agg: 'sum', format: compact },
+  { key: 'pageviews', name: 'Pageviews', color: 'var(--series-3)', agg: 'sum', format: compact },
+];
+
+const ENGAGEMENT_SERIES = [
+  { key: 'avgSessionDuration', name: 'Avg. session duration', color: 'var(--series-1)', agg: 'avg', format: fmtDuration },
+  { key: 'pagesPerSession',    name: 'Pages / session',       color: 'var(--series-2)', agg: 'avg', format: fmtDecimal1 },
+  { key: 'engagementRate',     name: 'Engagement rate',       color: 'var(--series-3)', agg: 'avg', format: fmtPct1 },
 ];
 
 let DATA = null;
-let state = { site: null, granularity: 'daily', range: 30, showTable: false };
+let state = { site: null, page: 'overview', granularity: 'daily', range: 30, showTable: false };
 
 function fmtDateYYYYMMDD(s) {
   return new Date(`${s.slice(0,4)}-${s.slice(4,6)}-${s.slice(6,8)}T00:00:00`);
@@ -180,8 +272,15 @@ function shortMonth(d) { return d.toLocaleDateString(undefined, { month: 'short'
 function compact(n) {
   if (n >= 1000000) return (n/1000000).toFixed(1).replace(/\.0$/,'') + 'M';
   if (n >= 1000) return (n/1000).toFixed(1).replace(/\.0$/,'') + 'K';
-  return String(n);
+  return String(Math.round(n * 10) / 10);
 }
+function fmtDuration(s) {
+  const m = Math.floor(s / 60), sec = Math.round(s % 60);
+  return `${m}:${String(sec).padStart(2, '0')}`;
+}
+function fmtDecimal1(v) { return v.toFixed(1); }
+function fmtPct1(v) { return (v * 100).toFixed(1) + '%'; }
+function capitalize(s) { return s.charAt(0).toUpperCase() + s.slice(1); }
 
 async function init() {
   const res = await fetch('./data.json', { cache: 'no-store' });
@@ -203,6 +302,12 @@ async function init() {
     siteToggle.appendChild(btn);
   });
 
+  document.getElementById('page-toggle').addEventListener('click', (e) => {
+    const btn = e.target.closest('button[data-page]');
+    if (!btn) return;
+    state.page = btn.dataset.page;
+    render();
+  });
   document.getElementById('granularity-toggle').addEventListener('click', (e) => {
     const btn = e.target.closest('button[data-granularity]');
     if (!btn) return;
@@ -225,9 +330,12 @@ async function init() {
 
 function syncToggles() {
   document.querySelectorAll('#site-toggle button').forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.site === state.site)));
+  document.querySelectorAll('#page-toggle button').forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.page === state.page)));
   document.querySelectorAll('#granularity-toggle button').forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.granularity === state.granularity)));
   document.querySelectorAll('#range-toggle button').forEach((b) => b.setAttribute('aria-pressed', String(Number(b.dataset.range) === state.range)));
   document.getElementById('range-toggle').style.display = state.granularity === 'daily' ? 'inline-flex' : 'none';
+  document.getElementById('page-overview').style.display = state.page === 'overview' ? '' : 'none';
+  document.getElementById('page-engagement').style.display = state.page === 'engagement' ? '' : 'none';
 }
 
 function currentSeries() {
@@ -251,28 +359,40 @@ function priorSliceForRange() {
 }
 
 function sum(rows, key) { return rows.reduce((a, r) => a + r[key], 0); }
+function avg(rows, key) { return rows.length ? sum(rows, key) / rows.length : 0; }
+function aggregate(rows, s) { return s.agg === 'avg' ? avg(rows, s.key) : sum(rows, s.key); }
 
 function render() {
   syncToggles();
-  document.getElementById('chart-title').textContent =
-    (state.granularity === 'daily' ? `Last ${state.range} days` : 'Monthly trend') + ' — ' + DATA.sites[state.site].label;
+  const periodLabel = state.granularity === 'daily' ? `Last ${state.range} days` : 'Monthly trend';
+  document.getElementById('chart-title').textContent = periodLabel + ' — ' + DATA.sites[state.site].label;
+  document.getElementById('eng-chart-title').textContent = 'Engagement trend — ' + periodLabel;
 
-  renderStats();
-  renderLegend();
-  renderChart();
-  renderDataTable();
-  renderTopPages();
+  if (state.page === 'overview') {
+    renderStatsInto('stats', OVERVIEW_SERIES);
+    renderLegend('legend', OVERVIEW_SERIES);
+    renderChart('chart', 'tooltip', 'chart-wrap', sliceForRange(), OVERVIEW_SERIES);
+    renderDataTable();
+    renderTopPages();
+  } else {
+    renderStatsInto('eng-stats', ENGAGEMENT_SERIES);
+    const rows = sliceForRange();
+    renderChart('eng-chart-duration', 'eng-tooltip-duration', 'eng-wrap-duration', rows, [ENGAGEMENT_SERIES[0]]);
+    renderChart('eng-chart-pages', 'eng-tooltip-pages', 'eng-wrap-pages', rows, [ENGAGEMENT_SERIES[1]]);
+    renderChart('eng-chart-rate', 'eng-tooltip-rate', 'eng-wrap-rate', rows, [ENGAGEMENT_SERIES[2]]);
+    renderBreakdowns();
+  }
 }
 
-function renderStats() {
+function renderStatsInto(containerId, seriesList) {
   const rows = sliceForRange();
   const prior = priorSliceForRange();
-  const wrap = document.getElementById('stats');
+  const wrap = document.getElementById(containerId);
   wrap.innerHTML = '';
 
-  SERIES.forEach((s) => {
-    const total = sum(rows, s.key);
-    const priorTotal = prior ? sum(prior, s.key) : null;
+  seriesList.forEach((s) => {
+    const total = aggregate(rows, s);
+    const priorTotal = prior ? aggregate(prior, s) : null;
     const tile = document.createElement('div');
     tile.className = 'stat-tile';
 
@@ -288,7 +408,7 @@ function renderStats() {
 
     tile.innerHTML = `
       <div class="stat-label">${s.name}</div>
-      <div class="stat-value">${compact(total)}</div>
+      <div class="stat-value">${s.format(total)}</div>
       ${deltaHtml}
       ${spark}
     `;
@@ -312,10 +432,10 @@ function sparklineSvg(rows, key, color) {
   </svg>`;
 }
 
-function renderLegend() {
-  const legend = document.getElementById('legend');
+function renderLegend(elId, seriesList) {
+  const legend = document.getElementById(elId);
   legend.innerHTML = '';
-  SERIES.forEach((s) => {
+  seriesList.forEach((s) => {
     const item = document.createElement('div');
     item.className = 'legend-item';
     item.innerHTML = `<span class="legend-swatch" style="background:${s.color}"></span><span></span>`;
@@ -324,10 +444,23 @@ function renderLegend() {
   });
 }
 
-function renderChart() {
-  const rows = sliceForRange();
-  const svg = document.getElementById('chart');
-  const tooltip = document.getElementById('tooltip');
+function niceCeiling(v) {
+  if (v <= 0) return 1;
+  const mag = Math.pow(10, Math.floor(Math.log10(v)));
+  const norm = v / mag;
+  let nice;
+  if (norm <= 1) nice = 1;
+  else if (norm <= 2) nice = 2;
+  else if (norm <= 5) nice = 5;
+  else nice = 10;
+  return nice * mag;
+}
+
+// Generic line chart: draws 1+ series that share one y-axis/domain.
+// Pass a single-item seriesList when the metric's unit doesn't match the others.
+function renderChart(svgId, tooltipId, wrapId, rows, seriesList) {
+  const svg = document.getElementById(svgId);
+  const tooltip = document.getElementById(tooltipId);
   svg.innerHTML = '';
 
   if (!rows.length) {
@@ -335,12 +468,13 @@ function renderChart() {
     return;
   }
 
-  const W = 900, H = 260, ML = 44, MR = 34, MT = 16, MB = 24;
+  const format = seriesList[0].format || ((v) => v.toLocaleString());
+  const W = 900, H = 260, ML = 44, MR = 42, MT = 16, MB = 24;
   const plotW = W - ML - MR, plotH = H - MT - MB;
   svg.setAttribute('viewBox', `0 0 ${W} ${H}`);
 
-  const allVals = rows.flatMap(r => SERIES.map(s => r[s.key]));
-  const maxVal = Math.max(1, ...allVals);
+  const allVals = rows.flatMap(r => seriesList.map(s => r[s.key]));
+  const maxVal = Math.max(1e-9, ...allVals);
   const niceMax = niceCeiling(maxVal);
 
   const x = (i) => ML + (rows.length === 1 ? plotW / 2 : (i / (rows.length - 1)) * plotW);
@@ -361,7 +495,7 @@ function renderChart() {
     text.setAttribute('class', 'axis-text');
     text.setAttribute('x', ML - 8); text.setAttribute('y', yy + 3);
     text.setAttribute('text-anchor', 'end');
-    text.textContent = compact(Math.round(v));
+    text.textContent = format(v);
     gGrid.appendChild(text);
   }
   svg.appendChild(gGrid);
@@ -385,7 +519,7 @@ function renderChart() {
   const lastRow = rows[rows.length - 1];
   const lastX = x(rows.length - 1);
 
-  SERIES.forEach((s) => {
+  seriesList.forEach((s) => {
     const pts = rows.map((r, i) => `${x(i).toFixed(1)},${y(r[s.key]).toFixed(1)}`).join(' ');
     const poly = document.createElementNS(ns, 'polyline');
     poly.setAttribute('class', 'series-line');
@@ -405,7 +539,7 @@ function renderChart() {
   // Separate colliding end-labels: sort by true y, enforce a minimum gap,
   // and draw a short leader line whenever a label had to move off its dot.
   const MIN_GAP = 13;
-  const labelPositions = SERIES
+  const labelPositions = seriesList
     .map((s) => ({ s, trueY: y(lastRow[s.key]), val: lastRow[s.key] }))
     .sort((a, b) => a.trueY - b.trueY);
   for (let i = 1; i < labelPositions.length; i++) {
@@ -431,7 +565,7 @@ function renderChart() {
     label.setAttribute('x', lastX + 9);
     label.setAttribute('y', trueY + 4);
     label.setAttribute('fill', 'var(--text-primary)');
-    label.textContent = compact(val);
+    label.textContent = format(val);
     svg.appendChild(label);
   });
 
@@ -441,7 +575,7 @@ function renderChart() {
   crosshair.style.display = 'none';
   svg.appendChild(crosshair);
 
-  const hoverDots = SERIES.map((s) => {
+  const hoverDots = seriesList.map((s) => {
     const c = document.createElementNS(ns, 'circle');
     c.setAttribute('class', 'hover-dot');
     c.setAttribute('r', 4);
@@ -461,7 +595,7 @@ function renderChart() {
     const row = rows[i];
     crosshair.style.display = '';
     crosshair.setAttribute('x1', x(i)); crosshair.setAttribute('x2', x(i));
-    SERIES.forEach((s, si) => {
+    seriesList.forEach((s, si) => {
       hoverDots[si].style.display = '';
       hoverDots[si].setAttribute('cx', x(i));
       hoverDots[si].setAttribute('cy', y(row[s.key]));
@@ -477,7 +611,7 @@ function renderChart() {
     dateEl.className = 'tt-date';
     dateEl.textContent = dateLabel;
     tooltip.appendChild(dateEl);
-    SERIES.forEach((s) => {
+    seriesList.forEach((s) => {
       const rowEl = document.createElement('div');
       rowEl.className = 'tt-row';
       const key = document.createElement('span');
@@ -488,12 +622,12 @@ function renderChart() {
       name.textContent = s.name;
       const val = document.createElement('span');
       val.className = 'tt-val';
-      val.textContent = row[s.key].toLocaleString();
+      val.textContent = format(row[s.key]);
       rowEl.appendChild(key); rowEl.appendChild(name); rowEl.appendChild(val);
       tooltip.appendChild(rowEl);
     });
 
-    const wrapRect = document.getElementById('chart-wrap').getBoundingClientRect();
+    const wrapRect = document.getElementById(wrapId).getBoundingClientRect();
     tooltip.style.opacity = '1';
     let left = clientX - wrapRect.left + 14;
     let top = clientY - wrapRect.top - 10;
@@ -521,18 +655,6 @@ function renderChart() {
   hitRect.addEventListener('mouseleave', hideTooltip);
 }
 
-function niceCeiling(v) {
-  if (v <= 0) return 1;
-  const mag = Math.pow(10, Math.floor(Math.log10(v)));
-  const norm = v / mag;
-  let nice;
-  if (norm <= 1) nice = 1;
-  else if (norm <= 2) nice = 2;
-  else if (norm <= 5) nice = 5;
-  else nice = 10;
-  return nice * mag;
-}
-
 function renderDataTable() {
   const table = document.getElementById('data-table');
   table.classList.toggle('hidden', !state.showTable);
@@ -541,13 +663,13 @@ function renderDataTable() {
 
   const rows = sliceForRange();
   let html = '<thead><tr><th>' + (state.granularity === 'daily' ? 'Date' : 'Month') + '</th>';
-  SERIES.forEach(s => html += `<th>${s.name}</th>`);
+  OVERVIEW_SERIES.forEach(s => html += `<th>${s.name}</th>`);
   html += '</tr></thead><tbody>';
   rows.slice().reverse().forEach((r) => {
     const d = state.granularity === 'daily' ? fmtDateYYYYMMDD(r.date) : fmtMonthYYYYMM(r.month);
     const label = state.granularity === 'daily' ? d.toLocaleDateString() : shortMonth(d);
     html += `<tr><td>${label}</td>`;
-    SERIES.forEach(s => html += `<td>${r[s.key].toLocaleString()}</td>`);
+    OVERVIEW_SERIES.forEach(s => html += `<td>${r[s.key].toLocaleString()}</td>`);
     html += '</tr>';
   });
   html += '</tbody>';
@@ -564,6 +686,96 @@ function renderTopPages() {
   let html = '<thead><tr><th>Page</th><th>Pageviews</th></tr></thead><tbody>';
   site.topPages.forEach((p) => {
     html += `<tr><td class="path" title="${escapeHtml(p.path)}">${escapeHtml(p.path)}</td><td>${p.pageviews.toLocaleString()}</td></tr>`;
+  });
+  html += '</tbody>';
+  table.innerHTML = html;
+}
+
+function renderBreakdowns() {
+  const site = DATA.sites[state.site];
+  renderBarList('channels-list', site.channels, 'var(--series-1)');
+  renderBarList('devices-list', site.devices.map(d => ({ ...d, label: capitalize(d.label) })), 'var(--series-1)');
+  renderNewReturning('new-returning', site.newVsReturning.filter(r => r.label === 'new' || r.label === 'returning'));
+  renderCountriesTable('countries-table', site.countries);
+}
+
+function renderBarList(elId, items, color) {
+  const el = document.getElementById(elId);
+  el.innerHTML = '';
+  if (!items || !items.length) { el.innerHTML = '<div class="empty">No data</div>'; return; }
+  const total = items.reduce((a, i) => a + i.sessions, 0) || 1;
+  const max = Math.max(...items.map(i => i.sessions), 1);
+  items.forEach((i) => {
+    const pct = ((i.sessions / total) * 100).toFixed(1);
+    const widthPct = ((i.sessions / max) * 100).toFixed(1);
+    const row = document.createElement('div');
+    row.className = 'bar-row';
+    const labelEl = document.createElement('div');
+    labelEl.className = 'bar-label';
+    labelEl.title = i.label;
+    labelEl.textContent = i.label;
+    const track = document.createElement('div');
+    track.className = 'bar-track';
+    const fill = document.createElement('div');
+    fill.className = 'bar-fill';
+    fill.style.width = widthPct + '%';
+    fill.style.background = color;
+    track.appendChild(fill);
+    const valueEl = document.createElement('div');
+    valueEl.className = 'bar-value';
+    valueEl.textContent = i.sessions.toLocaleString() + ' ';
+    const pctSpan = document.createElement('span');
+    pctSpan.className = 'bar-pct';
+    pctSpan.textContent = `(${pct}%)`;
+    valueEl.appendChild(pctSpan);
+    row.appendChild(labelEl); row.appendChild(track); row.appendChild(valueEl);
+    el.appendChild(row);
+  });
+}
+
+function renderNewReturning(elId, items) {
+  const el = document.getElementById(elId);
+  el.innerHTML = '';
+  if (!items || !items.length) { el.innerHTML = '<div class="empty">No data</div>'; return; }
+  const total = items.reduce((a, i) => a + i.sessions, 0) || 1;
+  const colors = ['var(--series-1)', 'var(--series-2)'];
+
+  const track = document.createElement('div');
+  track.className = 'stacked-track';
+  const legend = document.createElement('div');
+  legend.className = 'stacked-legend';
+
+  items.forEach((i, idx) => {
+    const pct = (i.sessions / total) * 100;
+    const seg = document.createElement('div');
+    seg.className = 'stacked-seg';
+    seg.style.width = pct + '%';
+    seg.style.background = colors[idx % colors.length];
+    track.appendChild(seg);
+
+    const li = document.createElement('div');
+    li.className = 'legend-item';
+    const swatch = document.createElement('span');
+    swatch.className = 'legend-swatch';
+    swatch.style.background = colors[idx % colors.length];
+    const text = document.createElement('span');
+    text.textContent = `${capitalize(i.label)} — ${pct.toFixed(1)}% (${i.sessions.toLocaleString()})`;
+    li.appendChild(swatch); li.appendChild(text);
+    legend.appendChild(li);
+  });
+
+  el.appendChild(track);
+  el.appendChild(legend);
+}
+
+function renderCountriesTable(elId, items) {
+  const table = document.getElementById(elId);
+  if (!items || !items.length) { table.innerHTML = '<tr><td class="empty">No data</td></tr>'; return; }
+  const total = items.reduce((a, i) => a + i.sessions, 0) || 1;
+  let html = '<thead><tr><th>Country</th><th>Sessions</th><th>%</th></tr></thead><tbody>';
+  items.forEach((i) => {
+    const pct = ((i.sessions / total) * 100).toFixed(1);
+    html += `<tr><td>${escapeHtml(i.label)}</td><td>${i.sessions.toLocaleString()}</td><td>${pct}%</td></tr>`;
   });
   html += '</tbody>';
   table.innerHTML = html;
