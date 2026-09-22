@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Site Analytics</title>
+<style>
+  :root {
+    color-scheme: light;
+    --surface-1:      #fcfcfb;
+    --page-plane:     #f9f9f7;
+    --text-primary:   #0b0b0b;
+    --text-secondary: #52514e;
+    --text-muted:     #898781;
+    --gridline:       #e1e0d9;
+    --baseline:       #c3c2b7;
+    --border:         rgba(11,11,11,0.10);
+    --good:           #006300;
+    --series-1:       #2a78d6; /* sessions */
+    --series-2:       #eb6834; /* users */
+    --series-3:       #1baf7a; /* pageviews */
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      color-scheme: dark;
+      --surface-1:      #1a1a19;
+      --page-plane:     #0d0d0d;
+      --text-primary:   #ffffff;
+      --text-secondary: #c3c2b7;
+      --text-muted:     #898781;
+      --gridline:       #2c2c2a;
+      --baseline:       #383835;
+      --border:         rgba(255,255,255,0.10);
+      --good:           #0ca30c;
+      --series-1:       #3987e5;
+      --series-2:       #d95926;
+      --series-3:       #199e70;
+    }
+  }
+
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0; padding: 0;
+    background: var(--page-plane);
+    color: var(--text-primary);
+    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  }
+  body { padding: 24px 20px 64px; }
+  .wrap { max-width: 980px; margin: 0 auto; }
+
+  header { display: flex; align-items: baseline; justify-content: space-between; flex-wrap: wrap; gap: 8px; margin-bottom: 20px; }
+  h1 { font-size: 20px; font-weight: 650; margin: 0; }
+  .updated { font-size: 12px; color: var(--text-muted); }
+
+  .filters { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin-bottom: 18px; }
+
+  .segmented { display: inline-flex; background: var(--surface-1); border: 1px solid var(--border); border-radius: 8px; padding: 2px; gap: 2px; }
+  .segmented button {
+    appearance: none; border: none; background: transparent; color: var(--text-secondary);
+    font: inherit; font-size: 13px; font-weight: 550; padding: 6px 12px; border-radius: 6px; cursor: pointer;
+  }
+  .segmented button[aria-pressed="true"] { background: var(--series-1); color: #fff; }
+  .segmented button:not([aria-pressed="true"]):hover { background: var(--gridline); }
+
+  .card { background: var(--surface-1); border: 1px solid var(--border); border-radius: 12px; padding: 18px; margin-bottom: 16px; }
+
+  .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; margin-bottom: 16px; }
+  .stat-tile { background: var(--surface-1); border: 1px solid var(--border); border-radius: 12px; padding: 14px 16px; }
+  .stat-label { font-size: 12px; color: var(--text-secondary); margin-bottom: 6px; }
+  .stat-value { font-size: 26px; font-weight: 650; line-height: 1.1; }
+  .stat-delta { font-size: 12px; margin-top: 6px; font-weight: 550; }
+  .stat-delta.up { color: var(--good); }
+  .stat-delta.down { color: var(--text-muted); }
+  .stat-sparkline { margin-top: 8px; display: block; }
+
+  .chart-head { display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px; flex-wrap: wrap; gap: 8px; }
+  .chart-title { font-size: 14px; font-weight: 600; }
+  .legend { display: flex; gap: 14px; flex-wrap: wrap; }
+  .legend-item { display: flex; align-items: center; gap: 6px; font-size: 12px; color: var(--text-secondary); }
+  .legend-swatch { width: 14px; height: 2px; border-radius: 1px; }
+
+  svg.chart { width: 100%; height: auto; display: block; overflow: visible; }
+  .gridline { stroke: var(--gridline); stroke-width: 1; }
+  .axis-text { fill: var(--text-muted); font-size: 10px; }
+  .series-line { fill: none; stroke-width: 2; stroke-linejoin: round; stroke-linecap: round; }
+  .end-dot { stroke: var(--surface-1); stroke-width: 2; }
+  .end-label { font-size: 11px; font-weight: 600; }
+  .crosshair-line { stroke: var(--baseline); stroke-width: 1; }
+  .hover-dot { stroke: var(--surface-1); stroke-width: 2; }
+
+  .tooltip {
+    position: absolute; pointer-events: none; background: var(--surface-1); border: 1px solid var(--border);
+    border-radius: 8px; padding: 8px 10px; font-size: 12px; box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+    opacity: 0; transition: opacity 0.08s; white-space: nowrap; z-index: 10;
+  }
+  .tooltip .tt-date { color: var(--text-secondary); margin-bottom: 4px; font-weight: 600; }
+  .tooltip .tt-row { display: flex; align-items: center; gap: 6px; }
+  .tooltip .tt-key { width: 10px; height: 2px; border-radius: 1px; flex: none; }
+  .tooltip .tt-val { font-weight: 650; margin-left: auto; padding-left: 10px; }
+  .tooltip .tt-name { color: var(--text-secondary); }
+
+  .chart-wrap { position: relative; }
+
+  .toggle-table { background: none; border: none; color: var(--text-secondary); font-size: 12px; cursor: pointer; text-decoration: underline; padding: 0; }
+
+  table.data-table { width: 100%; border-collapse: collapse; font-size: 12px; margin-top: 12px; }
+  table.data-table th, table.data-table td { text-align: right; padding: 5px 8px; border-bottom: 1px solid var(--gridline); font-variant-numeric: tabular-nums; }
+  table.data-table th:first-child, table.data-table td:first-child { text-align: left; font-variant-numeric: normal; }
+  table.data-table th { color: var(--text-secondary); font-weight: 600; }
+  table.data-table.hidden { display: none; }
+
+  .pages-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  .pages-table th, .pages-table td { text-align: left; padding: 7px 8px; border-bottom: 1px solid var(--gridline); }
+  .pages-table td:last-child, .pages-table th:last-child { text-align: right; font-variant-numeric: tabular-nums; }
+  .pages-table th { color: var(--text-secondary); font-weight: 600; font-size: 12px; }
+  .pages-table td.path { max-width: 420px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+  .empty { color: var(--text-muted); font-size: 13px; padding: 24px; text-align: center; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Site analytics</h1>
+    <div class="updated" id="updated">Loading…</div>
+  </header>
+
+  <div class="filters">
+    <div class="segmented" id="site-toggle" role="tablist" aria-label="Site"></div>
+    <div class="segmented" id="granularity-toggle" role="tablist" aria-label="Granularity">
+      <button data-granularity="daily" aria-pressed="true">Daily</button>
+      <button data-granularity="monthly" aria-pressed="false">Monthly</button>
+    </div>
+    <div class="segmented" id="range-toggle" role="tablist" aria-label="Range">
+      <button data-range="7" aria-pressed="false">7d</button>
+      <button data-range="30" aria-pressed="true">30d</button>
+      <button data-range="90" aria-pressed="false">90d</button>
+    </div>
+  </div>
+
+  <div class="stats" id="stats"></div>
+
+  <div class="card">
+    <div class="chart-head">
+      <div class="chart-title" id="chart-title">Trend</div>
+      <div class="legend" id="legend"></div>
+    </div>
+    <div class="chart-wrap" id="chart-wrap">
+      <svg class="chart" id="chart"></svg>
+      <div class="tooltip" id="tooltip"></div>
+    </div>
+    <button class="toggle-table" id="toggle-table">View as table</button>
+    <table class="data-table hidden" id="data-table"></table>
+  </div>
+
+  <div class="card">
+    <div class="chart-title" style="margin-bottom:10px;">Top pages (last 30 days)</div>
+    <table class="pages-table" id="pages-table"></table>
+  </div>
+</div>
+
+<script>
+const SERIES = [
+  { key: 'sessions',  name: 'Sessions',  color: 'var(--series-1)' },
+  { key: 'users',     name: 'Users',     color: 'var(--series-2)' },
+  { key: 'pageviews', name: 'Pageviews', color: 'var(--series-3)' },
+];
+
+let DATA = null;
+let state = { site: null, granularity: 'daily', range: 30, showTable: false };
+
+function fmtDateYYYYMMDD(s) {
+  return new Date(`${s.slice(0,4)}-${s.slice(4,6)}-${s.slice(6,8)}T00:00:00`);
+}
+function fmtMonthYYYYMM(s) {
+  return new Date(`${s.slice(0,4)}-${s.slice(4,6)}-01T00:00:00`);
+}
+function shortDate(d) { return d.toLocaleDateString(undefined, { month: 'short', day: 'numeric' }); }
+function shortMonth(d) { return d.toLocaleDateString(undefined, { month: 'short', year: '2-digit' }); }
+function compact(n) {
+  if (n >= 1000000) return (n/1000000).toFixed(1).replace(/\.0$/,'') + 'M';
+  if (n >= 1000) return (n/1000).toFixed(1).replace(/\.0$/,'') + 'K';
+  return String(n);
+}
+
+async function init() {
+  const res = await fetch('./data.json', { cache: 'no-store' });
+  DATA = await res.json();
+  const siteIds = Object.keys(DATA.sites);
+  state.site = siteIds[0];
+
+  document.getElementById('updated').textContent =
+    'Updated ' + new Date(DATA.generatedAt).toLocaleString(undefined, { dateStyle: 'medium', timeStyle: 'short' });
+
+  const siteToggle = document.getElementById('site-toggle');
+  siteToggle.innerHTML = '';
+  siteIds.forEach((id) => {
+    const btn = document.createElement('button');
+    btn.textContent = DATA.sites[id].label;
+    btn.dataset.site = id;
+    btn.setAttribute('aria-pressed', id === state.site ? 'true' : 'false');
+    btn.addEventListener('click', () => { state.site = id; render(); });
+    siteToggle.appendChild(btn);
+  });
+
+  document.getElementById('granularity-toggle').addEventListener('click', (e) => {
+    const btn = e.target.closest('button[data-granularity]');
+    if (!btn) return;
+    state.granularity = btn.dataset.granularity;
+    render();
+  });
+  document.getElementById('range-toggle').addEventListener('click', (e) => {
+    const btn = e.target.closest('button[data-range]');
+    if (!btn) return;
+    state.range = Number(btn.dataset.range);
+    render();
+  });
+  document.getElementById('toggle-table').addEventListener('click', () => {
+    state.showTable = !state.showTable;
+    render();
+  });
+
+  render();
+}
+
+function syncToggles() {
+  document.querySelectorAll('#site-toggle button').forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.site === state.site)));
+  document.querySelectorAll('#granularity-toggle button').forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.granularity === state.granularity)));
+  document.querySelectorAll('#range-toggle button').forEach((b) => b.setAttribute('aria-pressed', String(Number(b.dataset.range) === state.range)));
+  document.getElementById('range-toggle').style.display = state.granularity === 'daily' ? 'inline-flex' : 'none';
+}
+
+function currentSeries() {
+  const site = DATA.sites[state.site];
+  return state.granularity === 'daily' ? site.daily : site.monthly;
+}
+
+function sliceForRange() {
+  const all = currentSeries();
+  if (state.granularity === 'monthly') return all;
+  return all.slice(-state.range);
+}
+
+function priorSliceForRange() {
+  if (state.granularity === 'monthly') return null;
+  const all = currentSeries();
+  const n = state.range;
+  const cur = all.slice(-n);
+  const prior = all.slice(-2 * n, -n);
+  return prior.length === n ? prior : null;
+}
+
+function sum(rows, key) { return rows.reduce((a, r) => a + r[key], 0); }
+
+function render() {
+  syncToggles();
+  document.getElementById('chart-title').textContent =
+    (state.granularity === 'daily' ? `Last ${state.range} days` : 'Monthly trend') + ' — ' + DATA.sites[state.site].label;
+
+  renderStats();
+  renderLegend();
+  renderChart();
+  renderDataTable();
+  renderTopPages();
+}
+
+function renderStats() {
+  const rows = sliceForRange();
+  const prior = priorSliceForRange();
+  const wrap = document.getElementById('stats');
+  wrap.innerHTML = '';
+
+  SERIES.forEach((s) => {
+    const total = sum(rows, s.key);
+    const priorTotal = prior ? sum(prior, s.key) : null;
+    const tile = document.createElement('div');
+    tile.className = 'stat-tile';
+
+    let deltaHtml = '';
+    if (priorTotal !== null && priorTotal > 0) {
+      const pct = ((total - priorTotal) / priorTotal) * 100;
+      const dir = pct >= 0 ? 'up' : 'down';
+      const sign = pct >= 0 ? '+' : '';
+      deltaHtml = `<div class="stat-delta ${dir}">${sign}${pct.toFixed(1)}% vs prior ${state.range}d</div>`;
+    }
+
+    const spark = sparklineSvg(rows, s.key, s.color);
+
+    tile.innerHTML = `
+      <div class="stat-label">${s.name}</div>
+      <div class="stat-value">${compact(total)}</div>
+      ${deltaHtml}
+      ${spark}
+    `;
+    wrap.appendChild(tile);
+  });
+}
+
+function sparklineSvg(rows, key, color) {
+  if (rows.length < 2) return '';
+  const w = 140, h = 28, pad = 2;
+  const vals = rows.map(r => r[key]);
+  const min = Math.min(...vals), max = Math.max(...vals);
+  const range = max - min || 1;
+  const pts = vals.map((v, i) => {
+    const x = pad + (i / (vals.length - 1)) * (w - pad * 2);
+    const y = h - pad - ((v - min) / range) * (h - pad * 2);
+    return `${x.toFixed(1)},${y.toFixed(1)}`;
+  }).join(' ');
+  return `<svg class="stat-sparkline" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}">
+    <polyline points="${pts}" fill="none" stroke="${color}" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+  </svg>`;
+}
+
+function renderLegend() {
+  const legend = document.getElementById('legend');
+  legend.innerHTML = '';
+  SERIES.forEach((s) => {
+    const item = document.createElement('div');
+    item.className = 'legend-item';
+    item.innerHTML = `<span class="legend-swatch" style="background:${s.color}"></span><span></span>`;
+    item.querySelector('span:last-child').textContent = s.name;
+    legend.appendChild(item);
+  });
+}
+
+function renderChart() {
+  const rows = sliceForRange();
+  const svg = document.getElementById('chart');
+  const tooltip = document.getElementById('tooltip');
+  svg.innerHTML = '';
+
+  if (!rows.length) {
+    svg.setAttribute('viewBox', '0 0 900 260');
+    return;
+  }
+
+  const W = 900, H = 260, ML = 44, MR = 34, MT = 16, MB = 24;
+  const plotW = W - ML - MR, plotH = H - MT - MB;
+  svg.setAttribute('viewBox', `0 0 ${W} ${H}`);
+
+  const allVals = rows.flatMap(r => SERIES.map(s => r[s.key]));
+  const maxVal = Math.max(1, ...allVals);
+  const niceMax = niceCeiling(maxVal);
+
+  const x = (i) => ML + (rows.length === 1 ? plotW / 2 : (i / (rows.length - 1)) * plotW);
+  const y = (v) => MT + plotH - (v / niceMax) * plotH;
+
+  const ns = 'http://www.w3.org/2000/svg';
+  const gGrid = document.createElementNS(ns, 'g');
+  const ticks = 4;
+  for (let t = 0; t <= ticks; t++) {
+    const v = (niceMax / ticks) * t;
+    const yy = y(v);
+    const line = document.createElementNS(ns, 'line');
+    line.setAttribute('class', 'gridline');
+    line.setAttribute('x1', ML); line.setAttribute('x2', W - MR);
+    line.setAttribute('y1', yy); line.setAttribute('y2', yy);
+    gGrid.appendChild(line);
+    const text = document.createElementNS(ns, 'text');
+    text.setAttribute('class', 'axis-text');
+    text.setAttribute('x', ML - 8); text.setAttribute('y', yy + 3);
+    text.setAttribute('text-anchor', 'end');
+    text.textContent = compact(Math.round(v));
+    gGrid.appendChild(text);
+  }
+  svg.appendChild(gGrid);
+
+  const dateLabelIdx = [0, Math.floor((rows.length - 1) / 2), rows.length - 1];
+  const gXAxis = document.createElementNS(ns, 'g');
+  dateLabelIdx.forEach((i) => {
+    if (i < 0 || i >= rows.length) return;
+    const d = state.granularity === 'daily' ? fmtDateYYYYMMDD(rows[i].date) : fmtMonthYYYYMM(rows[i].month);
+    const label = state.granularity === 'daily' ? shortDate(d) : shortMonth(d);
+    const text = document.createElementNS(ns, 'text');
+    text.setAttribute('class', 'axis-text');
+    text.setAttribute('x', x(i));
+    text.setAttribute('y', H - 6);
+    text.setAttribute('text-anchor', i === 0 ? 'start' : i === rows.length - 1 ? 'end' : 'middle');
+    text.textContent = label;
+    gXAxis.appendChild(text);
+  });
+  svg.appendChild(gXAxis);
+
+  const lastRow = rows[rows.length - 1];
+  const lastX = x(rows.length - 1);
+
+  SERIES.forEach((s) => {
+    const pts = rows.map((r, i) => `${x(i).toFixed(1)},${y(r[s.key]).toFixed(1)}`).join(' ');
+    const poly = document.createElementNS(ns, 'polyline');
+    poly.setAttribute('class', 'series-line');
+    poly.setAttribute('points', pts);
+    poly.setAttribute('stroke', s.color);
+    svg.appendChild(poly);
+
+    const dot = document.createElementNS(ns, 'circle');
+    dot.setAttribute('class', 'end-dot');
+    dot.setAttribute('cx', lastX);
+    dot.setAttribute('cy', y(lastRow[s.key]));
+    dot.setAttribute('r', 4);
+    dot.setAttribute('fill', s.color);
+    svg.appendChild(dot);
+  });
+
+  // Separate colliding end-labels: sort by true y, enforce a minimum gap,
+  // and draw a short leader line whenever a label had to move off its dot.
+  const MIN_GAP = 13;
+  const labelPositions = SERIES
+    .map((s) => ({ s, trueY: y(lastRow[s.key]), val: lastRow[s.key] }))
+    .sort((a, b) => a.trueY - b.trueY);
+  for (let i = 1; i < labelPositions.length; i++) {
+    const prev = labelPositions[i - 1];
+    const cur = labelPositions[i];
+    if (cur.trueY - prev.trueY < MIN_GAP) {
+      cur.trueY = prev.trueY + MIN_GAP;
+    }
+  }
+
+  labelPositions.forEach(({ s, trueY, val }) => {
+    const realY = y(val);
+    if (Math.abs(trueY - realY) > 1) {
+      const leader = document.createElementNS(ns, 'line');
+      leader.setAttribute('x1', lastX + 4); leader.setAttribute('y1', realY);
+      leader.setAttribute('x2', lastX + 7); leader.setAttribute('y2', trueY);
+      leader.setAttribute('stroke', 'var(--text-muted)');
+      leader.setAttribute('stroke-width', 1);
+      svg.appendChild(leader);
+    }
+    const label = document.createElementNS(ns, 'text');
+    label.setAttribute('class', 'end-label');
+    label.setAttribute('x', lastX + 9);
+    label.setAttribute('y', trueY + 4);
+    label.setAttribute('fill', 'var(--text-primary)');
+    label.textContent = compact(val);
+    svg.appendChild(label);
+  });
+
+  const crosshair = document.createElementNS(ns, 'line');
+  crosshair.setAttribute('class', 'crosshair-line');
+  crosshair.setAttribute('y1', MT); crosshair.setAttribute('y2', MT + plotH);
+  crosshair.style.display = 'none';
+  svg.appendChild(crosshair);
+
+  const hoverDots = SERIES.map((s) => {
+    const c = document.createElementNS(ns, 'circle');
+    c.setAttribute('class', 'hover-dot');
+    c.setAttribute('r', 4);
+    c.setAttribute('fill', s.color);
+    c.style.display = 'none';
+    svg.appendChild(c);
+    return c;
+  });
+
+  const hitRect = document.createElementNS(ns, 'rect');
+  hitRect.setAttribute('x', ML); hitRect.setAttribute('y', MT);
+  hitRect.setAttribute('width', plotW); hitRect.setAttribute('height', plotH);
+  hitRect.setAttribute('fill', 'transparent');
+  svg.appendChild(hitRect);
+
+  function showTooltipAt(i, clientX, clientY) {
+    const row = rows[i];
+    crosshair.style.display = '';
+    crosshair.setAttribute('x1', x(i)); crosshair.setAttribute('x2', x(i));
+    SERIES.forEach((s, si) => {
+      hoverDots[si].style.display = '';
+      hoverDots[si].setAttribute('cx', x(i));
+      hoverDots[si].setAttribute('cy', y(row[s.key]));
+    });
+
+    const d = state.granularity === 'daily' ? fmtDateYYYYMMDD(row.date) : fmtMonthYYYYMM(row.month);
+    const dateLabel = state.granularity === 'daily'
+      ? d.toLocaleDateString(undefined, { weekday: 'short', month: 'short', day: 'numeric' })
+      : d.toLocaleDateString(undefined, { month: 'long', year: 'numeric' });
+
+    tooltip.innerHTML = '';
+    const dateEl = document.createElement('div');
+    dateEl.className = 'tt-date';
+    dateEl.textContent = dateLabel;
+    tooltip.appendChild(dateEl);
+    SERIES.forEach((s) => {
+      const rowEl = document.createElement('div');
+      rowEl.className = 'tt-row';
+      const key = document.createElement('span');
+      key.className = 'tt-key';
+      key.style.background = s.color;
+      const name = document.createElement('span');
+      name.className = 'tt-name';
+      name.textContent = s.name;
+      const val = document.createElement('span');
+      val.className = 'tt-val';
+      val.textContent = row[s.key].toLocaleString();
+      rowEl.appendChild(key); rowEl.appendChild(name); rowEl.appendChild(val);
+      tooltip.appendChild(rowEl);
+    });
+
+    const wrapRect = document.getElementById('chart-wrap').getBoundingClientRect();
+    tooltip.style.opacity = '1';
+    let left = clientX - wrapRect.left + 14;
+    let top = clientY - wrapRect.top - 10;
+    tooltip.style.left = left + 'px';
+    tooltip.style.top = top + 'px';
+  }
+
+  function hideTooltip() {
+    tooltip.style.opacity = '0';
+    crosshair.style.display = 'none';
+    hoverDots.forEach((d) => d.style.display = 'none');
+  }
+
+  function onMove(e) {
+    const rect = svg.getBoundingClientRect();
+    const scaleX = W / rect.width;
+    const svgX = (e.clientX - rect.left) * scaleX;
+    let idx = Math.round(((svgX - ML) / plotW) * (rows.length - 1));
+    idx = Math.max(0, Math.min(rows.length - 1, idx));
+    showTooltipAt(idx, e.clientX, e.clientY);
+  }
+  hitRect.addEventListener('pointermove', onMove);
+  hitRect.addEventListener('mousemove', onMove);
+  hitRect.addEventListener('pointerleave', hideTooltip);
+  hitRect.addEventListener('mouseleave', hideTooltip);
+}
+
+function niceCeiling(v) {
+  if (v <= 0) return 1;
+  const mag = Math.pow(10, Math.floor(Math.log10(v)));
+  const norm = v / mag;
+  let nice;
+  if (norm <= 1) nice = 1;
+  else if (norm <= 2) nice = 2;
+  else if (norm <= 5) nice = 5;
+  else nice = 10;
+  return nice * mag;
+}
+
+function renderDataTable() {
+  const table = document.getElementById('data-table');
+  table.classList.toggle('hidden', !state.showTable);
+  document.getElementById('toggle-table').textContent = state.showTable ? 'Hide table' : 'View as table';
+  if (!state.showTable) { table.innerHTML = ''; return; }
+
+  const rows = sliceForRange();
+  let html = '<thead><tr><th>' + (state.granularity === 'daily' ? 'Date' : 'Month') + '</th>';
+  SERIES.forEach(s => html += `<th>${s.name}</th>`);
+  html += '</tr></thead><tbody>';
+  rows.slice().reverse().forEach((r) => {
+    const d = state.granularity === 'daily' ? fmtDateYYYYMMDD(r.date) : fmtMonthYYYYMM(r.month);
+    const label = state.granularity === 'daily' ? d.toLocaleDateString() : shortMonth(d);
+    html += `<tr><td>${label}</td>`;
+    SERIES.forEach(s => html += `<td>${r[s.key].toLocaleString()}</td>`);
+    html += '</tr>';
+  });
+  html += '</tbody>';
+  table.innerHTML = html;
+}
+
+function renderTopPages() {
+  const site = DATA.sites[state.site];
+  const table = document.getElementById('pages-table');
+  if (!site.topPages || !site.topPages.length) {
+    table.innerHTML = '<tr><td class="empty">No page data</td></tr>';
+    return;
+  }
+  let html = '<thead><tr><th>Page</th><th>Pageviews</th></tr></thead><tbody>';
+  site.topPages.forEach((p) => {
+    html += `<tr><td class="path" title="${escapeHtml(p.path)}">${escapeHtml(p.path)}</td><td>${p.pageviews.toLocaleString()}</td></tr>`;
+  });
+  html += '</tbody>';
+  table.innerHTML = html;
+}
+
+function escapeHtml(str) {
+  const div = document.createElement('div');
+  div.textContent = str;
+  return div.innerHTML;
+}
+
+init().catch((err) => {
+  document.querySelector('.wrap').innerHTML = `<div class="empty">Couldn't load data.json — ${err.message}</div>`;
+  console.error(err);
+});
+</script>
+</body>
+</html>

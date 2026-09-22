@@ -1,0 +1,1837 @@
+{
+  "generatedAt": "2026-09-22T13:14:43.752Z",
+  "sites": {
+    "japaneseunlocked": {
+      "label": "Japanese Unlocked",
+      "daily": [
+        {
+          "date": "20260430",
+          "sessions": 11,
+          "users": 10,
+          "pageviews": 29
+        },
+        {
+          "date": "20260501",
+          "sessions": 18,
+          "users": 14,
+          "pageviews": 63
+        },
+        {
+          "date": "20260502",
+          "sessions": 25,
+          "users": 21,
+          "pageviews": 126
+        },
+        {
+          "date": "20260503",
+          "sessions": 11,
+          "users": 6,
+          "pageviews": 26
+        },
+        {
+          "date": "20260504",
+          "sessions": 7,
+          "users": 7,
+          "pageviews": 8
+        },
+        {
+          "date": "20260505",
+          "sessions": 2,
+          "users": 2,
+          "pageviews": 4
+        },
+        {
+          "date": "20260506",
+          "sessions": 3,
+          "users": 3,
+          "pageviews": 3
+        },
+        {
+          "date": "20260507",
+          "sessions": 7,
+          "users": 7,
+          "pageviews": 9
+        },
+        {
+          "date": "20260508",
+          "sessions": 6,
+          "users": 6,
+          "pageviews": 16
+        },
+        {
+          "date": "20260509",
+          "sessions": 4,
+          "users": 4,
+          "pageviews": 4
+        },
+        {
+          "date": "20260510",
+          "sessions": 5,
+          "users": 5,
+          "pageviews": 5
+        },
+        {
+          "date": "20260511",
+          "sessions": 3,
+          "users": 3,
+          "pageviews": 3
+        },
+        {
+          "date": "20260512",
+          "sessions": 2,
+          "users": 2,
+          "pageviews": 2
+        },
+        {
+          "date": "20260513",
+          "sessions": 4,
+          "users": 4,
+          "pageviews": 4
+        },
+        {
+          "date": "20260514",
+          "sessions": 5,
+          "users": 5,
+          "pageviews": 5
+        },
+        {
+          "date": "20260515",
+          "sessions": 7,
+          "users": 6,
+          "pageviews": 8
+        },
+        {
+          "date": "20260517",
+          "sessions": 4,
+          "users": 4,
+          "pageviews": 9
+        },
+        {
+          "date": "20260518",
+          "sessions": 3,
+          "users": 2,
+          "pageviews": 3
+        },
+        {
+          "date": "20260519",
+          "sessions": 4,
+          "users": 4,
+          "pageviews": 5
+        },
+        {
+          "date": "20260520",
+          "sessions": 2,
+          "users": 2,
+          "pageviews": 2
+        },
+        {
+          "date": "20260521",
+          "sessions": 4,
+          "users": 4,
+          "pageviews": 4
+        },
+        {
+          "date": "20260522",
+          "sessions": 3,
+          "users": 2,
+          "pageviews": 3
+        },
+        {
+          "date": "20260523",
+          "sessions": 2,
+          "users": 2,
+          "pageviews": 3
+        },
+        {
+          "date": "20260525",
+          "sessions": 3,
+          "users": 3,
+          "pageviews": 3
+        },
+        {
+          "date": "20260527",
+          "sessions": 1,
+          "users": 1,
+          "pageviews": 11
+        },
+        {
+          "date": "20260528",
+          "sessions": 4,
+          "users": 4,
+          "pageviews": 6
+        },
+        {
+          "date": "20260529",
+          "sessions": 11,
+          "users": 7,
+          "pageviews": 17
+        },
+        {
+          "date": "20260530",
+          "sessions": 4,
+          "users": 3,
+          "pageviews": 7
+        },
+        {
+          "date": "20260531",
+          "sessions": 4,
+          "users": 4,
+          "pageviews": 8
+        },
+        {
+          "date": "20260601",
+          "sessions": 8,
+          "users": 6,
+          "pageviews": 23
+        },
+        {
+          "date": "20260602",
+          "sessions": 12,
+          "users": 9,
+          "pageviews": 21
+        },
+        {
+          "date": "20260603",
+          "sessions": 8,
+          "users": 7,
+          "pageviews": 10
+        },
+        {
+          "date": "20260604",
+          "sessions": 10,
+          "users": 8,
+          "pageviews": 15
+        },
+        {
+          "date": "20260605",
+          "sessions": 20,
+          "users": 9,
+          "pageviews": 43
+        },
+        {
+          "date": "20260606",
+          "sessions": 14,
+          "users": 9,
+          "pageviews": 32
+        },
+        {
+          "date": "20260607",
+          "sessions": 22,
+          "users": 15,
+          "pageviews": 49
+        },
+        {
+          "date": "20260608",
+          "sessions": 17,
+          "users": 15,
+          "pageviews": 35
+        },
+        {
+          "date": "20260609",
+          "sessions": 14,
+          "users": 8,
+          "pageviews": 31
+        },
+        {
+          "date": "20260610",
+          "sessions": 8,
+          "users": 7,
+          "pageviews": 20
+        },
+        {
+          "date": "20260611",
+          "sessions": 13,
+          "users": 8,
+          "pageviews": 29
+        },
+        {
+          "date": "20260612",
+          "sessions": 11,
+          "users": 5,
+          "pageviews": 33
+        },
+        {
+          "date": "20260613",
+          "sessions": 14,
+          "users": 8,
+          "pageviews": 107
+        },
+        {
+          "date": "20260614",
+          "sessions": 15,
+          "users": 7,
+          "pageviews": 17
+        },
+        {
+          "date": "20260615",
+          "sessions": 11,
+          "users": 7,
+          "pageviews": 17
+        },
+        {
+          "date": "20260616",
+          "sessions": 15,
+          "users": 14,
+          "pageviews": 34
+        },
+        {
+          "date": "20260617",
+          "sessions": 13,
+          "users": 8,
+          "pageviews": 20
+        },
+        {
+          "date": "20260618",
+          "sessions": 19,
+          "users": 14,
+          "pageviews": 32
+        },
+        {
+          "date": "20260619",
+          "sessions": 11,
+          "users": 6,
+          "pageviews": 32
+        },
+        {
+          "date": "20260620",
+          "sessions": 21,
+          "users": 17,
+          "pageviews": 78
+        },
+        {
+          "date": "20260621",
+          "sessions": 24,
+          "users": 14,
+          "pageviews": 45
+        },
+        {
+          "date": "20260622",
+          "sessions": 20,
+          "users": 14,
+          "pageviews": 82
+        },
+        {
+          "date": "20260623",
+          "sessions": 12,
+          "users": 10,
+          "pageviews": 16
+        },
+        {
+          "date": "20260624",
+          "sessions": 6,
+          "users": 6,
+          "pageviews": 11
+        },
+        {
+          "date": "20260625",
+          "sessions": 15,
+          "users": 7,
+          "pageviews": 41
+        },
+        {
+          "date": "20260626",
+          "sessions": 18,
+          "users": 10,
+          "pageviews": 26
+        },
+        {
+          "date": "20260627",
+          "sessions": 20,
+          "users": 16,
+          "pageviews": 34
+        },
+        {
+          "date": "20260628",
+          "sessions": 10,
+          "users": 6,
+          "pageviews": 42
+        },
+        {
+          "date": "20260629",
+          "sessions": 21,
+          "users": 20,
+          "pageviews": 32
+        },
+        {
+          "date": "20260630",
+          "sessions": 24,
+          "users": 19,
+          "pageviews": 40
+        },
+        {
+          "date": "20260701",
+          "sessions": 16,
+          "users": 12,
+          "pageviews": 47
+        },
+        {
+          "date": "20260702",
+          "sessions": 24,
+          "users": 20,
+          "pageviews": 58
+        },
+        {
+          "date": "20260703",
+          "sessions": 28,
+          "users": 20,
+          "pageviews": 52
+        },
+        {
+          "date": "20260704",
+          "sessions": 29,
+          "users": 19,
+          "pageviews": 105
+        },
+        {
+          "date": "20260705",
+          "sessions": 7,
+          "users": 4,
+          "pageviews": 7
+        },
+        {
+          "date": "20260706",
+          "sessions": 11,
+          "users": 5,
+          "pageviews": 25
+        },
+        {
+          "date": "20260707",
+          "sessions": 9,
+          "users": 8,
+          "pageviews": 11
+        },
+        {
+          "date": "20260708",
+          "sessions": 18,
+          "users": 16,
+          "pageviews": 30
+        },
+        {
+          "date": "20260709",
+          "sessions": 16,
+          "users": 15,
+          "pageviews": 22
+        },
+        {
+          "date": "20260710",
+          "sessions": 10,
+          "users": 8,
+          "pageviews": 34
+        },
+        {
+          "date": "20260711",
+          "sessions": 7,
+          "users": 5,
+          "pageviews": 8
+        },
+        {
+          "date": "20260712",
+          "sessions": 5,
+          "users": 5,
+          "pageviews": 8
+        },
+        {
+          "date": "20260713",
+          "sessions": 13,
+          "users": 10,
+          "pageviews": 17
+        },
+        {
+          "date": "20260714",
+          "sessions": 7,
+          "users": 6,
+          "pageviews": 15
+        },
+        {
+          "date": "20260715",
+          "sessions": 12,
+          "users": 6,
+          "pageviews": 17
+        },
+        {
+          "date": "20260716",
+          "sessions": 6,
+          "users": 4,
+          "pageviews": 11
+        },
+        {
+          "date": "20260717",
+          "sessions": 14,
+          "users": 12,
+          "pageviews": 25
+        },
+        {
+          "date": "20260718",
+          "sessions": 7,
+          "users": 7,
+          "pageviews": 10
+        },
+        {
+          "date": "20260719",
+          "sessions": 18,
+          "users": 17,
+          "pageviews": 21
+        },
+        {
+          "date": "20260720",
+          "sessions": 7,
+          "users": 4,
+          "pageviews": 8
+        },
+        {
+          "date": "20260721",
+          "sessions": 13,
+          "users": 12,
+          "pageviews": 22
+        },
+        {
+          "date": "20260722",
+          "sessions": 19,
+          "users": 17,
+          "pageviews": 32
+        },
+        {
+          "date": "20260723",
+          "sessions": 13,
+          "users": 11,
+          "pageviews": 22
+        },
+        {
+          "date": "20260724",
+          "sessions": 8,
+          "users": 7,
+          "pageviews": 9
+        },
+        {
+          "date": "20260725",
+          "sessions": 6,
+          "users": 6,
+          "pageviews": 12
+        },
+        {
+          "date": "20260726",
+          "sessions": 7,
+          "users": 7,
+          "pageviews": 9
+        },
+        {
+          "date": "20260727",
+          "sessions": 8,
+          "users": 6,
+          "pageviews": 14
+        },
+        {
+          "date": "20260728",
+          "sessions": 9,
+          "users": 6,
+          "pageviews": 13
+        },
+        {
+          "date": "20260729",
+          "sessions": 8,
+          "users": 6,
+          "pageviews": 16
+        },
+        {
+          "date": "20260730",
+          "sessions": 15,
+          "users": 12,
+          "pageviews": 19
+        },
+        {
+          "date": "20260731",
+          "sessions": 7,
+          "users": 7,
+          "pageviews": 17
+        },
+        {
+          "date": "20260801",
+          "sessions": 11,
+          "users": 8,
+          "pageviews": 23
+        },
+        {
+          "date": "20260802",
+          "sessions": 2,
+          "users": 2,
+          "pageviews": 2
+        },
+        {
+          "date": "20260803",
+          "sessions": 20,
+          "users": 14,
+          "pageviews": 51
+        },
+        {
+          "date": "20260804",
+          "sessions": 18,
+          "users": 16,
+          "pageviews": 30
+        },
+        {
+          "date": "20260805",
+          "sessions": 12,
+          "users": 10,
+          "pageviews": 29
+        },
+        {
+          "date": "20260806",
+          "sessions": 22,
+          "users": 12,
+          "pageviews": 30
+        },
+        {
+          "date": "20260807",
+          "sessions": 21,
+          "users": 19,
+          "pageviews": 57
+        },
+        {
+          "date": "20260808",
+          "sessions": 14,
+          "users": 13,
+          "pageviews": 25
+        },
+        {
+          "date": "20260809",
+          "sessions": 7,
+          "users": 2,
+          "pageviews": 7
+        },
+        {
+          "date": "20260810",
+          "sessions": 22,
+          "users": 19,
+          "pageviews": 32
+        },
+        {
+          "date": "20260811",
+          "sessions": 29,
+          "users": 22,
+          "pageviews": 67
+        },
+        {
+          "date": "20260812",
+          "sessions": 25,
+          "users": 19,
+          "pageviews": 46
+        },
+        {
+          "date": "20260813",
+          "sessions": 25,
+          "users": 20,
+          "pageviews": 49
+        },
+        {
+          "date": "20260814",
+          "sessions": 13,
+          "users": 13,
+          "pageviews": 74
+        },
+        {
+          "date": "20260815",
+          "sessions": 21,
+          "users": 18,
+          "pageviews": 45
+        },
+        {
+          "date": "20260816",
+          "sessions": 25,
+          "users": 24,
+          "pageviews": 56
+        },
+        {
+          "date": "20260817",
+          "sessions": 20,
+          "users": 16,
+          "pageviews": 57
+        },
+        {
+          "date": "20260818",
+          "sessions": 25,
+          "users": 21,
+          "pageviews": 40
+        },
+        {
+          "date": "20260819",
+          "sessions": 17,
+          "users": 14,
+          "pageviews": 28
+        },
+        {
+          "date": "20260820",
+          "sessions": 37,
+          "users": 32,
+          "pageviews": 88
+        },
+        {
+          "date": "20260821",
+          "sessions": 32,
+          "users": 25,
+          "pageviews": 63
+        },
+        {
+          "date": "20260822",
+          "sessions": 18,
+          "users": 16,
+          "pageviews": 51
+        },
+        {
+          "date": "20260823",
+          "sessions": 19,
+          "users": 16,
+          "pageviews": 27
+        },
+        {
+          "date": "20260824",
+          "sessions": 29,
+          "users": 24,
+          "pageviews": 83
+        },
+        {
+          "date": "20260825",
+          "sessions": 30,
+          "users": 23,
+          "pageviews": 67
+        },
+        {
+          "date": "20260826",
+          "sessions": 23,
+          "users": 19,
+          "pageviews": 52
+        },
+        {
+          "date": "20260827",
+          "sessions": 22,
+          "users": 15,
+          "pageviews": 36
+        },
+        {
+          "date": "20260828",
+          "sessions": 18,
+          "users": 18,
+          "pageviews": 29
+        },
+        {
+          "date": "20260829",
+          "sessions": 35,
+          "users": 32,
+          "pageviews": 108
+        },
+        {
+          "date": "20260830",
+          "sessions": 38,
+          "users": 29,
+          "pageviews": 111
+        },
+        {
+          "date": "20260831",
+          "sessions": 42,
+          "users": 35,
+          "pageviews": 82
+        },
+        {
+          "date": "20260901",
+          "sessions": 56,
+          "users": 34,
+          "pageviews": 96
+        },
+        {
+          "date": "20260902",
+          "sessions": 42,
+          "users": 30,
+          "pageviews": 112
+        },
+        {
+          "date": "20260903",
+          "sessions": 39,
+          "users": 30,
+          "pageviews": 116
+        },
+        {
+          "date": "20260904",
+          "sessions": 32,
+          "users": 21,
+          "pageviews": 65
+        },
+        {
+          "date": "20260905",
+          "sessions": 18,
+          "users": 13,
+          "pageviews": 37
+        },
+        {
+          "date": "20260906",
+          "sessions": 32,
+          "users": 28,
+          "pageviews": 59
+        },
+        {
+          "date": "20260907",
+          "sessions": 36,
+          "users": 25,
+          "pageviews": 53
+        },
+        {
+          "date": "20260908",
+          "sessions": 42,
+          "users": 31,
+          "pageviews": 89
+        },
+        {
+          "date": "20260909",
+          "sessions": 48,
+          "users": 39,
+          "pageviews": 121
+        },
+        {
+          "date": "20260910",
+          "sessions": 42,
+          "users": 38,
+          "pageviews": 187
+        },
+        {
+          "date": "20260911",
+          "sessions": 29,
+          "users": 20,
+          "pageviews": 77
+        },
+        {
+          "date": "20260912",
+          "sessions": 46,
+          "users": 31,
+          "pageviews": 136
+        },
+        {
+          "date": "20260913",
+          "sessions": 40,
+          "users": 29,
+          "pageviews": 69
+        },
+        {
+          "date": "20260914",
+          "sessions": 34,
+          "users": 27,
+          "pageviews": 62
+        },
+        {
+          "date": "20260915",
+          "sessions": 54,
+          "users": 39,
+          "pageviews": 129
+        },
+        {
+          "date": "20260916",
+          "sessions": 51,
+          "users": 37,
+          "pageviews": 155
+        },
+        {
+          "date": "20260917",
+          "sessions": 42,
+          "users": 30,
+          "pageviews": 69
+        },
+        {
+          "date": "20260918",
+          "sessions": 46,
+          "users": 38,
+          "pageviews": 133
+        },
+        {
+          "date": "20260919",
+          "sessions": 40,
+          "users": 34,
+          "pageviews": 101
+        },
+        {
+          "date": "20260920",
+          "sessions": 42,
+          "users": 31,
+          "pageviews": 76
+        },
+        {
+          "date": "20260921",
+          "sessions": 48,
+          "users": 37,
+          "pageviews": 98
+        },
+        {
+          "date": "20260922",
+          "sessions": 22,
+          "users": 18,
+          "pageviews": 50
+        }
+      ],
+      "monthly": [
+        {
+          "month": "202604",
+          "sessions": 11,
+          "users": 10,
+          "pageviews": 29
+        },
+        {
+          "month": "202605",
+          "sessions": 157,
+          "users": 128,
+          "pageviews": 367
+        },
+        {
+          "month": "202606",
+          "sessions": 447,
+          "users": 262,
+          "pageviews": 1047
+        },
+        {
+          "month": "202607",
+          "sessions": 378,
+          "users": 272,
+          "pageviews": 716
+        },
+        {
+          "month": "202608",
+          "sessions": 689,
+          "users": 530,
+          "pageviews": 1545
+        },
+        {
+          "month": "202609",
+          "sessions": 878,
+          "users": 588,
+          "pageviews": 2090
+        }
+      ],
+      "topPages": [
+        {
+          "path": "/games/",
+          "pageviews": 248
+        },
+        {
+          "path": "/",
+          "pageviews": 222
+        },
+        {
+          "path": "/games/battle/",
+          "pageviews": 145
+        },
+        {
+          "path": "/hiragana/",
+          "pageviews": 134
+        },
+        {
+          "path": "/vocab/",
+          "pageviews": 123
+        },
+        {
+          "path": "/start/",
+          "pageviews": 120
+        },
+        {
+          "path": "/jlpt/n5/",
+          "pageviews": 102
+        },
+        {
+          "path": "/conversation/",
+          "pageviews": 95
+        },
+        {
+          "path": "/kanji/",
+          "pageviews": 95
+        },
+        {
+          "path": "/jlpt/n4/mock/",
+          "pageviews": 93
+        }
+      ]
+    },
+    "vkchronicle": {
+      "label": "VK Chronicle",
+      "daily": [
+        {
+          "date": "20260504",
+          "sessions": 16,
+          "users": 12,
+          "pageviews": 67
+        },
+        {
+          "date": "20260505",
+          "sessions": 11,
+          "users": 7,
+          "pageviews": 88
+        },
+        {
+          "date": "20260506",
+          "sessions": 18,
+          "users": 10,
+          "pageviews": 86
+        },
+        {
+          "date": "20260507",
+          "sessions": 14,
+          "users": 10,
+          "pageviews": 47
+        },
+        {
+          "date": "20260508",
+          "sessions": 9,
+          "users": 4,
+          "pageviews": 81
+        },
+        {
+          "date": "20260509",
+          "sessions": 5,
+          "users": 2,
+          "pageviews": 53
+        },
+        {
+          "date": "20260510",
+          "sessions": 19,
+          "users": 13,
+          "pageviews": 94
+        },
+        {
+          "date": "20260511",
+          "sessions": 15,
+          "users": 8,
+          "pageviews": 54
+        },
+        {
+          "date": "20260512",
+          "sessions": 13,
+          "users": 6,
+          "pageviews": 85
+        },
+        {
+          "date": "20260513",
+          "sessions": 13,
+          "users": 5,
+          "pageviews": 54
+        },
+        {
+          "date": "20260514",
+          "sessions": 16,
+          "users": 7,
+          "pageviews": 75
+        },
+        {
+          "date": "20260515",
+          "sessions": 9,
+          "users": 6,
+          "pageviews": 14
+        },
+        {
+          "date": "20260516",
+          "sessions": 5,
+          "users": 4,
+          "pageviews": 8
+        },
+        {
+          "date": "20260517",
+          "sessions": 6,
+          "users": 3,
+          "pageviews": 14
+        },
+        {
+          "date": "20260518",
+          "sessions": 8,
+          "users": 4,
+          "pageviews": 15
+        },
+        {
+          "date": "20260519",
+          "sessions": 7,
+          "users": 5,
+          "pageviews": 9
+        },
+        {
+          "date": "20260520",
+          "sessions": 6,
+          "users": 4,
+          "pageviews": 6
+        },
+        {
+          "date": "20260521",
+          "sessions": 2,
+          "users": 2,
+          "pageviews": 4
+        },
+        {
+          "date": "20260522",
+          "sessions": 7,
+          "users": 5,
+          "pageviews": 18
+        },
+        {
+          "date": "20260523",
+          "sessions": 3,
+          "users": 3,
+          "pageviews": 4
+        },
+        {
+          "date": "20260525",
+          "sessions": 8,
+          "users": 7,
+          "pageviews": 12
+        },
+        {
+          "date": "20260526",
+          "sessions": 8,
+          "users": 6,
+          "pageviews": 9
+        },
+        {
+          "date": "20260527",
+          "sessions": 5,
+          "users": 5,
+          "pageviews": 5
+        },
+        {
+          "date": "20260528",
+          "sessions": 2,
+          "users": 2,
+          "pageviews": 2
+        },
+        {
+          "date": "20260529",
+          "sessions": 4,
+          "users": 2,
+          "pageviews": 4
+        },
+        {
+          "date": "20260530",
+          "sessions": 5,
+          "users": 5,
+          "pageviews": 6
+        },
+        {
+          "date": "20260531",
+          "sessions": 3,
+          "users": 3,
+          "pageviews": 4
+        },
+        {
+          "date": "20260601",
+          "sessions": 3,
+          "users": 3,
+          "pageviews": 5
+        },
+        {
+          "date": "20260602",
+          "sessions": 4,
+          "users": 4,
+          "pageviews": 5
+        },
+        {
+          "date": "20260603",
+          "sessions": 13,
+          "users": 13,
+          "pageviews": 15
+        },
+        {
+          "date": "20260604",
+          "sessions": 1,
+          "users": 1,
+          "pageviews": 2
+        },
+        {
+          "date": "20260605",
+          "sessions": 7,
+          "users": 7,
+          "pageviews": 8
+        },
+        {
+          "date": "20260607",
+          "sessions": 3,
+          "users": 1,
+          "pageviews": 23
+        },
+        {
+          "date": "20260608",
+          "sessions": 3,
+          "users": 2,
+          "pageviews": 2
+        },
+        {
+          "date": "20260609",
+          "sessions": 8,
+          "users": 8,
+          "pageviews": 8
+        },
+        {
+          "date": "20260610",
+          "sessions": 1,
+          "users": 1,
+          "pageviews": 2
+        },
+        {
+          "date": "20260611",
+          "sessions": 1,
+          "users": 1,
+          "pageviews": 3
+        },
+        {
+          "date": "20260612",
+          "sessions": 2,
+          "users": 2,
+          "pageviews": 23
+        },
+        {
+          "date": "20260613",
+          "sessions": 1,
+          "users": 1,
+          "pageviews": 1
+        },
+        {
+          "date": "20260614",
+          "sessions": 2,
+          "users": 1,
+          "pageviews": 2
+        },
+        {
+          "date": "20260615",
+          "sessions": 1,
+          "users": 1,
+          "pageviews": 2
+        },
+        {
+          "date": "20260616",
+          "sessions": 1,
+          "users": 1,
+          "pageviews": 1
+        },
+        {
+          "date": "20260617",
+          "sessions": 2,
+          "users": 2,
+          "pageviews": 3
+        },
+        {
+          "date": "20260618",
+          "sessions": 2,
+          "users": 2,
+          "pageviews": 3
+        },
+        {
+          "date": "20260619",
+          "sessions": 3,
+          "users": 2,
+          "pageviews": 3
+        },
+        {
+          "date": "20260620",
+          "sessions": 1,
+          "users": 1,
+          "pageviews": 1
+        },
+        {
+          "date": "20260623",
+          "sessions": 2,
+          "users": 2,
+          "pageviews": 2
+        },
+        {
+          "date": "20260625",
+          "sessions": 1,
+          "users": 1,
+          "pageviews": 1
+        },
+        {
+          "date": "20260626",
+          "sessions": 2,
+          "users": 1,
+          "pageviews": 4
+        },
+        {
+          "date": "20260627",
+          "sessions": 3,
+          "users": 2,
+          "pageviews": 2
+        },
+        {
+          "date": "20260629",
+          "sessions": 2,
+          "users": 2,
+          "pageviews": 3
+        },
+        {
+          "date": "20260630",
+          "sessions": 1,
+          "users": 1,
+          "pageviews": 1
+        },
+        {
+          "date": "20260702",
+          "sessions": 9,
+          "users": 9,
+          "pageviews": 11
+        },
+        {
+          "date": "20260703",
+          "sessions": 3,
+          "users": 3,
+          "pageviews": 4
+        },
+        {
+          "date": "20260704",
+          "sessions": 10,
+          "users": 7,
+          "pageviews": 28
+        },
+        {
+          "date": "20260705",
+          "sessions": 7,
+          "users": 4,
+          "pageviews": 32
+        },
+        {
+          "date": "20260706",
+          "sessions": 5,
+          "users": 2,
+          "pageviews": 10
+        },
+        {
+          "date": "20260707",
+          "sessions": 4,
+          "users": 2,
+          "pageviews": 5
+        },
+        {
+          "date": "20260708",
+          "sessions": 11,
+          "users": 5,
+          "pageviews": 48
+        },
+        {
+          "date": "20260709",
+          "sessions": 1,
+          "users": 0,
+          "pageviews": 1
+        },
+        {
+          "date": "20260710",
+          "sessions": 3,
+          "users": 3,
+          "pageviews": 5
+        },
+        {
+          "date": "20260711",
+          "sessions": 2,
+          "users": 2,
+          "pageviews": 6
+        },
+        {
+          "date": "20260712",
+          "sessions": 4,
+          "users": 4,
+          "pageviews": 13
+        },
+        {
+          "date": "20260713",
+          "sessions": 5,
+          "users": 5,
+          "pageviews": 6
+        },
+        {
+          "date": "20260714",
+          "sessions": 9,
+          "users": 8,
+          "pageviews": 10
+        },
+        {
+          "date": "20260715",
+          "sessions": 5,
+          "users": 5,
+          "pageviews": 5
+        },
+        {
+          "date": "20260716",
+          "sessions": 1,
+          "users": 1,
+          "pageviews": 1
+        },
+        {
+          "date": "20260717",
+          "sessions": 2,
+          "users": 2,
+          "pageviews": 3
+        },
+        {
+          "date": "20260718",
+          "sessions": 6,
+          "users": 4,
+          "pageviews": 6
+        },
+        {
+          "date": "20260719",
+          "sessions": 2,
+          "users": 2,
+          "pageviews": 13
+        },
+        {
+          "date": "20260720",
+          "sessions": 2,
+          "users": 2,
+          "pageviews": 2
+        },
+        {
+          "date": "20260721",
+          "sessions": 8,
+          "users": 6,
+          "pageviews": 9
+        },
+        {
+          "date": "20260722",
+          "sessions": 7,
+          "users": 7,
+          "pageviews": 8
+        },
+        {
+          "date": "20260723",
+          "sessions": 5,
+          "users": 5,
+          "pageviews": 5
+        },
+        {
+          "date": "20260724",
+          "sessions": 17,
+          "users": 15,
+          "pageviews": 17
+        },
+        {
+          "date": "20260725",
+          "sessions": 9,
+          "users": 9,
+          "pageviews": 19
+        },
+        {
+          "date": "20260726",
+          "sessions": 5,
+          "users": 4,
+          "pageviews": 9
+        },
+        {
+          "date": "20260727",
+          "sessions": 3,
+          "users": 3,
+          "pageviews": 4
+        },
+        {
+          "date": "20260728",
+          "sessions": 3,
+          "users": 3,
+          "pageviews": 4
+        },
+        {
+          "date": "20260729",
+          "sessions": 5,
+          "users": 5,
+          "pageviews": 7
+        },
+        {
+          "date": "20260730",
+          "sessions": 6,
+          "users": 4,
+          "pageviews": 16
+        },
+        {
+          "date": "20260731",
+          "sessions": 6,
+          "users": 6,
+          "pageviews": 21
+        },
+        {
+          "date": "20260801",
+          "sessions": 8,
+          "users": 8,
+          "pageviews": 18
+        },
+        {
+          "date": "20260802",
+          "sessions": 8,
+          "users": 7,
+          "pageviews": 22
+        },
+        {
+          "date": "20260803",
+          "sessions": 1,
+          "users": 1,
+          "pageviews": 1
+        },
+        {
+          "date": "20260804",
+          "sessions": 1,
+          "users": 1,
+          "pageviews": 1
+        },
+        {
+          "date": "20260805",
+          "sessions": 5,
+          "users": 5,
+          "pageviews": 13
+        },
+        {
+          "date": "20260806",
+          "sessions": 5,
+          "users": 5,
+          "pageviews": 17
+        },
+        {
+          "date": "20260807",
+          "sessions": 9,
+          "users": 7,
+          "pageviews": 9
+        },
+        {
+          "date": "20260808",
+          "sessions": 9,
+          "users": 9,
+          "pageviews": 14
+        },
+        {
+          "date": "20260809",
+          "sessions": 5,
+          "users": 4,
+          "pageviews": 8
+        },
+        {
+          "date": "20260810",
+          "sessions": 8,
+          "users": 8,
+          "pageviews": 13
+        },
+        {
+          "date": "20260811",
+          "sessions": 5,
+          "users": 4,
+          "pageviews": 5
+        },
+        {
+          "date": "20260812",
+          "sessions": 8,
+          "users": 6,
+          "pageviews": 11
+        },
+        {
+          "date": "20260813",
+          "sessions": 6,
+          "users": 6,
+          "pageviews": 10
+        },
+        {
+          "date": "20260814",
+          "sessions": 3,
+          "users": 2,
+          "pageviews": 3
+        },
+        {
+          "date": "20260815",
+          "sessions": 12,
+          "users": 12,
+          "pageviews": 23
+        },
+        {
+          "date": "20260816",
+          "sessions": 8,
+          "users": 7,
+          "pageviews": 7
+        },
+        {
+          "date": "20260817",
+          "sessions": 8,
+          "users": 6,
+          "pageviews": 7
+        },
+        {
+          "date": "20260818",
+          "sessions": 8,
+          "users": 8,
+          "pageviews": 9
+        },
+        {
+          "date": "20260819",
+          "sessions": 9,
+          "users": 9,
+          "pageviews": 16
+        },
+        {
+          "date": "20260820",
+          "sessions": 8,
+          "users": 8,
+          "pageviews": 8
+        },
+        {
+          "date": "20260821",
+          "sessions": 14,
+          "users": 14,
+          "pageviews": 17
+        },
+        {
+          "date": "20260822",
+          "sessions": 25,
+          "users": 19,
+          "pageviews": 41
+        },
+        {
+          "date": "20260823",
+          "sessions": 8,
+          "users": 7,
+          "pageviews": 12
+        },
+        {
+          "date": "20260824",
+          "sessions": 21,
+          "users": 18,
+          "pageviews": 32
+        },
+        {
+          "date": "20260825",
+          "sessions": 25,
+          "users": 22,
+          "pageviews": 26
+        },
+        {
+          "date": "20260826",
+          "sessions": 30,
+          "users": 30,
+          "pageviews": 31
+        },
+        {
+          "date": "20260827",
+          "sessions": 76,
+          "users": 74,
+          "pageviews": 74
+        },
+        {
+          "date": "20260828",
+          "sessions": 69,
+          "users": 69,
+          "pageviews": 71
+        },
+        {
+          "date": "20260829",
+          "sessions": 60,
+          "users": 59,
+          "pageviews": 72
+        },
+        {
+          "date": "20260830",
+          "sessions": 32,
+          "users": 31,
+          "pageviews": 34
+        },
+        {
+          "date": "20260831",
+          "sessions": 14,
+          "users": 13,
+          "pageviews": 15
+        },
+        {
+          "date": "20260901",
+          "sessions": 53,
+          "users": 50,
+          "pageviews": 54
+        },
+        {
+          "date": "20260902",
+          "sessions": 35,
+          "users": 31,
+          "pageviews": 57
+        },
+        {
+          "date": "20260903",
+          "sessions": 24,
+          "users": 19,
+          "pageviews": 27
+        },
+        {
+          "date": "20260904",
+          "sessions": 40,
+          "users": 39,
+          "pageviews": 42
+        },
+        {
+          "date": "20260905",
+          "sessions": 18,
+          "users": 18,
+          "pageviews": 18
+        },
+        {
+          "date": "20260906",
+          "sessions": 104,
+          "users": 103,
+          "pageviews": 118
+        },
+        {
+          "date": "20260907",
+          "sessions": 11,
+          "users": 11,
+          "pageviews": 11
+        },
+        {
+          "date": "20260908",
+          "sessions": 10,
+          "users": 9,
+          "pageviews": 16
+        },
+        {
+          "date": "20260909",
+          "sessions": 24,
+          "users": 24,
+          "pageviews": 29
+        },
+        {
+          "date": "20260910",
+          "sessions": 21,
+          "users": 17,
+          "pageviews": 51
+        },
+        {
+          "date": "20260911",
+          "sessions": 35,
+          "users": 34,
+          "pageviews": 36
+        },
+        {
+          "date": "20260912",
+          "sessions": 20,
+          "users": 19,
+          "pageviews": 20
+        },
+        {
+          "date": "20260913",
+          "sessions": 24,
+          "users": 22,
+          "pageviews": 33
+        },
+        {
+          "date": "20260914",
+          "sessions": 9,
+          "users": 9,
+          "pageviews": 9
+        },
+        {
+          "date": "20260915",
+          "sessions": 20,
+          "users": 20,
+          "pageviews": 27
+        },
+        {
+          "date": "20260916",
+          "sessions": 23,
+          "users": 21,
+          "pageviews": 25
+        },
+        {
+          "date": "20260917",
+          "sessions": 31,
+          "users": 31,
+          "pageviews": 58
+        },
+        {
+          "date": "20260918",
+          "sessions": 35,
+          "users": 34,
+          "pageviews": 37
+        },
+        {
+          "date": "20260919",
+          "sessions": 32,
+          "users": 31,
+          "pageviews": 34
+        },
+        {
+          "date": "20260920",
+          "sessions": 16,
+          "users": 16,
+          "pageviews": 16
+        },
+        {
+          "date": "20260921",
+          "sessions": 17,
+          "users": 17,
+          "pageviews": 31
+        },
+        {
+          "date": "20260922",
+          "sessions": 8,
+          "users": 8,
+          "pageviews": 8
+        }
+      ],
+      "monthly": [
+        {
+          "month": "202605",
+          "sessions": 237,
+          "users": 127,
+          "pageviews": 918
+        },
+        {
+          "month": "202606",
+          "sessions": 70,
+          "users": 58,
+          "pageviews": 125
+        },
+        {
+          "month": "202607",
+          "sessions": 165,
+          "users": 129,
+          "pageviews": 328
+        },
+        {
+          "month": "202608",
+          "sessions": 504,
+          "users": 465,
+          "pageviews": 640
+        },
+        {
+          "month": "202609",
+          "sessions": 610,
+          "users": 578,
+          "pageviews": 757
+        }
+      ],
+      "topPages": [
+        {
+          "path": "/label/",
+          "pageviews": 307
+        },
+        {
+          "path": "/",
+          "pageviews": 73
+        },
+        {
+          "path": "/subgenres/",
+          "pageviews": 64
+        },
+        {
+          "path": "/magazines/",
+          "pageviews": 20
+        },
+        {
+          "path": "/2026/07/new-visual-kei-videos-june-2026/",
+          "pageviews": 16
+        },
+        {
+          "path": "/getting-into-visual-kei/",
+          "pageviews": 15
+        },
+        {
+          "path": "/2026/06/new-visual-kei-videos-may-2026/",
+          "pageviews": 14
+        },
+        {
+          "path": "/subgenres/tanbi-kei/",
+          "pageviews": 14
+        },
+        {
+          "path": "/visual-kei-explained/",
+          "pageviews": 14
+        },
+        {
+          "path": "/subgenres/nagoya-kei/",
+          "pageviews": 13
+        }
+      ]
+    }
+  }
+}

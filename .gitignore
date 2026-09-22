@@ -1,0 +1,5 @@
+node_modules/
+*.log
+*-*.iam.gserviceaccount.com.json
+key.json
+service-account*.json

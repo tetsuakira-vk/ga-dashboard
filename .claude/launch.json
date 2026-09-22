@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "ga-dashboard",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": ["serve", "docs", "-l", "4173"],
+      "port": 4173
+    }
+  ]
+}
