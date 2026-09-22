@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-22T14:06:31.247Z",
+  "generatedAt": "2026-09-22T14:12:04.391Z",
   "sites": {
     "japaneseunlocked": {
       "label": "Japanese Unlocked",
@@ -1325,7 +1325,7 @@
           "sessions": 378,
           "users": 272,
           "pageviews": 716,
-          "avgSessionDuration": 166.55569604761905,
+          "avgSessionDuration": 166.55569604761908,
           "pagesPerSession": 1.8941798941798942,
           "engagementRate": 0.5158730158730159
         },
@@ -1334,7 +1334,7 @@
           "sessions": 689,
           "users": 530,
           "pageviews": 1545,
-          "avgSessionDuration": 187.89778367489112,
+          "avgSessionDuration": 187.89778367489114,
           "pagesPerSession": 2.2423802612481856,
           "engagementRate": 0.49782293178519593
         },
@@ -1343,7 +1343,7 @@
           "sessions": 879,
           "users": 589,
           "pageviews": 2091,
-          "avgSessionDuration": 245.82268283845275,
+          "avgSessionDuration": 245.82268283845278,
           "pagesPerSession": 2.378839590443686,
           "engagementRate": 0.5312855517633674
         }
@@ -2734,7 +2734,7 @@
           "sessions": 237,
           "users": 127,
           "pageviews": 918,
-          "avgSessionDuration": 422.19813472151884,
+          "avgSessionDuration": 422.198134721519,
           "pagesPerSession": 3.8734177215189876,
           "engagementRate": 0.42616033755274263
         },
@@ -2743,7 +2743,7 @@
           "sessions": 70,
           "users": 58,
           "pageviews": 125,
-          "avgSessionDuration": 88.70263805714283,
+          "avgSessionDuration": 88.70263805714285,
           "pagesPerSession": 1.7857142857142858,
           "engagementRate": 0.4142857142857143
         },
@@ -2752,7 +2752,7 @@
           "sessions": 165,
           "users": 129,
           "pageviews": 328,
-          "avgSessionDuration": 130.43049923636363,
+          "avgSessionDuration": 130.43049923636366,
           "pagesPerSession": 1.9878787878787878,
           "engagementRate": 0.503030303030303
         },
@@ -2770,7 +2770,7 @@
           "sessions": 610,
           "users": 578,
           "pageviews": 757,
-          "avgSessionDuration": 44.343403795081976,
+          "avgSessionDuration": 44.34340379508197,
           "pagesPerSession": 1.240983606557377,
           "engagementRate": 0.15737704918032788
         }
