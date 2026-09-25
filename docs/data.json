@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-24T21:19:42.229Z",
+  "generatedAt": "2026-09-25T11:29:37.901Z",
   "sites": {
     "japaneseunlocked": {
       "label": "Japanese Unlocked",
@@ -1302,12 +1302,21 @@
         },
         {
           "date": "20260924",
-          "sessions": 35,
-          "users": 29,
-          "pageviews": 115,
-          "avgSessionDuration": 1500.0195479714284,
-          "pagesPerSession": 3.2857142857142856,
-          "engagementRate": 0.02857142857142857
+          "sessions": 43,
+          "users": 37,
+          "pageviews": 128,
+          "avgSessionDuration": 1254.1463094186047,
+          "pagesPerSession": 2.9767441860465116,
+          "engagementRate": 0.023255813953488372
+        },
+        {
+          "date": "20260925",
+          "sessions": 15,
+          "users": 13,
+          "pageviews": 44,
+          "avgSessionDuration": 465.2007234,
+          "pagesPerSession": 2.933333333333333,
+          "engagementRate": 0
         }
       ],
       "monthly": [
@@ -1334,7 +1343,7 @@
           "sessions": 447,
           "users": 262,
           "pageviews": 1047,
-          "avgSessionDuration": 191.67167909395977,
+          "avgSessionDuration": 191.6716790939597,
           "pagesPerSession": 2.3422818791946307,
           "engagementRate": 0.5145413870246085
         },
@@ -1358,71 +1367,71 @@
         },
         {
           "month": "202609",
-          "sessions": 984,
-          "users": 664,
-          "pageviews": 2389,
-          "avgSessionDuration": 282.34783541971547,
-          "pagesPerSession": 2.4278455284552845,
-          "engagementRate": 0.5508130081300813
+          "sessions": 1007,
+          "users": 682,
+          "pageviews": 2446,
+          "avgSessionDuration": 284.2461648758688,
+          "pagesPerSession": 2.428997020854022,
+          "engagementRate": 0.5382323733862959
         }
       ],
       "topPages": [
         {
           "path": "/games/",
-          "pageviews": 267
+          "pageviews": 268
         },
         {
           "path": "/",
-          "pageviews": 241
-        },
-        {
-          "path": "/games/battle/",
-          "pageviews": 152
+          "pageviews": 244
         },
         {
           "path": "/hiragana/",
-          "pageviews": 148
+          "pageviews": 152
         },
         {
-          "path": "/vocab/",
-          "pageviews": 133
+          "path": "/games/battle/",
+          "pageviews": 151
         },
         {
           "path": "/start/",
-          "pageviews": 131
+          "pageviews": 129
+        },
+        {
+          "path": "/vocab/",
+          "pageviews": 128
         },
         {
           "path": "/jlpt/n5/",
-          "pageviews": 104
+          "pageviews": 103
         },
         {
           "path": "/conversation/",
-          "pageviews": 100
+          "pageviews": 99
         },
         {
           "path": "/kanji/",
-          "pageviews": 97
+          "pageviews": 94
         },
         {
           "path": "/games/match/",
-          "pageviews": 92
+          "pageviews": 93
         }
       ],
       "channels": [
         {
           "label": "Organic Search",
-          "sessions": 640,
-          "users": 430
+          "sessions": 634,
+          "users": 424
         },
         {
           "label": "AI Assistant",
-          "sessions": 245,
-          "users": 166
+          "sessions": 241,
+          "users": 164
         },
         {
           "label": "Direct",
-          "sessions": 238,
-          "users": 188
+          "sessions": 229,
+          "users": 183
         },
         {
           "label": "Referral",
@@ -1431,59 +1440,59 @@
         },
         {
           "label": "Unassigned",
-          "sessions": 23,
-          "users": 21
+          "sessions": 37,
+          "users": 34
         },
         {
           "label": "Cross-network",
-          "sessions": 8,
-          "users": 8
+          "sessions": 17,
+          "users": 17
         }
       ],
       "newVsReturning": [
         {
           "label": "new",
-          "sessions": 800,
-          "users": 798
+          "sessions": 795,
+          "users": 791
         },
         {
           "label": "returning",
-          "sessions": 283,
-          "users": 125
+          "sessions": 278,
+          "users": 122
         },
         {
           "label": "(not set)",
-          "sessions": 104,
+          "sessions": 101,
           "users": 0
         }
       ],
       "devices": [
         {
           "label": "desktop",
-          "sessions": 732,
-          "users": 503
+          "sessions": 728,
+          "users": 504
         },
         {
           "label": "mobile",
-          "sessions": 442,
-          "users": 298
+          "sessions": 437,
+          "users": 294
         },
         {
           "label": "tablet",
-          "sessions": 19,
-          "users": 13
+          "sessions": 21,
+          "users": 14
         }
       ],
       "countries": [
         {
           "label": "United States",
-          "sessions": 222,
-          "users": 144
+          "sessions": 224,
+          "users": 147
         },
         {
           "label": "Japan",
-          "sessions": 109,
-          "users": 80
+          "sessions": 111,
+          "users": 83
         },
         {
           "label": "India",
@@ -1492,60 +1501,60 @@
         },
         {
           "label": "Indonesia",
-          "sessions": 69,
-          "users": 52
-        },
-        {
-          "label": "China",
-          "sessions": 57,
-          "users": 57
+          "sessions": 68,
+          "users": 51
         },
         {
           "label": "Bangladesh",
-          "sessions": 56,
-          "users": 21
+          "sessions": 55,
+          "users": 20
+        },
+        {
+          "label": "China",
+          "sessions": 55,
+          "users": 55
         },
         {
           "label": "Singapore",
-          "sessions": 44,
-          "users": 39
-        },
-        {
-          "label": "Australia",
-          "sessions": 39,
-          "users": 25
+          "sessions": 42,
+          "users": 37
         },
         {
           "label": "Philippines",
-          "sessions": 39,
+          "sessions": 40,
           "users": 31
         },
         {
-          "label": "Vietnam",
-          "sessions": 38,
+          "label": "Australia",
+          "sessions": 37,
           "users": 24
+        },
+        {
+          "label": "Vietnam",
+          "sessions": 33,
+          "users": 20
         }
       ],
       "landingPages": [
         {
           "path": "/",
-          "sessions": 193,
-          "engagementRate": 0.6373056994818653
+          "sessions": 194,
+          "engagementRate": 0.634020618556701
         },
         {
           "path": "/games",
-          "sessions": 175,
-          "engagementRate": 0.7028571428571428
+          "sessions": 176,
+          "engagementRate": 0.6875
         },
         {
           "path": "/jlpt/n4/mock",
-          "sessions": 64,
-          "engagementRate": 0.59375
+          "sessions": 63,
+          "engagementRate": 0.5714285714285714
         },
         {
           "path": "/vocab",
-          "sessions": 59,
-          "engagementRate": 0.7288135593220338
+          "sessions": 57,
+          "engagementRate": 0.7192982456140351
         },
         {
           "path": "/conversation",
@@ -1555,44 +1564,49 @@
         {
           "path": "/widgets",
           "sessions": 46,
-          "engagementRate": 0.32608695652173914
+          "engagementRate": 0.30434782608695654
         },
         {
           "path": "/games/battle",
-          "sessions": 38,
-          "engagementRate": 0.3157894736842105
+          "sessions": 37,
+          "engagementRate": 0.2972972972972973
+        },
+        {
+          "path": "/grammar/verbs",
+          "sessions": 35,
+          "engagementRate": 0.5714285714285714
         },
         {
           "path": "/jlpt/mock",
           "sessions": 33,
           "engagementRate": 0.8181818181818182
-        },
-        {
-          "path": "/grammar/verbs",
-          "sessions": 32,
-          "engagementRate": 0.625
         }
       ],
       "sources": [
         {
           "label": "google / organic",
-          "sessions": 381,
-          "users": 264
+          "sessions": 379,
+          "users": 262
         },
         {
           "label": "(direct) / (none)",
-          "sessions": 238,
-          "users": 188
+          "sessions": 229,
+          "users": 183
         },
         {
           "label": "chatgpt.com / ai-assistant",
-          "sessions": 231,
-          "users": 158
+          "sessions": 227,
+          "users": 156
         },
         {
           "label": "bing / organic",
-          "sessions": 189,
-          "users": 112
+          "sessions": 182,
+          "users": 108
+        },
+        {
+          "label": "(not set)",
+          "sessions": 36,
+          "users": 33
         },
         {
           "label": "duckduckgo / organic",
@@ -1605,9 +1619,9 @@
           "users": 16
         },
         {
-          "label": "(not set)",
-          "sessions": 22,
-          "users": 20
+          "label": "(data not available)",
+          "sessions": 17,
+          "users": 17
         },
         {
           "label": "nar26.r.sp1-brevo.net / referral",
@@ -1618,33 +1632,28 @@
           "label": "yahoo / organic",
           "sessions": 12,
           "users": 9
-        },
-        {
-          "label": "(data not available)",
-          "sessions": 8,
-          "users": 8
         }
       ],
       "browsers": [
         {
           "label": "Chrome",
           "sessions": 629,
-          "users": 446
-        },
-        {
-          "label": "Edge",
-          "sessions": 223,
-          "users": 129
+          "users": 445
         },
         {
           "label": "Safari",
-          "sessions": 220,
+          "sessions": 219,
           "users": 144
         },
         {
+          "label": "Edge",
+          "sessions": 218,
+          "users": 129
+        },
+        {
           "label": "Android Webview",
-          "sessions": 35,
-          "users": 35
+          "sessions": 33,
+          "users": 33
         },
         {
           "label": "Firefox",
@@ -1653,8 +1662,8 @@
         },
         {
           "label": "Opera",
-          "sessions": 25,
-          "users": 10
+          "sessions": 26,
+          "users": 11
         },
         {
           "label": "Samsung Internet",
@@ -1671,27 +1680,27 @@
         {
           "label": "Windows",
           "sessions": 525,
-          "users": 346
+          "users": 349
         },
         {
           "label": "Android",
-          "sessions": 260,
-          "users": 182
+          "sessions": 255,
+          "users": 176
         },
         {
           "label": "iOS",
-          "sessions": 201,
-          "users": 129
+          "sessions": 203,
+          "users": 132
         },
         {
           "label": "Macintosh",
-          "sessions": 152,
-          "users": 112
+          "sessions": 147,
+          "users": 109
         },
         {
           "label": "Chrome OS",
-          "sessions": 28,
-          "users": 19
+          "sessions": 29,
+          "users": 20
         },
         {
           "label": "Linux",
@@ -1707,13 +1716,13 @@
       "cities": [
         {
           "label": "(not set)",
-          "sessions": 154,
-          "users": 127
+          "sessions": 150,
+          "users": 124
         },
         {
           "label": "Singapore",
-          "sessions": 44,
-          "users": 39
+          "sessions": 42,
+          "users": 37
         },
         {
           "label": "Memphis",
@@ -1721,19 +1730,14 @@
           "users": 1
         },
         {
+          "label": "New York",
+          "sessions": 22,
+          "users": 7
+        },
+        {
           "label": "Chattogram",
           "sessions": 21,
           "users": 3
-        },
-        {
-          "label": "New York",
-          "sessions": 20,
-          "users": 5
-        },
-        {
-          "label": "Hong Kong",
-          "sessions": 19,
-          "users": 8
         },
         {
           "label": "Jakarta",
@@ -1746,21 +1750,26 @@
           "users": 2
         },
         {
-          "label": "Ho Chi Minh City",
-          "sessions": 16,
-          "users": 9
+          "label": "Hong Kong",
+          "sessions": 17,
+          "users": 8
         },
         {
-          "label": "Dhaka",
+          "label": "Ho Chi Minh City",
           "sessions": 13,
-          "users": 11
+          "users": 7
+        },
+        {
+          "label": "Delhi",
+          "sessions": 12,
+          "users": 7
         }
       ],
       "events": [
         {
           "name": "scroll",
           "label": "Scrolled 90%+",
-          "count": 1134
+          "count": 1129
         },
         {
           "name": "click",
@@ -1780,16 +1789,6 @@
       ],
       "timing": [
         {
-          "day": 2,
-          "hour": 13,
-          "sessions": 18
-        },
-        {
-          "day": 2,
-          "hour": 16,
-          "sessions": 18
-        },
-        {
           "day": 3,
           "hour": 12,
           "sessions": 18
@@ -1798,6 +1797,11 @@
           "day": 4,
           "hour": 12,
           "sessions": 18
+        },
+        {
+          "day": 2,
+          "hour": 13,
+          "sessions": 16
         },
         {
           "day": 2,
@@ -1815,21 +1819,16 @@
           "sessions": 15
         },
         {
+          "day": 2,
+          "hour": 16,
+          "sessions": 15
+        },
+        {
           "day": 3,
           "hour": 7,
           "sessions": 15
         },
         {
-          "day": 2,
-          "hour": 12,
-          "sessions": 14
-        },
-        {
-          "day": 2,
-          "hour": 4,
-          "sessions": 14
-        },
-        {
           "day": 3,
           "hour": 13,
           "sessions": 14
@@ -1846,6 +1845,11 @@
         },
         {
           "day": 4,
+          "hour": 16,
+          "sessions": 13
+        },
+        {
+          "day": 4,
           "hour": 5,
           "sessions": 13
         },
@@ -1861,7 +1865,7 @@
         },
         {
           "day": 2,
-          "hour": 15,
+          "hour": 12,
           "sessions": 12
         },
         {
@@ -1887,11 +1891,6 @@
         {
           "day": 4,
           "hour": 10,
-          "sessions": 12
-        },
-        {
-          "day": 4,
-          "hour": 16,
           "sessions": 12
         },
         {
@@ -1931,17 +1930,7 @@
         },
         {
           "day": 2,
-          "hour": 10,
-          "sessions": 11
-        },
-        {
-          "day": 2,
-          "hour": 17,
-          "sessions": 11
-        },
-        {
-          "day": 2,
-          "hour": 9,
+          "hour": 15,
           "sessions": 11
         },
         {
@@ -1966,27 +1955,22 @@
         },
         {
           "day": 2,
-          "hour": 11,
+          "hour": 10,
           "sessions": 10
         },
         {
           "day": 2,
-          "hour": 14,
+          "hour": 17,
           "sessions": 10
         },
         {
           "day": 2,
-          "hour": 18,
+          "hour": 4,
           "sessions": 10
         },
         {
           "day": 2,
-          "hour": 2,
-          "sessions": 10
-        },
-        {
-          "day": 2,
-          "hour": 8,
+          "hour": 9,
           "sessions": 10
         },
         {
@@ -2005,18 +1989,28 @@
           "sessions": 10
         },
         {
+          "day": 4,
+          "hour": 15,
+          "sessions": 10
+        },
+        {
+          "day": 5,
+          "hour": 2,
+          "sessions": 10
+        },
+        {
+          "day": 5,
+          "hour": 3,
+          "sessions": 10
+        },
+        {
           "day": 1,
           "hour": 19,
           "sessions": 9
         },
         {
           "day": 2,
-          "hour": 0,
-          "sessions": 9
-        },
-        {
-          "day": 2,
-          "hour": 3,
+          "hour": 14,
           "sessions": 9
         },
         {
@@ -2036,17 +2030,12 @@
         },
         {
           "day": 4,
-          "hour": 15,
-          "sessions": 9
-        },
-        {
-          "day": 4,
           "hour": 2,
           "sessions": 9
         },
         {
-          "day": 5,
-          "hour": 3,
+          "day": 4,
+          "hour": 23,
           "sessions": 9
         },
         {
@@ -2080,6 +2069,31 @@
           "sessions": 8
         },
         {
+          "day": 2,
+          "hour": 0,
+          "sessions": 8
+        },
+        {
+          "day": 2,
+          "hour": 11,
+          "sessions": 8
+        },
+        {
+          "day": 2,
+          "hour": 18,
+          "sessions": 8
+        },
+        {
+          "day": 2,
+          "hour": 2,
+          "sessions": 8
+        },
+        {
+          "day": 2,
+          "hour": 8,
+          "sessions": 8
+        },
+        {
           "day": 3,
           "hour": 0,
           "sessions": 8
@@ -2146,7 +2160,7 @@
         },
         {
           "day": 5,
-          "hour": 2,
+          "hour": 4,
           "sessions": 8
         },
         {
@@ -2200,11 +2214,6 @@
           "sessions": 7
         },
         {
-          "day": 2,
-          "hour": 5,
-          "sessions": 7
-        },
-        {
           "day": 3,
           "hour": 10,
           "sessions": 7
@@ -2221,12 +2230,17 @@
         },
         {
           "day": 5,
+          "hour": 1,
+          "sessions": 7
+        },
+        {
+          "day": 5,
           "hour": 10,
           "sessions": 7
         },
         {
           "day": 5,
-          "hour": 4,
+          "hour": 7,
           "sessions": 7
         },
         {
@@ -2296,7 +2310,7 @@
         },
         {
           "day": 2,
-          "hour": 23,
+          "hour": 5,
           "sessions": 6
         },
         {
@@ -2316,12 +2330,32 @@
         },
         {
           "day": 5,
+          "hour": 0,
+          "sessions": 6
+        },
+        {
+          "day": 5,
           "hour": 15,
           "sessions": 6
         },
         {
           "day": 5,
           "hour": 20,
+          "sessions": 6
+        },
+        {
+          "day": 5,
+          "hour": 5,
+          "sessions": 6
+        },
+        {
+          "day": 5,
+          "hour": 6,
+          "sessions": 6
+        },
+        {
+          "day": 5,
+          "hour": 9,
           "sessions": 6
         },
         {
@@ -2375,6 +2409,16 @@
           "sessions": 5
         },
         {
+          "day": 2,
+          "hour": 23,
+          "sessions": 5
+        },
+        {
+          "day": 2,
+          "hour": 3,
+          "sessions": 5
+        },
+        {
           "day": 4,
           "hour": 11,
           "sessions": 5
@@ -2390,13 +2434,8 @@
           "sessions": 5
         },
         {
-          "day": 5,
-          "hour": 0,
-          "sessions": 5
-        },
-        {
-          "day": 5,
-          "hour": 1,
+          "day": 4,
+          "hour": 21,
           "sessions": 5
         },
         {
@@ -2420,16 +2459,6 @@
           "sessions": 5
         },
         {
-          "day": 5,
-          "hour": 6,
-          "sessions": 5
-        },
-        {
-          "day": 5,
-          "hour": 7,
-          "sessions": 5
-        },
-        {
           "day": 6,
           "hour": 19,
           "sessions": 5
@@ -2481,11 +2510,6 @@
         },
         {
           "day": 2,
-          "hour": 1,
-          "sessions": 4
-        },
-        {
-          "day": 2,
           "hour": 21,
           "sessions": 4
         },
@@ -2501,22 +2525,7 @@
         },
         {
           "day": 4,
-          "hour": 21,
-          "sessions": 4
-        },
-        {
-          "day": 4,
-          "hour": 23,
-          "sessions": 4
-        },
-        {
-          "day": 4,
           "hour": 9,
-          "sessions": 4
-        },
-        {
-          "day": 5,
-          "hour": 5,
           "sessions": 4
         },
         {
@@ -2560,6 +2569,11 @@
           "sessions": 3
         },
         {
+          "day": 2,
+          "hour": 1,
+          "sessions": 3
+        },
+        {
           "day": 3,
           "hour": 22,
           "sessions": 3
@@ -2582,11 +2596,6 @@
         {
           "day": 5,
           "hour": 8,
-          "sessions": 3
-        },
-        {
-          "day": 5,
-          "hour": 9,
           "sessions": 3
         },
         {
@@ -3850,11 +3859,20 @@
         },
         {
           "date": "20260924",
-          "sessions": 239,
-          "users": 237,
-          "pageviews": 243,
-          "avgSessionDuration": 0.025211008368200838,
-          "pagesPerSession": 1.0167364016736402,
+          "sessions": 247,
+          "users": 245,
+          "pageviews": 257,
+          "avgSessionDuration": 1.5113625870445344,
+          "pagesPerSession": 1.040485829959514,
+          "engagementRate": 0
+        },
+        {
+          "date": "20260925",
+          "sessions": 6,
+          "users": 6,
+          "pageviews": 6,
+          "avgSessionDuration": 0,
+          "pagesPerSession": 1,
           "engagementRate": 0
         }
       ],
@@ -3873,7 +3891,7 @@
           "sessions": 70,
           "users": 58,
           "pageviews": 125,
-          "avgSessionDuration": 88.70263805714283,
+          "avgSessionDuration": 88.70263805714286,
           "pagesPerSession": 1.7857142857142858,
           "engagementRate": 0.4142857142857143
         },
@@ -3891,32 +3909,32 @@
           "sessions": 504,
           "users": 465,
           "pageviews": 640,
-          "avgSessionDuration": 52.54180327579365,
+          "avgSessionDuration": 52.54180327579366,
           "pagesPerSession": 1.2698412698412698,
           "engagementRate": 0.2261904761904762
         },
         {
           "month": "202609",
-          "sessions": 864,
-          "users": 827,
-          "pageviews": 1016,
-          "avgSessionDuration": 31.408428506944443,
-          "pagesPerSession": 1.1759259259259258,
-          "engagementRate": 0.11458333333333333
+          "sessions": 878,
+          "users": 840,
+          "pageviews": 1036,
+          "avgSessionDuration": 31.325926375854216,
+          "pagesPerSession": 1.1799544419134396,
+          "engagementRate": 0.11275626423690205
         }
       ],
       "topPages": [
         {
           "path": "/label/",
-          "pageviews": 307
+          "pageviews": 301
         },
         {
           "path": "/",
-          "pageviews": 64
+          "pageviews": 59
         },
         {
           "path": "/subgenres/",
-          "pageviews": 59
+          "pageviews": 54
         },
         {
           "path": "/magazines/",
@@ -3940,7 +3958,7 @@
         },
         {
           "path": "/subgenres/tanbi-kei/",
-          "pageviews": 13
+          "pageviews": 14
         },
         {
           "path": "/2026/08/fest-inazuma-2026-reveals-final-lineup-vk-acts-confirmed/",
@@ -3950,18 +3968,23 @@
       "channels": [
         {
           "label": "Direct",
-          "sessions": 1016,
-          "users": 1016
+          "sessions": 1011,
+          "users": 1010
         },
         {
           "label": "Organic Search",
-          "sessions": 122,
-          "users": 80
+          "sessions": 116,
+          "users": 76
         },
         {
           "label": "AI Assistant",
-          "sessions": 18,
-          "users": 16
+          "sessions": 17,
+          "users": 15
+        },
+        {
+          "label": "Unassigned",
+          "sessions": 9,
+          "users": 7
         },
         {
           "label": "Organic Social",
@@ -3969,38 +3992,38 @@
           "users": 6
         },
         {
-          "label": "Unassigned",
-          "sessions": 6,
-          "users": 4
+          "label": "Cross-network",
+          "sessions": 1,
+          "users": 1
         }
       ],
       "newVsReturning": [
         {
           "label": "new",
-          "sessions": 1114,
-          "users": 1115
+          "sessions": 1107,
+          "users": 1105
         },
         {
           "label": "returning",
-          "sessions": 32,
+          "sessions": 33,
           "users": 19
         },
         {
           "label": "(not set)",
-          "sessions": 20,
+          "sessions": 17,
           "users": 0
         }
       ],
       "devices": [
         {
           "label": "desktop",
-          "sessions": 1093,
-          "users": 1057
+          "sessions": 1087,
+          "users": 1053
         },
         {
           "label": "mobile",
-          "sessions": 71,
-          "users": 62
+          "sessions": 67,
+          "users": 57
         },
         {
           "label": "tablet",
@@ -4011,18 +4034,18 @@
       "countries": [
         {
           "label": "Singapore",
-          "sessions": 604,
-          "users": 600
+          "sessions": 611,
+          "users": 606
         },
         {
           "label": "China",
-          "sessions": 378,
-          "users": 376
+          "sessions": 365,
+          "users": 363
         },
         {
           "label": "United States",
-          "sessions": 68,
-          "users": 52
+          "sessions": 63,
+          "users": 50
         },
         {
           "label": "Japan",
@@ -4030,14 +4053,14 @@
           "users": 19
         },
         {
-          "label": "Mexico",
-          "sessions": 12,
-          "users": 5
+          "label": "Canada",
+          "sessions": 11,
+          "users": 7
         },
         {
-          "label": "Canada",
-          "sessions": 10,
-          "users": 6
+          "label": "Mexico",
+          "sessions": 11,
+          "users": 4
         },
         {
           "label": "Brazil",
@@ -4050,12 +4073,12 @@
           "users": 4
         },
         {
-          "label": "Argentina",
+          "label": "United Kingdom",
           "sessions": 6,
           "users": 6
         },
         {
-          "label": "Germany",
+          "label": "Argentina",
           "sessions": 5,
           "users": 5
         }
@@ -4063,18 +4086,18 @@
       "landingPages": [
         {
           "path": "/label",
-          "sessions": 298,
+          "sessions": 292,
           "engagementRate": 0
         },
         {
           "path": "/",
-          "sessions": 58,
-          "engagementRate": 0.27586206896551724
+          "sessions": 52,
+          "engagementRate": 0.28846153846153844
         },
         {
           "path": "/subgenres",
-          "sessions": 44,
-          "engagementRate": 0.45454545454545453
+          "sessions": 39,
+          "engagementRate": 0.5128205128205128
         },
         {
           "path": "/visual-kei-explained",
@@ -4102,9 +4125,9 @@
           "engagementRate": 0.08333333333333333
         },
         {
-          "path": "/vk-fashion",
+          "path": "/how-to",
           "sessions": 9,
-          "engagementRate": 0.4444444444444444
+          "engagementRate": 0
         },
         {
           "path": "/2026/06/new-visual-kei-videos-may-2026",
@@ -4115,38 +4138,38 @@
       "sources": [
         {
           "label": "(direct) / (none)",
-          "sessions": 1016,
-          "users": 1016
+          "sessions": 1011,
+          "users": 1010
         },
         {
           "label": "bing / organic",
-          "sessions": 70,
+          "sessions": 67,
           "users": 38
         },
         {
           "label": "chatgpt.com / ai-assistant",
-          "sessions": 17,
-          "users": 15
+          "sessions": 16,
+          "users": 14
         },
         {
           "label": "duckduckgo / organic",
-          "sessions": 16,
-          "users": 15
-        },
-        {
-          "label": "ecosia.org / organic",
-          "sessions": 11,
-          "users": 10
+          "sessions": 14,
+          "users": 13
         },
         {
           "label": "google / organic",
-          "sessions": 10,
+          "sessions": 11,
           "users": 5
         },
         {
-          "label": "yandex.com.tr / referral",
-          "sessions": 4,
-          "users": 4
+          "label": "ecosia.org / organic",
+          "sessions": 10,
+          "users": 9
+        },
+        {
+          "label": "(not set)",
+          "sessions": 5,
+          "users": 5
         },
         {
           "label": "cn.bing.com / referral",
@@ -4167,23 +4190,18 @@
       "browsers": [
         {
           "label": "Chrome",
-          "sessions": 1046,
-          "users": 1037
+          "sessions": 1041,
+          "users": 1029
         },
         {
           "label": "Edge",
-          "sessions": 68,
-          "users": 37
+          "sessions": 67,
+          "users": 39
         },
         {
           "label": "Safari",
-          "sessions": 39,
-          "users": 35
-        },
-        {
-          "label": "Firefox",
-          "sessions": 4,
-          "users": 4
+          "sessions": 37,
+          "users": 33
         },
         {
           "label": "Opera",
@@ -4192,6 +4210,11 @@
         },
         {
           "label": "Android Webview",
+          "sessions": 3,
+          "users": 3
+        },
+        {
+          "label": "Firefox",
           "sessions": 3,
           "users": 3
         },
@@ -4209,23 +4232,23 @@
       "operatingSystems": [
         {
           "label": "Windows",
-          "sessions": 1005,
-          "users": 971
+          "sessions": 998,
+          "users": 965
         },
         {
           "label": "Macintosh",
-          "sessions": 62,
-          "users": 61
+          "sessions": 64,
+          "users": 63
         },
         {
           "label": "Android",
-          "sessions": 41,
-          "users": 35
+          "sessions": 39,
+          "users": 32
         },
         {
           "label": "iOS",
-          "sessions": 33,
-          "users": 29
+          "sessions": 31,
+          "users": 27
         },
         {
           "label": "Linux",
@@ -4246,18 +4269,18 @@
       "cities": [
         {
           "label": "Singapore",
-          "sessions": 600,
-          "users": 596
+          "sessions": 607,
+          "users": 602
         },
         {
           "label": "(not set)",
-          "sessions": 71,
-          "users": 72
+          "sessions": 69,
+          "users": 70
         },
         {
           "label": "Zhangjiajie",
-          "sessions": 39,
-          "users": 39
+          "sessions": 38,
+          "users": 38
         },
         {
           "label": "Shanghai",
@@ -4266,8 +4289,8 @@
         },
         {
           "label": "Zhengzhou",
-          "sessions": 30,
-          "users": 30
+          "sessions": 28,
+          "users": 28
         },
         {
           "label": "Suzhou",
@@ -4276,18 +4299,18 @@
         },
         {
           "label": "Hangzhou",
-          "sessions": 21,
-          "users": 21
+          "sessions": 20,
+          "users": 20
         },
         {
           "label": "Beijing",
-          "sessions": 19,
-          "users": 19
+          "sessions": 17,
+          "users": 17
         },
         {
           "label": "Chongqing",
-          "sessions": 16,
-          "users": 16
+          "sessions": 14,
+          "users": 14
         },
         {
           "label": "Dalian",
@@ -4299,12 +4322,12 @@
         {
           "name": "scroll",
           "label": "Scrolled 90%+",
-          "count": 367
+          "count": 361
         },
         {
           "name": "click",
           "label": "Outbound link click",
-          "count": 8
+          "count": 7
         }
       ],
       "timing": [
@@ -4344,14 +4367,14 @@
           "sessions": 17
         },
         {
+          "day": 5,
+          "hour": 4,
+          "sessions": 17
+        },
+        {
           "day": 0,
           "hour": 5,
           "sessions": 16
-        },
-        {
-          "day": 5,
-          "hour": 4,
-          "sessions": 15
         },
         {
           "day": 4,
@@ -4389,11 +4412,6 @@
           "sessions": 11
         },
         {
-          "day": 2,
-          "hour": 23,
-          "sessions": 10
-        },
-        {
           "day": 3,
           "hour": 10,
           "sessions": 10
@@ -4412,11 +4430,6 @@
           "day": 6,
           "hour": 16,
           "sessions": 10
-        },
-        {
-          "day": 2,
-          "hour": 12,
-          "sessions": 9
         },
         {
           "day": 4,
@@ -4424,11 +4437,36 @@
           "sessions": 9
         },
         {
+          "day": 4,
+          "hour": 23,
+          "sessions": 9
+        },
+        {
+          "day": 5,
+          "hour": 1,
+          "sessions": 9
+        },
+        {
           "day": 5,
           "hour": 18,
           "sessions": 9
         },
         {
+          "day": 5,
+          "hour": 5,
+          "sessions": 9
+        },
+        {
+          "day": 2,
+          "hour": 12,
+          "sessions": 8
+        },
+        {
+          "day": 2,
+          "hour": 23,
+          "sessions": 8
+        },
+        {
           "day": 3,
           "hour": 1,
           "sessions": 8
@@ -4445,22 +4483,22 @@
         },
         {
           "day": 4,
-          "hour": 5,
+          "hour": 15,
           "sessions": 8
         },
         {
-          "day": 5,
-          "hour": 1,
+          "day": 4,
+          "hour": 18,
+          "sessions": 8
+        },
+        {
+          "day": 4,
+          "hour": 5,
           "sessions": 8
         },
         {
           "day": 5,
           "hour": 20,
-          "sessions": 8
-        },
-        {
-          "day": 5,
-          "hour": 5,
           "sessions": 8
         },
         {
@@ -4474,23 +4512,8 @@
           "sessions": 7
         },
         {
-          "day": 2,
-          "hour": 11,
-          "sessions": 7
-        },
-        {
-          "day": 2,
-          "hour": 18,
-          "sessions": 7
-        },
-        {
           "day": 3,
           "hour": 12,
-          "sessions": 7
-        },
-        {
-          "day": 4,
-          "hour": 15,
           "sessions": 7
         },
         {
@@ -4505,12 +4528,12 @@
         },
         {
           "day": 4,
-          "hour": 18,
+          "hour": 20,
           "sessions": 7
         },
         {
-          "day": 4,
-          "hour": 23,
+          "day": 5,
+          "hour": 10,
           "sessions": 7
         },
         {
@@ -4555,22 +4578,17 @@
         },
         {
           "day": 2,
+          "hour": 11,
+          "sessions": 6
+        },
+        {
+          "day": 2,
           "hour": 14,
           "sessions": 6
         },
         {
           "day": 2,
-          "hour": 16,
-          "sessions": 6
-        },
-        {
-          "day": 2,
-          "hour": 6,
-          "sessions": 6
-        },
-        {
-          "day": 2,
-          "hour": 9,
+          "hour": 18,
           "sessions": 6
         },
         {
@@ -4601,11 +4619,6 @@
         {
           "day": 4,
           "hour": 7,
-          "sessions": 6
-        },
-        {
-          "day": 5,
-          "hour": 10,
           "sessions": 6
         },
         {
@@ -4700,12 +4713,12 @@
         },
         {
           "day": 2,
-          "hour": 10,
+          "hour": 20,
           "sessions": 5
         },
         {
           "day": 2,
-          "hour": 20,
+          "hour": 9,
           "sessions": 5
         },
         {
@@ -4731,6 +4744,11 @@
         {
           "day": 4,
           "hour": 14,
+          "sessions": 5
+        },
+        {
+          "day": 4,
+          "hour": 22,
           "sessions": 5
         },
         {
@@ -4800,12 +4818,7 @@
         },
         {
           "day": 2,
-          "hour": 1,
-          "sessions": 4
-        },
-        {
-          "day": 2,
-          "hour": 19,
+          "hour": 16,
           "sessions": 4
         },
         {
@@ -4850,17 +4863,12 @@
         },
         {
           "day": 4,
-          "hour": 20,
-          "sessions": 4
-        },
-        {
-          "day": 4,
-          "hour": 22,
-          "sessions": 4
-        },
-        {
-          "day": 4,
           "hour": 4,
+          "sessions": 4
+        },
+        {
+          "day": 5,
+          "hour": 0,
           "sessions": 4
         },
         {
@@ -4940,22 +4948,17 @@
         },
         {
           "day": 2,
+          "hour": 10,
+          "sessions": 3
+        },
+        {
+          "day": 2,
           "hour": 15,
           "sessions": 3
         },
         {
           "day": 2,
           "hour": 21,
-          "sessions": 3
-        },
-        {
-          "day": 2,
-          "hour": 22,
-          "sessions": 3
-        },
-        {
-          "day": 2,
-          "hour": 4,
           "sessions": 3
         },
         {
@@ -4976,11 +4979,6 @@
         {
           "day": 3,
           "hour": 5,
-          "sessions": 3
-        },
-        {
-          "day": 5,
-          "hour": 0,
           "sessions": 3
         },
         {
@@ -5040,22 +5038,22 @@
         },
         {
           "day": 2,
+          "hour": 1,
+          "sessions": 2
+        },
+        {
+          "day": 2,
           "hour": 17,
           "sessions": 2
         },
         {
           "day": 2,
-          "hour": 2,
+          "hour": 19,
           "sessions": 2
         },
         {
           "day": 2,
-          "hour": 3,
-          "sessions": 2
-        },
-        {
-          "day": 2,
-          "hour": 7,
+          "hour": 4,
           "sessions": 2
         },
         {
@@ -5120,6 +5118,31 @@
         },
         {
           "day": 1,
+          "hour": 7,
+          "sessions": 1
+        },
+        {
+          "day": 2,
+          "hour": 2,
+          "sessions": 1
+        },
+        {
+          "day": 2,
+          "hour": 22,
+          "sessions": 1
+        },
+        {
+          "day": 2,
+          "hour": 3,
+          "sessions": 1
+        },
+        {
+          "day": 2,
+          "hour": 6,
+          "sessions": 1
+        },
+        {
+          "day": 2,
           "hour": 7,
           "sessions": 1
         }
